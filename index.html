@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Tutor Management System - Front</title>
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+<link href="styles/framework.css" rel="stylesheet" type="text/css">
+<link href="styles/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="styles/animate.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/jqueryui.js"></script>
+<script type="text/javascript" src="scripts/framework-plugins.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</head>
+<body class="dual-sidebar">
+<div id="preloader">
+    <div id="status">
+        <h3 class="center-text">Welcome</h3>
+        <h1 class="center-text" style="font-size: 30px;">
+            <span style="color : #c0392b;">T</span>
+            <span style="color : #2980b9;">M</span>
+            <span style="color : #2abb67;">S</span>
+        </h1>
+        <h2 class="center-text smaller-text" style="font-size: 15px;">
+            <span style="color : #c0392b;">TUTOR</span>
+            <span style="color : #2980b9;">MANAGEMENT</span>
+            <span style="color : #2abb67;">SYSYTEM</span>
+        </h2>
+        <p class="center-text smaller-text">
+            We're loading the content, give us a second. This won't take long!
+        </p>
+    </div>
+</div>
+<div class="gallery-fix"></div> <!-- Important for all pages that have galleries or portfolios -->
+<div id="header-fixed">
+    <a class="open-left-sidebar" href="#"><i class="fa fa-navicon"></i></a>
+    <a class="style-logo" href="#">
+        <p>
+            <span style="color : #c0392b;">TUTOR</span>
+            <span style="color : #2980b9;">MANAGEMENT</span>
+            <span style="color : #2abb67;">SYSYTEM</span>
+        </p>
+    </a>
+    <a class="lock" href="#" onclick="logout();"><i class="fa fa-lock"></i></a>
+</div>
+<!-- Ball Footer Menu -->
+<div class="footer-menu">
+    <a href="#" class="footer-menu-open">
+        <i class="fa fa-ellipsis-v"></i>
+    </a>
+    <a href="#" class="footer-menu-close">
+        <em class="footer-menu-open-text">Navigation</em>
+        <i class="bg-red-dark fa fa-times"></i>
+    </a>
+    <a href="message_board.html" class="footer-menu-item fm-1">
+        <em>Messages</em>
+        <i class="bg-night-dark fa fa-envelope"></i>
+    </a>
+    <a href="notification.html" class="footer-menu-item fm-2">
+        <em>Notifications</em>
+        <i class="bg-green-dark fa fa-bell"></i>
+    </a>
+    <a href="tutor_profile.html" class="footer-menu-item fm-3">
+        <em>Profile</em>
+        <i class="bg-blue-dark fa fa-user"></i>
+    </a>
+</div>
+<div class="menu-background"></div>
+<div class="all-elements">
+    <div class="snap-drawers">
+        <div class="snap-drawer snap-drawer-left">    
+            <div class="sidebar-header">
+                <div class="container profile">
+                    <img src="images/profile/avatar.jpg" class="quote-image tutorImage img-responsive" />
+                    <strong class="quote-author tutorName">Alexander Stranger</strong>
+                    <span class="highlighted bg-blue-dark color-white">Tutor</span>
+                </div>
+                <div class="sidebar-header-logo">
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="sidebar-menu half-bottom">
+                <div class="sidebar-divider">
+                    Navigation 
+                </div>
+                <a class="menu-item" href="index.html">
+                    <i class="bg-green-light fa fa-dashboard"></i>
+                    <em>Dashboard</em>
+                    <i class="fa fa-circle"></i>
+                </a>
+                <a class="menu-item" href="message_board.html">
+                    <i class="bg-green-light fa fa-envelope"></i>
+                    <em>Message Board</em>
+                    <i class="fa fa-circle"></i>
+                </a>
+                <a class="menu-item" href="notification.html">
+                    <i class="bg-green-light fa fa-bell"></i>
+                    <em>Notifications</em>
+                    <i class="fa fa-circle"></i>
+                </a>
+                <a class="menu-item" href="tutor_profile.html">
+                    <i class="bg-green-light fa fa-user"></i>
+                    <em>Profile</em>
+                    <i class="fa fa-circle"></i>
+                </a>
+                <div class="has-submenu">
+                    <a class="menu-item show-submenu submenu-active" href="#">
+                        <i class="bg-green-light fa fa-user-secret"></i>
+                        <em>Availability Status</em>
+                    </a>
+                    <div class="submenu submenu-active">
+                        <a class="submenu-item" href="#"><i class="fa fa-angle-right"></i><em>Available</em><i class="fa fa-circle"></i></a>
+                        <a class="submenu-item" href=""><i class="fa fa-angle-right"></i><em>Not Available</em><i class="fa fa-circle"></i></a>
+                    </div>
+                </div>
+                <a class="menu-item" href="time_table.html">
+                    <i class="bg-green-light fa fa-calendar-o"></i>
+                    <em>Time Table</em>
+                    <i class="fa fa-circle"></i>
+                </a>
+                <a class="menu-item" href="student_list.html">
+                    <i class="bg-green-light fa fa-mortar-board"></i>
+                    <em>Students</em>
+                    <i class="fa fa-circle"></i>
+                </a>
+                <a class="menu-item" href="incident_reporting.html">
+                    <i class="bg-green-light fa fa-warning"></i>
+                    <em>Incident Reports</em>
+                    <i class="fa fa-circle"></i>
+                </a>
+                <a class="menu-item" href="reviews.html">
+                    <i class="bg-green-light fa fa-pencil"></i>
+                    <em>Reviews</em>
+                    <i class="fa fa-circle"></i>
+                </a>
+                <a class="menu-item" href="reports.html">
+                    <i class="bg-green-light fa fa-book"></i>
+                    <em>Reports</em>
+                    <i class="fa fa-circle"></i>
+                </a>
+                <a class="menu-item" href="settings.html">
+                    <i class="bg-green-light fa fa-wrench"></i>
+                    <em>Settings</em>
+                    <i class="fa fa-circle"></i>
+                </a>
+                <a class="menu-item" href="useful_links.html">
+                    <i class="bg-green-light fa fa-link"></i>
+                    <em>Useful Links</em>
+                    <i class="fa fa-circle"></i>
+                </a>
+            </div>
+        </div>
+        <div id="content" class="snap-content">
+            <div class="content">
+            <div class="header-clear-large"></div>
+            <!--Page content goes here, fixed elements go above the all elements class-->
+                <div class="material-container">
+                    <div class="design"><span class="line big"></span><span><i class="fa fa-dashboard"></i></span><span class="line big"></span></div>
+                    <div class="heading-style-5">
+                        <h4 class="heading-title">Tutor ID CARD</h4>
+                    </div>
+                </div>
+                <div class="decoration"></div>
+                <div class="container">
+                    <div class="material-container">
+                        <div class="">
+                            <h1 class="index">Bezaleel Solutions</h1>
+                            <img class="preload-image half-bottom tutorImage" style="width: 20%;display: block;margin: auto;max-width: 100%;" data-original="images/profile/avatar.jpg" />
+                            <table cellspacing='0' class="table">
+                                <tr>
+                                    <th>Tutor Name</th>
+                                    <td class="tutorName">Loading ... </td>
+                                </tr>
+                                <tr>
+                                    <th>Tutor Gender</th>
+                                    <td id="tutorGender">Loading ... </td>
+                                </tr>
+                                <tr>
+                                    <th>Subject Area</th>
+                                    <td id="tutorSubject">Loading ... </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="one-half-responsive last-column">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="material-container">
+                        <p class="center-text">
+                            © 2016 Tuition Management System. Written permission must be obtained prior to any third party use or
+                            duplication of these pages.
+                        </p>
+                    </div>
+                </div>
+            <!-- End of entire page content-->
+            </div> 
+        </div>
+    </div>  
+    <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
+</div>
+<script>
+    var urlToPass = "//localhost/tms/";
+    setTimeout(function(){
+        var userValidation = window.localStorage.getItem("tms_user");
+        if(userValidation == "" || userValidation == null){
+            window.location.href = "login.html";
+        }else{
+            var userData = JSON.parse(userValidation);
+            $("#tutorGender").html(userData[0].gender);
+            $("#tutorSubject").html(userData[0].subjects);
+            $(".tutorName").html(userData[0].name + " " + userData[0].lname);
+            $(".tutorImage").attr("data-original",urlToPass + userData[0].profile_pic);
+            $(".tutorImage").attr("src",urlToPass + userData[0].profile_pic);
+        }
+        var pageValidation = window.location.hash;
+        if(pageValidation == ''){
+
+        }else{
+            var newPage = pageValidation.replace("#","");
+            loadPage(newPage);
+        }
+    },1000);
+//    function loadPage(page_name){
+//        $(".snap-content").load(page_name+" .content");
+//        window.location.hash = "#"+page_name;
+//    }
+    function logout(){
+        window.localStorage.clear();
+        window.location.reload();
+    }
+</script>
+</body>
