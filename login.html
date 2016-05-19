@@ -57,7 +57,7 @@
     </div>
 </div>
 <script>
-    var urlToPass = "//localhost/tms/";
+    var urlToPass = "http://devlabx.com/tms_upd_forAndroid/";
     setTimeout(function(){
         $("#loginForm")[0].reset();
     },1000);
@@ -68,6 +68,7 @@
             $("#error").html("Please insert both fields correctly");
         }else{
             $.post(urlToPass + "android/ajaxLogin",{username:username,pwd:pwd},function(e){
+                console.log(e);
                 e = e.trim();
                 if(e == 'false'){
                     $("#error").html("Invalid Credentials");
