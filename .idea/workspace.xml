@@ -28,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8846154" vertical-offset="1937" max-vertical-offset="2720">
-              <caret line="207" column="69" selection-start-line="207" selection-start-column="29" selection-end-line="207" selection-end-column="69" />
+            <state vertical-scroll-proportion="-20.307692" vertical-offset="2532" max-vertical-offset="3179">
+              <caret line="261" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
               <folding>
                 <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
               </folding>
@@ -40,7 +40,7 @@
       <file leaf-file-name="settings.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0843372" vertical-offset="2175" max-vertical-offset="2754">
+            <state vertical-scroll-proportion="-9.846154" vertical-offset="2175" max-vertical-offset="2754">
               <caret line="224" column="21" selection-start-line="224" selection-start-column="21" selection-end-line="224" selection-end-column="21" />
               <folding>
                 <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
@@ -49,28 +49,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/login.html">
+      <file leaf-file-name="message_detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/message_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.7616581" vertical-offset="306" max-vertical-offset="1547">
-              <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+            <state vertical-scroll-proportion="-19.0" vertical-offset="4028" max-vertical-offset="4726">
+              <caret line="266" column="58" selection-start-line="266" selection-start-column="47" selection-end-line="266" selection-end-column="58" />
               <folding>
-                <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="android.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="android.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../tms/application/controllers/android.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="935">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.20552677" vertical-offset="51" max-vertical-offset="1020">
+              <caret line="73" column="144" selection-start-line="73" selection-start-column="144" selection-end-line="73" selection-end-column="144" />
               <folding>
-                <marker date="1463654858088" expanded="true" signature="889:1279" placeholder="..." />
-                <marker date="1463654858088" expanded="true" signature="1081:1244" placeholder="..." />
-                <marker date="1463654858088" expanded="true" signature="1137:1166" placeholder="..." />
-                <marker date="1463654858088" expanded="true" signature="1137:1208" placeholder="..." />
+                <element signature="n#__construct#0;n#Android#0;n#!!top" expanded="false" />
+                <element signature="n#index#0;n#Android#0;n#!!top" expanded="false" />
+                <element signature="n#ajaxLogin#0;n#Android#0;n#!!top" expanded="false" />
+                <element signature="n#ajax#0;n#Android#0;n#!!top" expanded="false" />
+                <element signature="e#628#1480#0#PHP" expanded="false" />
+                <element signature="e#1489#2054#0#PHP" expanded="false" />
+                <element signature="n#sendToTutor#0;n#Android#0;n#!!top" expanded="false" />
+                <marker date="1464016107866" expanded="true" signature="2857:2975" placeholder="SELECT * FRO..." />
+                <marker date="1464016107866" expanded="true" signature="4100:4144" placeholder="SELECT * FRO..." />
+                <marker date="1464016107866" expanded="true" signature="4100:4264" placeholder="SELECT * FRO..." />
+                <marker date="1464016107866" expanded="true" signature="4100:4267" placeholder="SELECT * FRO..." />
               </folding>
             </state>
           </provider>
@@ -87,11 +104,14 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/config.xml" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/settings.html" />
         <option value="$PROJECT_DIR$/useful_links.html" />
-        <option value="$PROJECT_DIR$/../tms/application/controllers/android.php" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$APPLICATION_HOME_DIR$/bin/idea.properties" />
         <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/message_board.html" />
+        <option value="$PROJECT_DIR$/message_detail.html" />
+        <option value="$PROJECT_DIR$/../tms/application/controllers/android.php" />
       </list>
     </option>
   </component>
@@ -128,6 +148,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -148,19 +169,42 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tms" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f7502774-3665-4646-b714-7d9e3965b3f6" name="Default" comment="" />
@@ -177,7 +221,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -188,6 +231,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -213,11 +257,355 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="881" max-vertical-offset="1547">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tms/application/controllers/android.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#__construct#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#index#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#ajaxLogin#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#ajax#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="e#628#1480#0#PHP" expanded="false" />
+            <element signature="e#1489#2054#0#PHP" expanded="false" />
+            <element signature="n#sendToTutor#0;n#Android#0;n#!!top" expanded="false" />
+            <marker date="1464016107866" expanded="true" signature="2857:2975" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4144" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4264" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4267" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2600" max-vertical-offset="3179">
+          <caret line="222" column="0" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2175" max-vertical-offset="2754">
+          <caret line="224" column="21" selection-start-line="224" selection-start-column="21" selection-end-line="224" selection-end-column="21" />
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/useful_links.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3280" max-vertical-offset="3859">
+          <caret line="200" column="21" selection-start-line="200" selection-start-column="21" selection-end-line="200" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="881" max-vertical-offset="1547">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tms/application/controllers/android.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#__construct#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#index#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#ajaxLogin#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#ajax#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="e#628#1480#0#PHP" expanded="false" />
+            <element signature="e#1489#2054#0#PHP" expanded="false" />
+            <element signature="n#sendToTutor#0;n#Android#0;n#!!top" expanded="false" />
+            <marker date="1464016107866" expanded="true" signature="2857:2975" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4144" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4264" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4267" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2600" max-vertical-offset="3179">
+          <caret line="222" column="0" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2175" max-vertical-offset="2754">
+          <caret line="224" column="21" selection-start-line="224" selection-start-column="21" selection-end-line="224" selection-end-column="21" />
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/useful_links.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3280" max-vertical-offset="3859">
+          <caret line="200" column="21" selection-start-line="200" selection-start-column="21" selection-end-line="200" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="881" max-vertical-offset="1547">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tms/application/controllers/android.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#__construct#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#index#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#ajaxLogin#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#ajax#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="e#628#1480#0#PHP" expanded="false" />
+            <element signature="e#1489#2054#0#PHP" expanded="false" />
+            <element signature="n#sendToTutor#0;n#Android#0;n#!!top" expanded="false" />
+            <marker date="1464016107866" expanded="true" signature="2857:2975" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4144" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4264" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4267" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2975">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2175" max-vertical-offset="2754">
+          <caret line="224" column="33" selection-start-line="224" selection-start-column="33" selection-end-line="224" selection-end-column="33" />
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1547">
+          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tms/application/controllers/android.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="935">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="n#__construct#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#index#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#ajaxLogin#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#ajax#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="e#628#1480#0#PHP" expanded="false" />
+            <element signature="e#1489#2054#0#PHP" expanded="false" />
+            <element signature="n#sendToTutor#0;n#Android#0;n#!!top" expanded="false" />
+            <marker date="1464016107866" expanded="true" signature="2857:2975" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4144" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4264" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4267" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2975">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2175" max-vertical-offset="2754">
+          <caret line="224" column="33" selection-start-line="224" selection-start-column="33" selection-end-line="224" selection-end-column="33" />
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1547">
+          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tms/application/controllers/android.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="935">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="n#__construct#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#index#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#ajaxLogin#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#ajax#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="e#628#1480#0#PHP" expanded="false" />
+            <element signature="e#1489#2054#0#PHP" expanded="false" />
+            <element signature="n#sendToTutor#0;n#Android#0;n#!!top" expanded="false" />
+            <marker date="1464016107866" expanded="true" signature="2857:2975" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4144" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4264" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4267" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1937" max-vertical-offset="2720">
+          <caret line="207" column="69" selection-start-line="207" selection-start-column="29" selection-end-line="207" selection-end-column="69" />
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2175" max-vertical-offset="2754">
+          <caret line="224" column="21" selection-start-line="224" selection-start-column="21" selection-end-line="224" selection-end-column="21" />
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1547">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tms/application/controllers/android.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="935">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="n#__construct#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#index#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#ajaxLogin#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#ajax#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="e#628#1480#0#PHP" expanded="false" />
+            <element signature="e#1489#2054#0#PHP" expanded="false" />
+            <element signature="n#sendToTutor#0;n#Android#0;n#!!top" expanded="false" />
+            <marker date="1464016107866" expanded="true" signature="2857:2975" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4144" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4264" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4267" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="801" max-vertical-offset="2720">
@@ -250,20 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1252" max-vertical-offset="3026">
           <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
-            <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -272,10 +646,17 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="271" max-vertical-offset="867">
           <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
           <folding>
-            <marker date="1463654858088" expanded="true" signature="889:1279" placeholder="..." />
-            <marker date="1463654858088" expanded="true" signature="1081:1244" placeholder="..." />
-            <marker date="1463654858088" expanded="true" signature="1137:1166" placeholder="..." />
-            <marker date="1463654858088" expanded="true" signature="1137:1208" placeholder="..." />
+            <element signature="n#__construct#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#index#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#ajaxLogin#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#ajax#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="e#628#1480#0#PHP" expanded="false" />
+            <element signature="e#1489#2054#0#PHP" expanded="false" />
+            <element signature="n#sendToTutor#0;n#Android#0;n#!!top" expanded="false" />
+            <marker date="1464016107866" expanded="true" signature="2857:2975" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4144" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4264" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4267" placeholder="SELECT * FRO..." />
           </folding>
         </state>
       </provider>
@@ -295,7 +676,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1530">
           <caret line="59" column="46" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="46" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -304,20 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3552" max-vertical-offset="4131">
           <caret line="219" column="8" selection-start-line="219" selection-start-column="8" selection-end-line="219" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
-            <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -349,27 +724,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0843372" vertical-offset="2175" max-vertical-offset="2754">
-          <caret line="224" column="21" selection-start-line="224" selection-start-column="21" selection-end-line="224" selection-end-column="21" />
-          <folding>
-            <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../aliAndroid/sweipe/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.728417" vertical-offset="7077" max-vertical-offset="8398">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1460577519490" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1460577519490" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1460577519490" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1460577519490" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1460577519490" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -385,7 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03057554" vertical-offset="0" max-vertical-offset="3621">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -393,37 +750,106 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40202704" vertical-offset="0" max-vertical-offset="592">
           <caret line="363" column="0" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tms/application/controllers/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="5508">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/bin/idea.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3327032" vertical-offset="317" max-vertical-offset="2006">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/arqumDb/opart1.sql">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.1538463" vertical-offset="1121" max-vertical-offset="1700">
+          <caret line="55" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <element signature="n#__construct#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#index#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#view#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#logout#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#bidsCall#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#ajax#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#pay#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#applicationTest#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#applicationLogout#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#applicationAjaxCalls#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#contactQuery#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#deposit_conf#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#do_upload#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#updatePwd#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#easpayReturnUrlipn#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#easpayReturnUrl1#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#easpayReturnUrl#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <element signature="n#buyBuckets#0;n#Dashboard#0;n#!!top" expanded="false" />
-            <marker date="1463604535305" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1463604535305" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1463604535305" expanded="false" signature="-1:-1" placeholder="..." />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/useful_links.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46977547" vertical-offset="1853" max-vertical-offset="2482">
-          <caret line="206" column="10" selection-start-line="206" selection-start-column="10" selection-end-line="206" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.20725389" vertical-offset="3280" max-vertical-offset="3859">
+          <caret line="200" column="21" selection-start-line="200" selection-start-column="21" selection-end-line="200" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.307692" vertical-offset="2532" max-vertical-offset="3179">
+          <caret line="261" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/message_board.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3540587" vertical-offset="3314" max-vertical-offset="4454">
+          <caret line="207" column="3" selection-start-line="207" selection-start-column="3" selection-end-line="254" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#h2#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.846154" vertical-offset="2175" max-vertical-offset="2754">
+          <caret line="224" column="21" selection-start-line="224" selection-start-column="21" selection-end-line="224" selection-end-column="21" />
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tms/application/views/front/sendToTutor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.692308" vertical-offset="441" max-vertical-offset="1020">
+          <caret line="53" column="9" selection-start-line="48" selection-start-column="8" selection-end-line="53" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/message_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.0" vertical-offset="4028" max-vertical-offset="4726">
+          <caret line="266" column="58" selection-start-line="266" selection-start-column="47" selection-end-line="266" selection-end-column="58" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -436,59 +862,26 @@
             <element signature="n#style#0;n#span#0;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#2;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
-            <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../tms/application/controllers/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="5508">
-          <caret line="1" column="32" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="32" />
-          <folding>
-            <marker date="1463573728586" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1463573728586" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1463573728586" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1463573728586" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1463573728586" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1463573728586" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1463573728586" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1463573728586" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1463573728586" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1463573728586" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../tms/application/controllers/android.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="935">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.20552677" vertical-offset="51" max-vertical-offset="1020">
+          <caret line="73" column="144" selection-start-line="73" selection-start-column="144" selection-end-line="73" selection-end-column="144" />
           <folding>
-            <marker date="1463654858088" expanded="true" signature="889:1279" placeholder="..." />
-            <marker date="1463654858088" expanded="true" signature="1081:1244" placeholder="..." />
-            <marker date="1463654858088" expanded="true" signature="1137:1166" placeholder="..." />
-            <marker date="1463654858088" expanded="true" signature="1137:1208" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8846154" vertical-offset="1937" max-vertical-offset="2720">
-          <caret line="207" column="69" selection-start-line="207" selection-start-column="29" selection-end-line="207" selection-end-column="69" />
-          <folding>
-            <element signature="tag#div#0;tag#div#0;tag#div#5;tag#body#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7616581" vertical-offset="306" max-vertical-offset="1547">
-          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#__construct#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#index#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#ajaxLogin#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="n#ajax#0;n#Android#0;n#!!top" expanded="false" />
+            <element signature="e#628#1480#0#PHP" expanded="false" />
+            <element signature="e#1489#2054#0#PHP" expanded="false" />
+            <element signature="n#sendToTutor#0;n#Android#0;n#!!top" expanded="false" />
+            <marker date="1464016107866" expanded="true" signature="2857:2975" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4144" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4264" placeholder="SELECT * FRO..." />
+            <marker date="1464016107866" expanded="true" signature="4100:4267" placeholder="SELECT * FRO..." />
           </folding>
         </state>
       </provider>

@@ -15,8 +15,8 @@
 <body class="dual-sidebar">
 <div id="preloader">
     <div id="status">
-        <div class="preloader-logo"></div>
         <h3 class="center-text">Welcome</h3>
+        <img src="images/logo.png" />
         <p class="center-text smaller-text">
             We're loading the content, give us a second. This won't take long!
         </p>
@@ -44,10 +44,6 @@
                             <button onclick="doLogin()" type="button" class="pageapp-login-button button button-small button-green button-fullscreen">
                                 Login
                             </button>
-                            <div class="decoration"></div>
-                            <button type="button" class="pageapp-login-button button button-small button-green button-fullscreen">
-                                Register
-                            </button>
                         </form>
                     </div>
                 </div>
@@ -57,7 +53,7 @@
     </div>
 </div>
 <script>
-    var urlToPass = "http://devlabx.com/tms_upd_forAndroid/";
+    var urlToPass = "http://devlabx.com/tms_upd_forAndroid/index.php/";
     setTimeout(function(){
         $("#loginForm")[0].reset();
     },1000);

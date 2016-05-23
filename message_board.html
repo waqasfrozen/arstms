@@ -178,14 +178,18 @@
                     </div>
                 </div>
                 <div class="decoration"></div>
-                <div class="activity-item material-container">
-                    <img class="activity-item-image" src="images/pictures/2s.jpg" alt="img">
-                    <h5><a href="message_detail.html">Cosultant Name</a></h5>
-                    <em class="message">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </em>
-                    <em class="quote-title">10:20 PM</em>
+                
+                <div id="msgs">
+                    <div class='activity-item material-container'>
+                        <img class='activity-item-image' src='images/pictures/2s.jpg' alt='img'>
+                        <h5><a href='message_detail.html'>Cosultant Name</a></h5>
+                        <em class='message'>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </em>
+                        <em class='quote-title'>10:20 PM</em>
+                    </div>
                 </div>
+                
                 <div class="footer">
                     <div class="material-container">
                         <p class="center-text">
@@ -200,4 +204,54 @@
     </div>
     <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
 </div>
+<script>
+    var userid = '';
+    var userData = '';
+    var urlToPass = "http://devlabx.com/tms_upd_forAndroid/index.php/";
+    var urlForAssets = "http://devlabx.com/tms_upd/";
+    setTimeout(function(){
+        var userValidation = window.localStorage.getItem("tms_user");
+        if(userValidation == "" || userValidation == null){
+            window.location.href = "login.html";
+        }else{
+            userData = JSON.parse(userValidation);
+            userid = userData[0].id;
+            $(".tutorName").html(userData[0].name + " " + userData[0].lname);
+            $(".tutorImage").attr("data-original",urlForAssets + userData[0].profile_pic);
+            $(".tutorImage").attr("src",urlForAssets + userData[0].profile_pic);
+            sendingLoc();
+        }
+
+    },1000);
+    function sendingLoc(){
+        setInterval(function(){
+            getLocation();
+            getInbox();
+        },1000);
+    }
+
+    function logout(){
+        window.localStorage.clear();
+        window.location.reload();
+    }
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+    function showPosition(position) {
+        $.post(urlToPass + "android/ajax/SendLocation",{ id : userid , lat:position.coords.latitude,lon:position.coords.longitude},function(e){
+            //console.log(e);
+        });
+    }
+    function getInbox(){
+        $.post(urlToPass + "android/tutor_chat/getRecepients",{id : userData[0].id},function(e){
+            $("#msgs").html(e);
+        });
+    }
+
+</script>
 </body>

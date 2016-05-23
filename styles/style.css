@@ -84,7 +84,7 @@
 }
 
 #content{
-    background: url('../images/new/bg-2.jpg')!important;
+    background: url('../images/new/bg.jpg') no-repeat;
     background-size: cover;
     background-color:#f0f0f0!important;
     -webkit-box-shadow: 0 5px 7px 2px rgba(0,0,0,0.3);
@@ -1507,10 +1507,14 @@ form input[type="submit"]{
 
 .style-logo p{
     text-align: center;
-    font-size: 20px;
+    font-size: 11px;
     color: #2980b9;
     font-weight: bold;
     margin: 15px;
+}
+
+#status img{
+    max-width: 100%;
 }
 
 

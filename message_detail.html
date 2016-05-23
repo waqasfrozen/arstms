@@ -179,20 +179,21 @@
                 </div>
                 <div class="decoration"></div>
                 <div class="one-half-responsive">
+
+
                     <div class="material-container">
-                        <em class="speach-left-title">John Doe says:</em>
-                        <p class="speach-left blue-bubble">This is just an awesome bubble! It's quite cute isn't it?</p>
-                        <div class="clear"></div>
-                        <em class="speach-right-title">Jane Doe replied:</em>
-                        <p class="speach-right">Yeap! It's awesome isn't it and it's not that hard to use! And they act like bubbles, only expanding to 75% of width!</p>
-                        <div class="clear"></div>
-                        <p class="speach-status"><i class="fa fa-check"></i> Read 21:30 <img src="images/pictures/4s.jpg" alt="img"></p>
+                        <div class="msg">
+
+                        </div>
+
                         <div class="send-message">
-                            <input type="text" placeholder="Say Something...">
+                            <input type="text" id="newMsg" placeholder="Say Something...">
                             <input type="file" value="Attachments" placeholder="Say Something...">
-                            <input type="submit" class="login-button button button-small button-green button-fullscreen full-bottom" value="Send">
+                            <input type="button" onclick="sendMsg()" class="login-button button button-small button-green button-fullscreen full-bottom" value="Send">
                         </div>
                     </div>
+
+
                 </div>
                 <div class="decoration"></div>
                 <div class="footer">
@@ -209,4 +210,64 @@
     </div>
     <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
 </div>
+<script>
+    var userid = '';
+    var userData = '';
+    var urlToPass = "http://devlabx.com/tms_upd_forAndroid/index.php/";
+    var urlForAssets = "http://devlabx.com/tms_upd/";
+    setTimeout(function(){
+        var userValidation = window.localStorage.getItem("tms_user");
+        if(userValidation == "" || userValidation == null){
+            window.location.href = "login.html";
+        }else{
+            userData = JSON.parse(userValidation);
+            userid = userData[0].id;
+            $(".tutorName").html(userData[0].name + " " + userData[0].lname);
+            $(".tutorImage").attr("data-original",urlForAssets + userData[0].profile_pic);
+            $(".tutorImage").attr("src",urlForAssets + userData[0].profile_pic);
+            sendingLoc();
+        }
+
+    },1000);
+    function sendingLoc(){
+        setInterval(function(){
+            getLocation();
+            getInboxMsg();
+        },1000);
+    }
+
+    function logout(){
+        window.localStorage.clear();
+        window.location.reload();
+    }
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+    function showPosition(position) {
+        $.post(urlToPass + "android/ajax/SendLocation",{ id : userid , lat:position.coords.latitude,lon:position.coords.longitude},function(e){
+            //console.log(e);
+        });
+    }
+    function getInboxMsg(){
+        var id = window.location.hash;
+        id = id.replace("#","");
+        $.post(urlToPass + "android/tutor_chat/tutor_message_detail",{other : id , me : userData[0].id},function(e){
+            $(".msg").html(e);
+        });
+    }
+    function sendMsg(){
+        var id = window.location.hash;
+        id = id.replace("#","");
+        var msg = $("#newMsg").val();
+        $.post(urlToPass + "android/tutor_chat/sendMessage",{msg:msg,to:id,from:userData[0].id},function(a){
+            $("#newMsg").val(" ");
+        });
+    }
+
+</script>
 </body>

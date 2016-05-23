@@ -1,33 +1,7 @@
 /* Framework.CSS*/
 /*
 
-    Template Name:      Enabled Mobile & Tablet Templates
-    Theme URL:          http://enableds.com
-    Author:             Enabled
-    Author URI:         http://themeforest.net/user/Enabled?ref=Enabled 
-    Author Facebook:    https://www.facebook.com/enabled.labs
-    Author Twitter:     https://twitter.com/iEnabled
-    Version:            4.0
-    License:            Regular or Extended via ThemeForest
-    Plugin Licenses:    GPL / MIT - Redistribution Allowed
-    Structure:          Each chapter from the structure can be located using 
-                        CTRL + F ( Windows ) or CMD + F ( Mac ) The titles are
-                        copy pasted as they are in the code. 
-    
-    Description:        The framework is built into one single CSS file to allow the template
-                        universal, fast access to all the items. As -webkit- browsers cache the
-                        CSS on load, this asures best loading times on all platforms and at the
-                        same time asures you will find everything you need in one single place. 
 
-                        The style.css is built for individual features of templates. All the core
-                        elements of the CSS are located in framework.css and chaptered as added
-                        below. 
-
-                        Please Note! Not following the structure presented in the documentation
-                        or altering the framework.css without proper experience can lead to the 
-                        item malfunctioning. We are not responsible for any edits you make outside
-                        the as is item. All features of this CSS are explained in the second help
-                        documentation file provided in the pack with the item purchased!
 
     Structure:
                         
@@ -5280,7 +5254,7 @@ ul.tabs li.active-tab{
     color:#FFFFFF;
     border-bottom:solid 1px rgba(255,255,255,0.1);
     margin-bottom:20px;
-    font-size:12px;
+    font-size:15px;
 }
 
 .pageapp-login .unboxed-layout .decoration{
@@ -5292,7 +5266,7 @@ ul.tabs li.active-tab{
 .pageapp-login .unboxed-layout .pageapp-login-logo{
     width:125px;
     height:100px;
-    background-image:url(../images/pages-logo-light.png);
+    background-image:url(../images/logo.png);
     background-size:125px 100px;
     margin-left:auto;
     margin-right:auto;

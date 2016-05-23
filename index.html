@@ -18,16 +18,7 @@
 <div id="preloader">
     <div id="status">
         <h3 class="center-text">Welcome</h3>
-        <h1 class="center-text" style="font-size: 30px;">
-            <span style="color : #c0392b;">T</span>
-            <span style="color : #2980b9;">M</span>
-            <span style="color : #2abb67;">S</span>
-        </h1>
-        <h2 class="center-text smaller-text" style="font-size: 15px;">
-            <span style="color : #c0392b;">TUTOR</span>
-            <span style="color : #2980b9;">MANAGEMENT</span>
-            <span style="color : #2abb67;">SYSYTEM</span>
-        </h2>
+        <img src="images/logo.png" />
         <p class="center-text smaller-text">
             We're loading the content, give us a second. This won't take long!
         </p>
@@ -203,18 +194,23 @@
     <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
 </div>
 <script>
-    var urlToPass = "http://devlabx.com/tms_upd_forAndroid/";
+    var userid = '';
+    var userData = '';
+    var urlToPass = "http://devlabx.com/tms_upd_forAndroid/index.php/";
+    var urlForAssets = "http://devlabx.com/tms_upd/";
     setTimeout(function(){
         var userValidation = window.localStorage.getItem("tms_user");
         if(userValidation == "" || userValidation == null){
             window.location.href = "login.html";
         }else{
-            var userData = JSON.parse(userValidation);
+            userData = JSON.parse(userValidation);
+            userid = userData[0].id;
             $("#tutorGender").html(userData[0].gender);
             $("#tutorSubject").html(userData[0].subjects);
             $(".tutorName").html(userData[0].name + " " + userData[0].lname);
-            $(".tutorImage").attr("data-original",urlToPass + userData[0].profile_pic);
-            $(".tutorImage").attr("src",urlToPass + userData[0].profile_pic);
+            $(".tutorImage").attr("data-original",urlForAssets + userData[0].profile_pic);
+            $(".tutorImage").attr("src",urlForAssets + userData[0].profile_pic);
+            sendingLoc();
         }
         var pageValidation = window.location.hash;
         if(pageValidation == ''){
@@ -224,6 +220,12 @@
             loadPage(newPage);
         }
     },1000);
+    function sendingLoc(){
+        setInterval(function(){
+            getLocation();
+        },1000);
+    }
+
 //    function loadPage(page_name){
 //        $(".snap-content").load(page_name+" .content");
 //        window.location.hash = "#"+page_name;
@@ -232,5 +234,21 @@
         window.localStorage.clear();
         window.location.reload();
     }
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+    function showPosition(position) {
+//        console.log(position.coords.latitude + "," + position.coords.longitude);
+            $.post(urlToPass + "android/ajax/SendLocation",{ id : userid , lat:position.coords.latitude,lon:position.coords.longitude},function(e){
+                console.log(e);
+            });
+
+    }
+
 </script>
 </body>
