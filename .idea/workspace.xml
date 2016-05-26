@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.7661431" vertical-offset="1796" max-vertical-offset="3082">
+            <state vertical-scroll-proportion="13.71875" vertical-offset="1796" max-vertical-offset="3082">
               <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
@@ -73,6 +73,16 @@
                 <element signature="n#style#0;n#span#1;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#2;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.51454544" vertical-offset="1419" max-vertical-offset="2001">
+              <caret line="74" column="35" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,7 +137,6 @@
         <option value="$PROJECT_DIR$/message_detail.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/header.html" />
-        <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/student_list.html" />
         <option value="$PROJECT_DIR$/../tms/application/controllers/android.php" />
         <option value="$PROJECT_DIR$/../tms/system/core/Common.php" />
@@ -139,6 +148,7 @@
         <option value="$PROJECT_DIR$/incident_reporting.html" />
         <option value="$PROJECT_DIR$/reports.html" />
         <option value="$PROJECT_DIR$/settings.html" />
+        <option value="$PROJECT_DIR$/login.html" />
       </list>
     </option>
   </component>
@@ -626,14 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="2001">
-          <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/student_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7591623" vertical-offset="1727" max-vertical-offset="3036">
@@ -770,13 +772,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7661431" vertical-offset="1796" max-vertical-offset="3082">
+        <state vertical-scroll-proportion="13.71875" vertical-offset="1796" max-vertical-offset="3082">
           <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#span#0;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#2;n#p#0;n#a#1;n#div#2;n#body#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51454544" vertical-offset="1419" max-vertical-offset="2001">
+          <caret line="74" column="35" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
