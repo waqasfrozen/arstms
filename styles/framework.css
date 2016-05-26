@@ -398,7 +398,7 @@ textarea{
 .bg-2{background-image:url(../images/pictures/2.jpg);}
 .bg-3{background-image:url(../images/pictures/3.jpg);}
 .bg-4{background-image:url(../images/pictures/4.jpg);}
-.bg-5{background-image:url(../images/pictures/5.jpg);}
+.bg-5{background-image:url(../images/new/bg.jpg);}
 .bg-6{background-image:url(../images/pictures/6.jpg);}
 .bg-7{background-image:url(../images/pictures/7.jpg);}
 .cover-screen{background-size:cover; background-position: center center;}
@@ -607,7 +607,8 @@ ol ol ol{
 	padding:14px;
 	border-top: 1px solid #ffffff;
 	border-bottom:1px solid #e0e0e0;
-	border-left: 0px solid #e0e0e0;
+    word-break: break-all;
+    border-left: 0px solid #e0e0e0;
 }
 
 .table tr.even td{
@@ -5266,7 +5267,7 @@ ul.tabs li.active-tab{
 .pageapp-login .unboxed-layout .pageapp-login-logo{
     width:125px;
     height:100px;
-    background-image:url(../images/logo.png);
+    /*background-image:url(../images/logo.png);*/
     background-size:125px 100px;
     margin-left:auto;
     margin-right:auto;
