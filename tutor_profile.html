@@ -5,21 +5,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>Tutor Management System - Front</title>
-    <link rel="icon" type="image/png" href="images/splash/android-chrome-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" sizes="196x196" href="images/splash/apple-touch-icon-196x196.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/splash/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/splash/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/splash/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/splash/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/splash/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/splash/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/splash/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/splash/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/splash/apple-touch-icon-57x57.png">
-    <link rel="icon" type="image/png" href="images/splash/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="images/splash/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="images/splash/favicon-16x16.png" sizes="16x16">
-    <link rel="shortcut icon" href="images/splash/favicon.ico" type="image/x-icon" />
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="styles/framework.css" rel="stylesheet" type="text/css">
     <link href="styles/font-awesome.css" rel="stylesheet" type="text/css">
@@ -33,16 +18,7 @@
 <div id="preloader">
     <div id="status">
         <h3 class="center-text">Welcome</h3>
-        <h1 class="center-text" style="font-size: 30px;">
-            <span style="color : #c0392b;">T</span>
-            <span style="color : #2980b9;">M</span>
-            <span style="color : #2abb67;">S</span>
-        </h1>
-        <h2 class="center-text smaller-text" style="font-size: 15px;">
-            <span style="color : #c0392b;">TUTOR</span>
-            <span style="color : #2980b9;">MANAGEMENT</span>
-            <span style="color : #2abb67;">SYSYTEM</span>
-        </h2>
+        <img src="images/logo.png" />
         <p class="center-text smaller-text">
             We're loading the content, give us a second. This won't take long!
         </p>
@@ -58,7 +34,7 @@
             <span style="color : #2abb67;">SYSYTEM</span>
         </p>
     </a>
-    <a class="lock" href="login.html"><i class="fa fa-lock"></i></a>
+    <a class="lock" href="#" onclick="logout();"><i class="fa fa-lock"></i></a>
 </div>
 <!-- Ball Footer Menu -->
 <div class="footer-menu">
@@ -85,150 +61,46 @@
 <div class="menu-background"></div>
 <div class="all-elements">
     <div class="snap-drawers">
-        <div class="snap-drawer snap-drawer-left">
-            <div class="sidebar-header">
-                <div class="container profile">
-                    <img src="images/profile/avatar.jpg" class="quote-image img-responsive" />
-                    <strong class="quote-author">Alexander Stranger</strong>
-                    <span class="highlighted bg-blue-dark color-white">Tutor</span>
-                </div>
-                <div class="sidebar-header-logo">
-                    <a href="#"></a>
-                </div>
-            </div>
-            <div class="sidebar-menu half-bottom">
-                <div class="sidebar-divider">
-                    Navigation
-                </div>
-                <a class="menu-item" href="index.html">
-                    <i class="bg-green-light fa fa-dashboard"></i>
-                    <em>Dashboard</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="message_board.html">
-                    <i class="bg-green-light fa fa-envelope"></i>
-                    <em>Message Board</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="notification.html">
-                    <i class="bg-green-light fa fa-bell"></i>
-                    <em>Notifications</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="tutor_profile.html">
-                    <i class="bg-green-light fa fa-user"></i>
-                    <em>Profile</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <div class="has-submenu">
-                    <a class="menu-item show-submenu submenu-active" href="#">
-                        <i class="bg-green-light fa fa-user-secret"></i>
-                        <em>Availability Status</em>
-                    </a>
-                    <div class="submenu submenu-active">
-                        <a class="submenu-item" href="#"><i class="fa fa-angle-right"></i><em>Available</em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item" href=""><i class="fa fa-angle-right"></i><em>Not Available</em><i class="fa fa-circle"></i></a>
-                    </div>
-                </div>
-                <a class="menu-item" href="time_table.html">
-                    <i class="bg-green-light fa fa-calendar-o"></i>
-                    <em>Time Table</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="student_list.html">
-                    <i class="bg-green-light fa fa-mortar-board"></i>
-                    <em>Students</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="incident_reporting.html">
-                    <i class="bg-green-light fa fa-warning"></i>
-                    <em>Incident Reports</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="reviews.html">
-                    <i class="bg-green-light fa fa-pencil"></i>
-                    <em>Reviews</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="reports.html">
-                    <i class="bg-green-light fa fa-book"></i>
-                    <em>Reports</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="settings.html">
-                    <i class="bg-green-light fa fa-wrench"></i>
-                    <em>Settings</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="useful_links.html">
-                    <i class="bg-green-light fa fa-link"></i>
-                    <em>Useful Links</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-            </div>
+        <div class="snap-drawer snap-drawer-left appNavigationBar">
+
         </div>
         <div id="content" class="snap-content">
             <div class="content">
                 <div class="page-profile">
                     <div class="page-profile-header container-fullscreen">
-                        <img src="images/pictures/5s.jpg" alt="img">
-                        <h3>Sarah Connor</h3>
-                        <em><i class="fa fa-location-arrow"></i>Melbourne Victoria,  Australia</em>
-                        <em>Status : Available</em>
+                        <img class="tutorImage" src="images/pictures/5s.jpg" alt="img">
+                        <h3 class="tutorName">Loading...!!!</h3>
+                        <em><i class="fa fa-location-arrow"></i><span id="tutorLocation">Loading...!!!</span></em>
+                        <em>Status : <span class="status_availability">Available</span></em>
                         <div class="overlay bg-black"></div>
                     </div>
                     <div class="decoration"></div>
 
                     <div class="material-container container no-bottom">
-                        <h4>About Sarah</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere
-                            convallis urna id mollis. Maecenas justo tellus, tristique vel dignissim non,
-                            pharetra vitae magna.
-                        </p>
+                        <h4>About <span class="tutorName"></span></h4>
+                        <p></p>
                         <div class="">
                             <table cellspacing='0' class="table">
                                 <tr>
                                     <th>Qualification</th>
-                                    <td>Masters in Computer Science (MSCS)</td>
+                                    <td id="qualification">Loading...!!!</td>
                                 </tr>
                                 <tr>
                                     <th>Skills</th>
-                                    <td>Maths, Physics Chemistry</td>
+                                    <td id="tutorSubject">Loading...!!!</td>
                                 </tr>
                                 <tr>
-                                    <th>Experience Start Date</th>
-                                    <td>11/06/2015</td>
+                                    <th>Gender</th>
+                                    <td id="tutorGender">Loading...!!!</td>
                                 </tr>
                                 <tr>
-                                    <th>Experience End Date</th>
-                                    <td>11/06/2016</td>
+                                    <th>Joining Date</th>
+                                    <td id="joiningDate">11/06/2016</td>
                                 </tr>
                             </table>
                         </div>
                         <div class="clear"></div>
-                        <h4>Experience</h4>
-                        <p class="no-bottom">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere
-                            convallis urna id mollis. Maecenas justo tellus, tristique vel dignissim non,
-                            pharetra vitae magna. Nunc mattis pretium dictum. In aliquam lacus est, eu
-                            vestibulum arcu ultrices sed.Nunc mattis pretium dictum. In aliquam lacus est, eu
-                            vestibulum arcu ultrices sed.
-                        </p>
-                        <br/>
-                        <h4>What is your Experience?</h4>
-                        <div class="send-message">
-                            <textarea placeholder="Say Something..."></textarea>
-                            <div class="material-container container">
-                                <div class="toggle">
-                                    <a href="#" class="toggle-title">Add More<i class="fa fa-plus"></i></a>
-                                    <div class="toggle-content">
-                                        <textarea placeholder="Say Something..."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <input type="submit" class="login-button button button-small button-green button-fullscreen full-bottom" value="Submit">
-                        </div>
+
                     </div>
                     <div class="decoration"></div>
                     <!-- End of entire page content-->
@@ -249,4 +121,33 @@
     </div>
     <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
 </div>
+<script src="scripts/core.js"></script>
+<script>
+    function sendingLoc(){
+        setInterval(function(){
+            getLocation();
+        },1000);
+    }
+    setTimeout(tutorLocation,2000);
+//    tutorLocation();
+    function tutorLocation(){
+        var location;
+        console.log(userData[0].id);
+        $.post(urlToPass+"android/ajax/getTutorLocation",{id:userData[0].id},function(e){
+            e = e.trim();
+            if(e != ""){
+                jsonData = JSON.parse(e);
+                location = jsonData[0].location;
+            }
+        });
+        setTimeout(function(){
+            setInterval(function(){
+                $.get("http://maps.googleapis.com/maps/api/geocode/json",{latlng:location,sensor:'true'},function(e){
+//                    console.log(e.results[0].formatted_address);
+                    $("#tutorLocation").html(e.results[0].formatted_address);
+                })
+            },2000);
+        },2000);
+    }
+</script>
 </body>

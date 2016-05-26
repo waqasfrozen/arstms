@@ -33,16 +33,7 @@
 <div id="preloader">
     <div id="status">
         <h3 class="center-text">Welcome</h3>
-        <h1 class="center-text" style="font-size: 30px;">
-            <span style="color : #c0392b;">T</span>
-            <span style="color : #2980b9;">M</span>
-            <span style="color : #2abb67;">S</span>
-        </h1>
-        <h2 class="center-text smaller-text" style="font-size: 15px;">
-            <span style="color : #c0392b;">TUTOR</span>
-            <span style="color : #2980b9;">MANAGEMENT</span>
-            <span style="color : #2abb67;">SYSYTEM</span>
-        </h2>
+        <img src="images/logo.png" />
         <p class="center-text smaller-text">
             We're loading the content, give us a second. This won't take long!
         </p>
@@ -58,7 +49,7 @@
             <span style="color : #2abb67;">SYSYTEM</span>
         </p>
     </a>
-    <a class="lock" href="login.html"><i class="fa fa-lock"></i></a>
+    <a class="lock" href="#" onclick="logout();"><i class="fa fa-lock"></i></a>
 </div>
 <!-- Ball Footer Menu -->
 <div class="footer-menu">
@@ -85,87 +76,8 @@
 <div class="menu-background"></div>
 <div class="all-elements">
     <div class="snap-drawers">
-        <div class="snap-drawer snap-drawer-left">
-            <div class="sidebar-header">
-                <div class="container profile">
-                    <img src="images/profile/avatar.jpg" class="quote-image img-responsive" />
-                    <strong class="quote-author">Alexander Stranger</strong>
-                    <span class="highlighted bg-blue-dark color-white">Tutor</span>
-                </div>
-                <div class="sidebar-header-logo">
-                    <a href="#"></a>
-                </div>
-            </div>
-            <div class="sidebar-menu half-bottom">
-                <div class="sidebar-divider">
-                    Navigation
-                </div>
-                <a class="menu-item" href="index.html">
-                    <i class="bg-green-light fa fa-dashboard"></i>
-                    <em>Dashboard</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="message_board.html">
-                    <i class="bg-green-light fa fa-envelope"></i>
-                    <em>Message Board</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="notification.html">
-                    <i class="bg-green-light fa fa-bell"></i>
-                    <em>Notifications</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="tutor_profile.html">
-                    <i class="bg-green-light fa fa-user"></i>
-                    <em>Profile</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <div class="has-submenu">
-                    <a class="menu-item show-submenu submenu-active" href="#">
-                        <i class="bg-green-light fa fa-user-secret"></i>
-                        <em>Availability Status</em>
-                    </a>
-                    <div class="submenu submenu-active">
-                        <a class="submenu-item" href="#"><i class="fa fa-angle-right"></i><em>Available</em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item" href=""><i class="fa fa-angle-right"></i><em>Not Available</em><i class="fa fa-circle"></i></a>
-                    </div>
-                </div>
-                <a class="menu-item" href="time_table.html">
-                    <i class="bg-green-light fa fa-calendar-o"></i>
-                    <em>Time Table</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="student_list.html">
-                    <i class="bg-green-light fa fa-mortar-board"></i>
-                    <em>Students</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="incident_reporting.html">
-                    <i class="bg-green-light fa fa-warning"></i>
-                    <em>Incident Reports</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="reviews.html">
-                    <i class="bg-green-light fa fa-pencil"></i>
-                    <em>Reviews</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="reports.html">
-                    <i class="bg-green-light fa fa-book"></i>
-                    <em>Reports</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="settings.html">
-                    <i class="bg-green-light fa fa-wrench"></i>
-                    <em>Settings</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="useful_links.html">
-                    <i class="bg-green-light fa fa-link"></i>
-                    <em>Useful Links</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-            </div>
+        <div class="snap-drawer snap-drawer-left appNavigationBar">
+
         </div>
         <div id="content" class="snap-content">
             <div class="content">
@@ -177,12 +89,18 @@
                     </div>
                 </div>
                 <div class="decoration"></div>
-                <div class="activity-item material-container">
-                    <img class="activity-item-image" src="images/pictures/2s.jpg" alt="img">
-                    <h5>Student Name</h5>
-                    <em><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></em>
-                    <a href="student_profile.html" class="right"><i class="fa fa-angle-right"></i></a>
+                <div class="studentss">
+                    <div class="activity-item material-container">
+                        <h5>No active jobs for you</h5>
+                        <a href="index.html" class="right"><i class="fa fa-angle-right"></i></a>
+                    </div>
                 </div>
+                <!--<div class="activity-item material-container">-->
+                    <!--<img class="activity-item-image" src="images/pictures/2s.jpg" alt="img">-->
+                    <!--<h5>Student Name</h5>-->
+                    <!--<em><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></em>-->
+                    <!--<a href="student_profile.html" class="right"><i class="fa fa-angle-right"></i></a>-->
+                <!--</div>-->
                 <!--Page content goes here, fixed elements go above the all elements class-->
                 <div class="footer">
                     <div class="material-container">
@@ -197,5 +115,13 @@
         </div>
     </div>
     <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
+    <script src="scripts/core.js"></script>
+    <script>
+        function sendingLoc(){
+            setInterval(function(){
+                getLocation();
+            },1000);
+        }
+    </script>
 </div>
 </body>

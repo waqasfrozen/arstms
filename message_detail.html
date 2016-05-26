@@ -48,7 +48,7 @@
         </p>
     </div>
 </div>
-<div class="gallery-fix"></div> <!-- Important for all pages that have galleries or portfolios -->
+<div class="gallery-fix"></div>
 <div id="header-fixed">
     <a class="open-left-sidebar" href="#"><i class="fa fa-navicon"></i></a>
     <a class="style-logo" href="#">
@@ -60,7 +60,7 @@
     </a>
     <a class="lock" href="login.html"><i class="fa fa-lock"></i></a>
 </div>
-<!-- Ball Footer Menu -->
+
 <div class="footer-menu">
     <a href="#" class="footer-menu-open">
         <i class="fa fa-ellipsis-v"></i>
@@ -170,7 +170,6 @@
         <div id="content" class="snap-content">
             <div class="content">
                 <div class="header-clear-large"></div>
-                <!--Page content goes here, fixed elements go above the all elements class-->
                 <div class="material-container">
                     <div class="design"><span class="line big"></span><span><i class="fa fa-wechat"></i></span><span class="line big"></span></div>
                     <div class="heading-style-5">
@@ -179,21 +178,15 @@
                 </div>
                 <div class="decoration"></div>
                 <div class="one-half-responsive">
-
-
                     <div class="material-container">
                         <div class="msg">
-
                         </div>
-
                         <div class="send-message">
                             <input type="text" id="newMsg" placeholder="Say Something...">
                             <input type="file" value="Attachments" placeholder="Say Something...">
                             <input type="button" onclick="sendMsg()" class="login-button button button-small button-green button-fullscreen full-bottom" value="Send">
                         </div>
                     </div>
-
-
                 </div>
                 <div class="decoration"></div>
                 <div class="footer">
@@ -204,70 +197,19 @@
                         </p>
                     </div>
                 </div>
-                <!-- End of entire page content-->
             </div>
         </div>
     </div>
     <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
 </div>
+<script src="scripts/core.js"></script>
 <script>
-    var userid = '';
-    var userData = '';
-    var urlToPass = "http://devlabx.com/tms_upd_forAndroid/index.php/";
-    var urlForAssets = "http://devlabx.com/tms_upd/";
-    setTimeout(function(){
-        var userValidation = window.localStorage.getItem("tms_user");
-        if(userValidation == "" || userValidation == null){
-            window.location.href = "login.html";
-        }else{
-            userData = JSON.parse(userValidation);
-            userid = userData[0].id;
-            $(".tutorName").html(userData[0].name + " " + userData[0].lname);
-            $(".tutorImage").attr("data-original",urlForAssets + userData[0].profile_pic);
-            $(".tutorImage").attr("src",urlForAssets + userData[0].profile_pic);
-            sendingLoc();
-        }
-
-    },1000);
     function sendingLoc(){
         setInterval(function(){
             getLocation();
             getInboxMsg();
         },1000);
     }
-
-    function logout(){
-        window.localStorage.clear();
-        window.location.reload();
-    }
-
-    function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-            alert("Geolocation is not supported by this browser.");
-        }
-    }
-    function showPosition(position) {
-        $.post(urlToPass + "android/ajax/SendLocation",{ id : userid , lat:position.coords.latitude,lon:position.coords.longitude},function(e){
-            //console.log(e);
-        });
-    }
-    function getInboxMsg(){
-        var id = window.location.hash;
-        id = id.replace("#","");
-        $.post(urlToPass + "android/tutor_chat/tutor_message_detail",{other : id , me : userData[0].id},function(e){
-            $(".msg").html(e);
-        });
-    }
-    function sendMsg(){
-        var id = window.location.hash;
-        id = id.replace("#","");
-        var msg = $("#newMsg").val();
-        $.post(urlToPass + "android/tutor_chat/sendMessage",{msg:msg,to:id,from:userData[0].id},function(a){
-            $("#newMsg").val(" ");
-        });
-    }
-
 </script>
+
 </body>
