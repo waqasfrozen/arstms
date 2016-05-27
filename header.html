@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="scripts/alertify/css/alertify.css"/>
+<script src="scripts/alertify/alertify.min.js"></script>
 <div class="sidebar-header">
     <div class="container profile">
         <img src="images/profile/avatar.jpg" class="quote-image tutorImage img-responsive" />
@@ -38,8 +40,8 @@
             <em>Availability Status</em>
         </a>
         <div class="submenu submenu-active">
-            <a class="submenu-item" onclick="changeStatus('online')"><i class="fa fa-angle-right"></i><em  id="availabilityStatusAvailable">Available</em><i class="fa fa-circle"></i></a>
-            <a class="submenu-item" onclick="changeStatus('offline')"><i class="fa fa-angle-right"></i><em  id="availabilityStatusNotAvailable">Not Available</em><i class="fa fa-circle"></i></a>
+            <a class="submenu-item" id="availabilityStatusAvailable" onclick="changeStatus('online')"><i class="fa fa-angle-right"></i><em >Available</em><i class="fa fa-circle"></i></a>
+            <a class="submenu-item" id="availabilityStatusNotAvailable" onclick="changeStatus('offline')"><i class="fa fa-angle-right"></i><em  >Not Available</em><i class="fa fa-circle"></i></a>
         </div>
     </div>
     <a class="menu-item" href="time_table.html">

@@ -10,11 +10,15 @@ setTimeout(function(){
         userData = JSON.parse(userValidation);
         userid = userData[0].id;
         if(userData[0].availablity_status == 'online'){
+            $("#availabilityStatusAvailable").attr("onclick","");
+            $("#availabilityStatusNotAvailable").attr("onclick","changeStatus('offline')");
             $("#availabilityStatusAvailable").css("font-weight","bolder !important")
             $("#availabilityStatusAvailable").css("color","green")
             $("#availabilityStatusNotAvailable").css("font-weight","400")
             $("#availabilityStatusNotAvailable").css("color","#6B757D")
         }else{
+            $("#availabilityStatusNotAvailable").attr("onclick","");
+            $("#availabilityStatusAvailable").attr("onclick","changeStatus('online')");
             $("#availabilityStatusNotAvailable").css("font-weight","bolder !important")
             $("#availabilityStatusNotAvailable").css("color","green")
             $("#availabilityStatusAvailable").css("font-weight","400")
@@ -84,10 +88,24 @@ $.post('header.html',{},function(e){
 })
 
 function changeStatus(status){
-    $.post(urlToPass + "android/ajax/changeStatus",{id : userData[0].id , status:status},function(e){
-        console.log(e);
-        e = e.trim();
-        window.localStorage.setItem("tms_user",e);
-        window.location.reload();
-    });
+
+    alertify.confirm(
+        'Availablity Status', 'Are you sure you want to change the status?',
+        function()
+            {
+                alertify.success('Status Changed');
+                $.post(urlToPass + "android/ajax/changeStatus",{id : userData[0].id , status:status},function(e){
+                    console.log(e);
+                    e = e.trim();
+                    window.localStorage.setItem("tms_user",e);
+                    setTimeout(function(){
+                        window.location.reload();
+                    },1000);
+                });
+            },
+        function(){
+            alertify.error('Cancel')
+        }
+    ).set('movable' , false);
+
 }
