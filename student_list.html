@@ -90,19 +90,11 @@
                 </div>
                 <div class="decoration"></div>
                 <div class="studentss">
-                    <div class="activity-item material-container">
-                        <h5>No active jobs for you</h5>
-                        <a href="index.html" class="right"><i class="fa fa-angle-right"></i></a>
+                    <div class='activity-item material-container'>
+                        <h5>Please Wait ... While Searching</h5>
+                        <a href='index.html' class='right'><i class='fa fa-angle-right'></i></a>
                     </div>
                 </div>
-                <!--<div class="activity-item material-container">-->
-                    <!--<img class="activity-item-image" src="images/pictures/2s.jpg" alt="img">-->
-                    <!--<h5>Student Name</h5>-->
-                    <!--<em><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></em>-->
-                    <!--<a href="student_profile.html" class="right"><i class="fa fa-angle-right"></i></a>-->
-                <!--</div>-->
-                <!--Page content goes here, fixed elements go above the all elements class-->
-                <!-- End of entire page content-->
             </div>
         </div>
     </div>
@@ -114,6 +106,8 @@
                 getLocation();
             },1000);
         }
+        setTimeout(getJobs(),2000);
+//        getJobs();
     </script>
 </div>
 </body>

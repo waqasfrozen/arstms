@@ -12,8 +12,8 @@
         Tutor Management System
     </description>
 
-    <author href="http://phonegap.com" email="support@phonegap.com">
-        The Developers
+    <author href="http://phonegap.com" email="faizan@jetnetix.com">
+        Jetnetix
     </author>
 
     <!--
@@ -21,18 +21,19 @@
         following tag to your config.xml; you will still have the INTERNET
         permission on your app, which PhoneGap requires.
     -->
-    <preference name="permissions"                value="none"/>
+    <preference name="permissions" value="none"/>
+
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
-    <preference name="webviewbounce"              value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
-    <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
-    <preference name="stay-in-webview"            value="false" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
+    <preference name="webviewbounce"            value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
+    <preference name="prerendered-icon"          value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
+    <preference name="stay-in-webview"           value="false" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
     <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
-    <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
-    <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
+    <preference name="exit-on-suspend"           value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
+    <preference name="detect-data-types"         value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
     <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
     <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
     <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
@@ -87,10 +88,11 @@
     <icon src="images/bezaleelLogo.png" gap:platform="winphone" gap:role="background" />
 
     <!-- Define app splash screen for each platform. -->
-    <!--<gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />-->
-    <!--<gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />-->
-    <!--<gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />-->
-    <!--<gap:splash src="res/screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />-->
+    <splash src="images/bezaleelLogo.png" />
+    <gap:splash src="images/bezaleelLogo.png"      gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="images/bezaleelLogo.png"      gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="images/bezaleelLogo.png"      gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="images/bezaleelLogo.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
     <!--<gap:splash src="res/screen/blackberry/screen-225.png"              gap:platform="blackberry" />-->
     <!--<gap:splash src="res/screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />-->
     <!--<gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960" />-->

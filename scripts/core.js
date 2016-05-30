@@ -39,9 +39,9 @@ setTimeout(function(){
 
     }else{
         var newPage = pageValidation.replace("#","");
-        loadPage(newPage);
+        //loadPage(newPage);
     }
-},1000);
+    },1000);
 
 function logout(){
     $.post(urlToPass + "android/ajax/changeStatus",{id : userData[0].id , status:status},function(e){
@@ -59,7 +59,6 @@ function getLocation() {
 }
 function showPosition(position) {
     $.post(urlToPass + "android/ajax/SendLocation",{ id : userid , lat:position.coords.latitude,lon:position.coords.longitude},function(e){
-        //console.log(e);
     });
 }
 function getInboxMsg(){
@@ -88,7 +87,6 @@ $.post('header.html',{},function(e){
 })
 
 function changeStatus(status){
-
     alertify.confirm(
         'Availablity Status', 'Are you sure you want to change the status?',
         function()
@@ -107,5 +105,13 @@ function changeStatus(status){
             alertify.error('Cancel')
         }
     ).set('movable' , false);
-
+}
+function getJobs(){
+    setTimeout(function(){
+        var userId = userData[0].id;
+        $.post(urlToPass+"android/ajax/getTutorJobs",{id:userId},function(e){
+            e = e.trim();
+            $(".studentss").html(e);
+        });
+    },2000);
 }
