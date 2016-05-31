@@ -565,7 +565,7 @@
     line-height:50px;
     font-size:15px;
     color:#FFFFFF;
-    background-color:#e34e47;
+    background-color:dodgerblue;
     -moz-transform: scale(1,1);
     -webkit-transform: scale(1,1);
     -o-transform: scale(1,1);
@@ -601,7 +601,7 @@
     line-height:50px;
     font-size:14px;
     color:#FFFFFF;
-    background-color:#e34e47;
+    background-color:dodgerblue!important;
     -moz-transform: scale(1,1);
     -webkit-transform: scale(1,1);
     -o-transform: scale(1,1);
@@ -1517,8 +1517,31 @@ form input[type="submit"]{
     max-width: 100%;
 }
 
+.designed{
+    background: dodgerblue;
+}
 
+.designed i{
+    font-size: 20px;
+    color: #fff;
+}
 
+.designed h4{
+    color: #fff;
+}
+
+.designed p{
+    color: #fff;
+    font-size: 13px;
+}
+
+.footer .material-container{
+    padding: 10px 10px 1px 10px!important;
+}
+
+.dodgerblue{
+    background: dodgerblue!important;
+}
 
 
 

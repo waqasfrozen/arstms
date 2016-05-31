@@ -315,7 +315,7 @@ textarea{
 .color-teal-light{ color: #1abc9c;}
 .color-teal-dark{  color: #16a085;}
 
-.bg-green-light{background-color: #2ecc71!important;}
+.bg-green-light{background-color: #2ecc71;}
 .bg-green-dark{background-color: #2abb67!important;}
 .bg-hover-green-light:hover{background-color: #2ecc71!important; color:#FFFFFF!important; transition:all 200ms ease;}
 .bg-hover-green-dark:hover{background-color: #2abb67!important; color:#FFFFFF!important; transition:all 200ms ease;}
