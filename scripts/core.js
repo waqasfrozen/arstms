@@ -46,7 +46,7 @@ setTimeout(function(){
     },1000);
 
 function logout(){
-    $.post(urlToPass + "android/ajax/changeStatus",{id : userData[0].id , status:status},function(e){
+    $.post(urlToPass + "android/ajax/changeStatus",{id : userData[0].id , status:"offline"},function(e){
         window.localStorage.clear();
         window.location.reload();
     });

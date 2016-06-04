@@ -58,8 +58,8 @@
 <div class="simple-login-modal-content modal-content rounded-modal">
     <div class="login-modal-wrapper">
         <h4>Forgot Your Password</h4>
-        <input type="emaik" class="login-modal-user" value="Enter your Email">
-        <a href="#" class="button-green login-button">Submit</a>
+        <input type="email" class="login-modal-user" id="forgetEmail" placeholder="Enter your Email">
+        <a class="button-green login-button" onclick="forgetPassword()">Submit</a>
         <a href="#" class="button-red login-close modal-close">Close</a>
         <div class="clear"></div>
     </div>
@@ -84,10 +84,15 @@
                 if(e != 'false'){
                     window.localStorage.setItem("tms_user",e);
                     window.location.href = "index.html";
-//                    window.location.reload();
                 }
             })
         }
+    }
+    function forgetPassword(){
+        var email = $("#forgetEmail").val();
+        $.post(urlToPass+"android/ajax/forgetPassword",{email:email}, function (e) {
+            console.log(e);
+        })
     }
 </script>
 </body>
