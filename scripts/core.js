@@ -1,3 +1,5 @@
+var tutorLong;
+var tutorLat;
 var userid = '';
 var userData = '';
 var urlToPass = "http://devlabx.com/tms_upd_forAndroid/index.php/";
@@ -58,7 +60,9 @@ function getLocation() {
     }
 }
 function showPosition(position) {
-    $.post(urlToPass + "android/ajax/SendLocation",{ id : userid , lat:position.coords.latitude,lon:position.coords.longitude},function(e){
+    tutorLat = position.coords.latitude;
+    tutorLong = position.coords.longitude;
+    $.post(urlToPass + "android/ajax/SendLocation",{ id : userid , lat: position.coords.latitude, lon:position.coords.longitude},function(e){
     });
 }
 function getInboxMsg(){

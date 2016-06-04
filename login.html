@@ -41,6 +41,9 @@
                                 <input type="password" id="pwd" placeholder="Password">
                             </div>
                             <p style="background: transparent;color: white;text-align: center;" id="error"></p>
+                            <button onclick="" type="button" class="simple-login-modal pageapp-login-button button button-small button-green button-fullscreen">
+                                Forgot Password
+                            </button>
                             <button onclick="doLogin()" type="button" class="pageapp-login-button button button-small button-green button-fullscreen">
                                 Login
                             </button>
@@ -50,6 +53,15 @@
                 <div class="overlay bg-black"></div>
             </div>
         </div>
+    </div>
+</div>
+<div class="simple-login-modal-content modal-content rounded-modal">
+    <div class="login-modal-wrapper">
+        <h4>Forgot Your Password</h4>
+        <input type="emaik" class="login-modal-user" value="Enter your Email">
+        <a href="#" class="button-green login-button">Submit</a>
+        <a href="#" class="button-red login-close modal-close">Close</a>
+        <div class="clear"></div>
     </div>
 </div>
 <script>

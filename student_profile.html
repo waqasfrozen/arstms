@@ -67,8 +67,8 @@
                 <div class="header-clear-large"></div>
                 <div class="page-profile">
                     <div class="page-profile-header container-fullscreen">
-                        <h3>Student Name</h3>
-                        <em><i class="fa fa-location-arrow"></i>Melbourne Victoria,  Australia</em>
+                        <h3 class="student_name">Student Name</h3>
+                        <em><i class="fa fa-location-arrow"></i><span class="address"></span></em>
                         <div class="overlay bg-black"></div>
                     </div>
                     <div class="decoration"></div>
@@ -155,6 +155,7 @@
 </div>
 <script src="scripts/core.js"></script>
 <script>
+    var long1 = ''; var lat1 = '';
     function sendingLoc(){
         setInterval(function(){
             getLocation();
@@ -178,8 +179,19 @@
                 $(".ideal_time").html(jsonData[0].ideal_time);
                 $(".subject_required").html(jsonData[0].subjects);
                 $(".student_name").html(jsonData[0].student);
+
+                long1 = jsonData[0].longitude;
+                lat1 = jsonData[0].latitude;
+                getTimeBetweenTwoLocations();
             }
         })
+    }
+    function getTimeBetweenTwoLocations(){
+        $.post(urlToPass+"android/ajax/getTimeBetweenTwoLocations",{},function(e){
+            e.trim();
+            var locationData = JSON.parse(e);
+            console.log(locationData.travel_time_minutes);
+        });
     }
 </script>
 </body>
