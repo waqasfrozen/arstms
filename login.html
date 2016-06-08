@@ -90,7 +90,7 @@
     }
     function forgetPassword(){
         var email = $("#forgetEmail").val();
-        $.post(urlToPass+"android/ajax/forgetPassword",{email:email}, function (e) {
+        $.post(urlToPass+"android/ajax/forgetPassword",{email:email,id:userData[0].id}, function (e) {
             console.log(e);
         })
     }

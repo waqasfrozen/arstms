@@ -13,6 +13,39 @@
     <script type="text/javascript" src="scripts/jqueryui.js"></script>
     <script type="text/javascript" src="scripts/framework-plugins.js"></script>
     <script type="text/javascript" src="scripts/custom.js"></script>
+    <style>
+        h3.accordiona {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        h3.accordiona.active, h3.accordiona:hover {
+            background-color: #ddd;
+        }
+
+        div.panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.6s ease-in-out;
+            opacity: 0;
+        }
+
+        div.panel.show {
+            opacity: 1;
+            max-height: 500px;
+        }
+    </style>
+
 </head>
 <body class="dual-sidebar">
 <div id="preloader">
@@ -24,7 +57,7 @@
         </p>
     </div>
 </div>
-<div class="gallery-fix"></div> <!-- Important for all pages that have galleries or portfolios -->
+<div class="gallery-fix"></div>
 <div id="header-fixed">
     <a class="open-left-sidebar" href="#"><i class="fa fa-navicon"></i></a>
     <a class="style-logo" href="#">
@@ -36,7 +69,6 @@
     </a>
     <a class="lock" href="#" onclick="logout();"><i class="fa fa-lock"></i></a>
 </div>
-<!-- Ball Footer Menu -->
 <div class="footer-menu">
     <a href="#" class="footer-menu-open">
         <i class="fa fa-ellipsis-v"></i>
@@ -67,45 +99,20 @@
         <div id="content" class="snap-content">
             <div class="content">
                 <div class="header-clear-large"></div>
-                <!--Page content goes here, fixed elements go above the all elements class-->
                 <div class="material-container designed">
                     <div class="design"><span class="line big"></span><span><i class="fa fa-book"></i></span><span class="line big"></span></div>
                     <div class="heading-style-5">
                         <h4 class="heading-title">Reports</h4>
                     </div>
                 </div>
-                <!-- Tabs -->
                 <div class="container">
                     <ul class="tabs">
                         <li class="tab-link active-tab" data-tab="current">Current</li>
                         <li class="tab-link" data-tab="past">Past</li>
                     </ul>
-
-                    <div id="current" class="tab-content active-tab-content">
-                        <div class="material-container container">
-                            <div class="toggle">
-                                <a href="#" class="toggle-title">Client 1<i class="fa fa-plus"></i></a>
-                                <div class="toggle-content">
-                                    <div class="material-container container">
-                                        <div class="one-half-responsive">
-                                            <ul class="half-bottom-if-responsive">
-                                                <li>Student One</li>
-                                                <ul>
-                                                    <li><a href="fill_monthly_report.html">Monthly Reports</a></li>
-                                                </ul>
-                                                <li>Student Two</li>
-                                                <ul>
-                                                    <li><a href="fill_scheme_of_learning.html">Scheme of Learning </a></li>
-                                                </ul>
-                                                <li>Student Three</li>
-                                                <ul>
-                                                    <li><a href="fill_individual_education_plan.html">Individual Education Plan</a></li>
-                                                </ul>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div id="current" class="tab-content active-tab-content ">
+                        <div id="accordion" class="currentClients">
+                            <img src="images/loader.gif" alt=""/>
                         </div>
                     </div>
                     <div id="past" class="tab-content">
@@ -132,7 +139,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- End of entire page content-->
             </div>
         </div>
     </div>
@@ -145,5 +151,16 @@
             getLocation();
         },1000);
     }
+    setTimeout(function(){
+        $.post(urlToPass + "android/ajax/getClientsForReports",{id:userData[0].id},function(e){
+            $(".currentClients").html(e);
+            $('#accordion').accordion({
+                active: true,
+                collapsible: true
+            });
+            $('#accordion').accordion();
+        });
+    },1500);
 </script>
+
 </body>

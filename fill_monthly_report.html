@@ -5,21 +5,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>Tutor Management System - Front</title>
-    <link rel="icon" type="image/png" href="images/splash/android-chrome-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" sizes="196x196" href="images/splash/apple-touch-icon-196x196.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/splash/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/splash/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/splash/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/splash/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/splash/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/splash/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/splash/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/splash/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/splash/apple-touch-icon-57x57.png">
-    <link rel="icon" type="image/png" href="images/splash/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="images/splash/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="images/splash/favicon-16x16.png" sizes="16x16">
-    <link rel="shortcut icon" href="images/splash/favicon.ico" type="image/x-icon" />
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="styles/framework.css" rel="stylesheet" type="text/css">
     <link href="styles/font-awesome.css" rel="stylesheet" type="text/css">
@@ -39,7 +24,7 @@
         </p>
     </div>
 </div>
-<div class="gallery-fix"></div> <!-- Important for all pages that have galleries or portfolios -->
+<div class="gallery-fix"></div>
 <div id="header-fixed">
     <a class="open-left-sidebar" href="#"><i class="fa fa-navicon"></i></a>
     <a class="style-logo" href="#">
@@ -49,7 +34,7 @@
             <span style="color : #2abb67;">SYSYTEM</span>
         </p>
     </a>
-    <a class="lock" href="login.html"><i class="fa fa-lock"></i></a>
+    <a class="lock" href="#" onclick="logout();"><i class="fa fa-lock"></i></a>
 </div>
 <!-- Ball Footer Menu -->
 <div class="footer-menu">
@@ -76,87 +61,8 @@
 <div class="menu-background"></div>
 <div class="all-elements">
     <div class="snap-drawers">
-        <div class="snap-drawer snap-drawer-left">
-            <div class="sidebar-header">
-                <div class="container profile">
-                    <img src="images/profile/avatar.jpg" class="quote-image img-responsive" />
-                    <strong class="quote-author">Alexander Stranger</strong>
-                    <span class="highlighted bg-blue-dark color-white">Tutor</span>
-                </div>
-                <div class="sidebar-header-logo">
-                    <a href="#"></a>
-                </div>
-            </div>
-            <div class="sidebar-menu half-bottom">
-                <div class="sidebar-divider">
-                    Navigation
-                </div>
-                <a class="menu-item" href="index.html">
-                    <i class="bg-green-light fa fa-dashboard"></i>
-                    <em>Dashboard</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="message_board.html">
-                    <i class="bg-green-light fa fa-envelope"></i>
-                    <em>Message Board</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="notification.html">
-                    <i class="bg-green-light fa fa-bell"></i>
-                    <em>Notifications</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="tutor_profile.html">
-                    <i class="bg-green-light fa fa-user"></i>
-                    <em>Profile</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <div class="has-submenu">
-                    <a class="menu-item show-submenu submenu-active" href="#">
-                        <i class="bg-green-light fa fa-user-secret"></i>
-                        <em>Availability Status</em>
-                    </a>
-                    <div class="submenu submenu-active">
-                        <a class="submenu-item" href="#"><i class="fa fa-angle-right"></i><em>Available</em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item" href=""><i class="fa fa-angle-right"></i><em>Not Available</em><i class="fa fa-circle"></i></a>
-                    </div>
-                </div>
-                <a class="menu-item" href="time_table.html">
-                    <i class="bg-green-light fa fa-calendar-o"></i>
-                    <em>Time Table</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="student_list.html">
-                    <i class="bg-green-light fa fa-mortar-board"></i>
-                    <em>Students</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="incident_reporting.html">
-                    <i class="bg-green-light fa fa-warning"></i>
-                    <em>Incident Reports</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="reviews.html">
-                    <i class="bg-green-light fa fa-pencil"></i>
-                    <em>Reviews</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="reports.html">
-                    <i class="bg-green-light fa fa-book"></i>
-                    <em>Reports</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="settings.html">
-                    <i class="bg-green-light fa fa-wrench"></i>
-                    <em>Settings</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="useful_links.html">
-                    <i class="bg-green-light fa fa-link"></i>
-                    <em>Useful Links</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-            </div>
+        <div class="snap-drawer snap-drawer-left appNavigationBar">
+
         </div>
         <div id="content" class="snap-content">
             <div class="content">
@@ -169,148 +75,149 @@
                 </div>
                 <div class="decoration"></div>
                 <div class="material-container container">
-                    <form>
-                        <input type="text" placeholder="Student Name" disabled>
-                        <input type="text" placeholder="Subject" disabled>
-                        <input type="text" placeholder="Date" disabled>
-                        <input type="text" placeholder="Tutor" disabled>
-                        <input type="text" placeholder="Year" disabled>
-                        <input type="text" placeholder="LA/School" disabled>
+                    <form id="form1">
+                        <input type="text" readonly id="studentid" name="studentid" placeholder="Student ID" >
+                        <input type="text" readonly id="studentName" name="studentName" placeholder="Student Name" >
+                        <input type="text" readonly id="subject" name="subject" placeholder="Subject" >
+                        <input type="text" readonly id="date" name="date" placeholder="Date" >
+                        <input type="text" readonly id="tutor" name="tutor" placeholder="Tutor" >
+                        <input type="text" readonly id="year" name="year" placeholder="Year" >
+                        <input type="text" readonly id="school" name="school" placeholder="LA/School" >
                         <label><strong>This term’s subject targets</strong></label>
                         <br/>
-                        <input class="checkbox" type="checkbox">
-                        <label class="checkbox-label">Specific</label>
-                        <input class="checkbox" type="checkbox">
-                        <label class="checkbox-label">Achievable</label>
-                        <input class="checkbox" type="checkbox">
-                        <label class="checkbox-label">Realistic</label>
-                        <input class="checkbox" type="checkbox">
-                        <label class="checkbox-label">Time-bound</label>
+                        <input class="checkbox" name="subjectTarget[]" value="specific" id="specific" type="checkbox">
+                        <label for="specific" class="checkbox-label">Specific</label>
+                        <input class="checkbox" name="subjectTarget[]" value="achievable" id="achievable"  type="checkbox">
+                        <label for="achievable" class="checkbox-label">Achievable</label>
+                        <input class="checkbox" type="checkbox" name="subjectTarget[]" value="realistic" id="realistic">
+                        <label class="checkbox-label" for="realistic">Realistic</label>
+                        <input class="checkbox" type="checkbox" name="subjectTarget[]" value="time_Bound" id="time_bound" >
+                        <label class="checkbox-label" for="time_Bound">Time-bound</label>
                         <br/>
                         <label><strong>Summary of work covered this term</strong></label>
                         <br/>
-                        <textarea style="height: 100px;" placeholder="Please provide a summary of what has been covered this term in relation to the Scheme of Learning."></textarea>
+                        <textarea style="height: 100px;" name="summary" placeholder="Please provide a summary of what has been covered this term in relation to the Scheme of Learning."></textarea>
                         <br/>
                         <h3><strong>Progress</strong></h3>
                         <label><strong>Standard Of Progress</strong></label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[standard]" value="e">
                         <label class="radio-label">E = Excellent</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[standard]" value="g">
                         <label class="radio-label">G = Good</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[standard]" value="s">
                         <label class="radio-label">S = Satisfactory</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[standard]" value="i">
                         <label class="radio-label">I = Improvement Needed</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[standard]" value="c">
                         <label class="radio-label">C = Cause of Concern</label>
                         <Br/>
                         <label><strong>Standard of homework</strong></label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[homework]" value="e">
                         <label class="radio-label">E = Excellent</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[homework]" value="g">
                         <label class="radio-label">G = Good</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[homework]" value="s">
                         <label class="radio-label">S = Satisfactory</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[homework]" value="i">
                         <label class="radio-label">I = Improvement Needed</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[homework]" value="c">
                         <label class="radio-label">C = Cause of Concern</label>
                         <br/>
                         <label><strong>Effort</strong></label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[effort]" value="e">
                         <label class="radio-label">E = Excellent</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[effort]" value="g">
                         <label class="radio-label">G = Good</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[effort]" value="s">
                         <label class="radio-label">S = Satisfactory</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[effort]" value="i">
                         <label class="radio-label">I = Improvement Needed</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[effort]" value="c">
                         <label class="radio-label">C = Cause of Concern</label>
                         <br/>
                         <label><strong>Progress</strong></label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[progress]" value="e">
                         <label class="radio-label">E = Excellent</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[progress]" value="g">
                         <label class="radio-label">G = Good</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[progress]" value="s">
                         <label class="radio-label">S = Satisfactory</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[progress]" value="i">
                         <label class="radio-label">I = Improvement Needed</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[progress]" value="c">
                         <label class="radio-label">C = Cause of Concern</label>
                         <br/>
                         <label><strong>Behaviour in lessons</strong></label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[behaviour]" value="e">
                         <label class="radio-label">E = Excellent</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[behaviour]" value="g">
                         <label class="radio-label">G = Good</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[behaviour]" value="s">
                         <label class="radio-label">S = Satisfactory</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[behaviour]" value="i">
                         <label class="radio-label">I = Improvement Needed</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[behaviour]" value="c">
                         <label class="radio-label">C = Cause of Concern</label>
                         <br/>
                         <label><strong>Attendance</strong></label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[attendance]" value="e">
                         <label class="radio-label">E = Excellent</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[attendance]" value="g">
                         <label class="radio-label">G = Good</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[attendance]" value="s">
                         <label class="radio-label">S = Satisfactory</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[attendance]" value="i">
                         <label class="radio-label">I = Improvement Needed</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[attendance]" value="c">
                         <label class="radio-label">C = Cause of Concern</label>
                         <br/>
                         <label><strong>Punctuality</strong></label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[punctuality]" value="e">
                         <label class="radio-label">E = Excellent</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[punctuality]" value="g">
                         <label class="radio-label">G = Good</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[punctuality]" value="s">
                         <label class="radio-label">S = Satisfactory</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[punctuality]" value="i">
                         <label class="radio-label">I = Improvement Needed</label>
-                        <input class="radiobox" type="radio">
+                        <input class="radiobox" type="radio" name="studentpogress[punctuality]" value="c">
                         <label class="radio-label">C = Cause of Concern</label>
                         <br/>
                         <h5 style="color: gray">Note: Please use National Curriculum Levels/GCSE/AS/A2 grades A*-E</h5>
                         <label>Last term’s grade/baseline assessment</label>
-                        <select class="dropdown">
-                            <option>A*</option>
-                            <option>A</option>
-                            <option>B</option>
-                            <option>C</option>
-                            <option>D</option>
-                            <option>E</option>
-                            <option>F</option>
-                            <option>U/G</option>
+                        <select name="lastTermGrade" class="dropdown">
+                            <option value="A*">A*</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="U">U/G</option>
                         </select>
                         <label>Current assessment grade</label>
-                        <select class="dropdown">
-                            <option>A*</option>
-                            <option>A</option>
-                            <option>B</option>
-                            <option>C</option>
-                            <option>D</option>
-                            <option>E</option>
-                            <option>F</option>
-                            <option>U/G</option>
+                        <select class="dropdown" name="currentGrade">
+                            <option value="A*">A*</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="U">U/G</option>
                         </select>
                         <label>Target grade for end of academic year</label>
-                        <select class="dropdown">
-                            <option>A*</option>
-                            <option>A</option>
-                            <option>B</option>
-                            <option>C</option>
-                            <option>D</option>
-                            <option>E</option>
-                            <option>F</option>
-                            <option>U/G</option>
+                        <select name="endOfAcademicYearGrade" class="dropdown">
+                            <option value="A*">A*</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="U">U/G</option>
                         </select>
-                        <input class="login-button button button-small button-green button-fullscreen full-bottom" type="submit" value="Submit Report">
+                        <input class="login-button button button-small button-green button-fullscreen full-bottom" type="button" onclick="getForm()" value="Submit Report">
                     </form>
                 </div>
                 <!-- End of entire page content-->
@@ -319,4 +226,25 @@
     </div>
     <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
 </div>
+<script src="scripts/core.js"></script>
+<script>
+    function sendingLoc(){
+        setInterval(function(){
+            getLocation();
+        },1000);
+    }
+    $("#studentid").val(getUrlParameter('std_id'));
+    $("#studentName").val(getUrlParameter('name'));
+    $("#subject").val(getUrlParameter('subject'));
+    $("#tutor").val(getUrlParameter('tutor'));
+    document.getElementById('date').value = new Date();
+
+    function getForm(){
+        var data = JSON.stringify($("#form1").serializeArray());
+        $.post(urlToPass+"android/ajax/fillMonthlyReport",{id:userData[0].id,data:data},function(e){
+            console.log(e);
+            //$("#form1")[0].reset();
+        });
+    }
+</script>
 </body>
