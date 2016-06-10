@@ -5,21 +5,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>Tutor Management System - Front</title>
-    <link rel="icon" type="image/png" href="images/splash/android-chrome-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" sizes="196x196" href="images/splash/apple-touch-icon-196x196.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/splash/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/splash/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/splash/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/splash/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/splash/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/splash/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/splash/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/splash/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/splash/apple-touch-icon-57x57.png">
-    <link rel="icon" type="image/png" href="images/splash/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="images/splash/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="images/splash/favicon-16x16.png" sizes="16x16">
-    <link rel="shortcut icon" href="images/splash/favicon.ico" type="image/x-icon" />
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="styles/framework.css" rel="stylesheet" type="text/css">
     <link href="styles/font-awesome.css" rel="stylesheet" type="text/css">
@@ -49,7 +34,7 @@
             <span style="color : #2abb67;">SYSYTEM</span>
         </p>
     </a>
-    <a class="lock" href="login.html"><i class="fa fa-lock"></i></a>
+    <a class="lock" href="#" onclick="logout();"><i class="fa fa-lock"></i></a>
 </div>
 <!-- Ball Footer Menu -->
 <div class="footer-menu">
@@ -76,87 +61,8 @@
 <div class="menu-background"></div>
 <div class="all-elements">
     <div class="snap-drawers">
-        <div class="snap-drawer snap-drawer-left">
-            <div class="sidebar-header">
-                <div class="container profile">
-                    <img src="images/profile/avatar.jpg" class="quote-image img-responsive" />
-                    <strong class="quote-author">Alexander Stranger</strong>
-                    <span class="highlighted bg-blue-dark color-white">Tutor</span>
-                </div>
-                <div class="sidebar-header-logo">
-                    <a href="#"></a>
-                </div>
-            </div>
-            <div class="sidebar-menu half-bottom">
-                <div class="sidebar-divider">
-                    Navigation
-                </div>
-                <a class="menu-item" href="index.html">
-                    <i class="bg-green-light fa fa-dashboard"></i>
-                    <em>Dashboard</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="message_board.html">
-                    <i class="bg-green-light fa fa-envelope"></i>
-                    <em>Message Board</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="notification.html">
-                    <i class="bg-green-light fa fa-bell"></i>
-                    <em>Notifications</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="tutor_profile.html">
-                    <i class="bg-green-light fa fa-user"></i>
-                    <em>Profile</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <div class="has-submenu">
-                    <a class="menu-item show-submenu submenu-active" href="#">
-                        <i class="bg-green-light fa fa-user-secret"></i>
-                        <em>Availability Status</em>
-                    </a>
-                    <div class="submenu submenu-active">
-                        <a class="submenu-item" href="#"><i class="fa fa-angle-right"></i><em>Available</em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item" href=""><i class="fa fa-angle-right"></i><em>Not Available</em><i class="fa fa-circle"></i></a>
-                    </div>
-                </div>
-                <a class="menu-item" href="time_table.html">
-                    <i class="bg-green-light fa fa-calendar-o"></i>
-                    <em>Time Table</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="student_list.html">
-                    <i class="bg-green-light fa fa-mortar-board"></i>
-                    <em>Students</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="incident_reporting.html">
-                    <i class="bg-green-light fa fa-warning"></i>
-                    <em>Incident Reports</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="reviews.html">
-                    <i class="bg-green-light fa fa-pencil"></i>
-                    <em>Reviews</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="reports.html">
-                    <i class="bg-green-light fa fa-book"></i>
-                    <em>Reports</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="settings.html">
-                    <i class="bg-green-light fa fa-wrench"></i>
-                    <em>Settings</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="useful_links.html">
-                    <i class="bg-green-light fa fa-link"></i>
-                    <em>Useful Links</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-            </div>
+        <div class="snap-drawer snap-drawer-left appNavigationBar">
+
         </div>
         <div id="content" class="snap-content">
             <div class="content">
@@ -173,39 +79,40 @@
                     <em>
                         Please complete this document to indicate the learning plan for your student.  This document is intended to provide a bullet point summary.  You are encouraged to write lesson plans to assist the delivery of lessons.  Lesson plans will be asked for in advance of an observation of a specific lesson only.
                     </em>
-                    <form>
-                        <input type="text" placeholder="Subject" disabled>
-                        <input type="text" placeholder="Unit Name" disabled>
-                        <input type="text" placeholder="Unit Aim" disabled>
-                        <input type="text" placeholder="Link to Specification" disabled>
-                        <input type="text" placeholder="The previous unit was" disabled>
-                        <input type="text" placeholder="The Next unit will be" disabled>
-                        <input type="text" placeholder="Starting Level – Initial assessment Results" disabled>
-                        <input type="text" placeholder="Current Attainment Level" disabled>
-                        <input type="text" placeholder="Target Attainment Level" disabled>
-                        <input type="text" placeholder="Student" disabled>
-                        <input type="text" placeholder="Year group" disabled>
-                        <input type="text" placeholder="Tutor" disabled>
-                        <input type="text" placeholder="Date" disabled>
+                    <form id="form1">
+                        <input id="studentid" name="student_id" type="text" placeholder="Subject" readonly>
+                        <input id="subject" name="subject" type="text" placeholder="Subject" readonly>
+                        <input name="unit_name" type="text" placeholder="Unit Name" >
+                        <input name="unit_aim" type="text" placeholder="Unit Aim" >
+                        <input name="link_to_specification" type="text" placeholder="Link to Specification" >
+                        <input name="previous_unit_was" type="text" placeholder="The previous unit was" >
+                        <input name="next_unit_will_be" type="text" placeholder="The Next unit will be" >
+                        <input name="starting_level" type="text" placeholder="Starting Level – Initial assessment Results" >
+                        <input name="current_attainment_level" type="text" placeholder="Current Attainment Level" >
+                        <input name="target_attainment_level" type="text" placeholder="Target Attainment Level" >
+                        <input id="studentName" name="student" type="text" placeholder="Student" readonly>
+                        <input id="yearGroup" name="yearGroup" type="text" placeholder="Year group" readonly>
+                        <input id="tutor" name="tutor" type="text" placeholder="Tutor" readonly>
+                        <input name="date" type="date" placeholder="Date" >
                         <br/>
-                    </form>
                     <br/>
                     <h3><strong>Week 1 (This would be changed according to the date/month)</strong></h3>
                     <br/>
-                    <form>
-                        <input type="text" placeholder="Lesson Objectives (in the ‘I 1 can do…’ form)" />
-                        <input type="text" placeholder="Resources" />
-                        <input type="text" placeholder="VAK (visual auditory kinaesthetic approaches used)" />
-                        <input type="text" placeholder="Literacy/Numeracy/ICT/SEAL" />
-                        <input type="text" placeholder="Assessment for Learning approaches used" />
-                        <input type="text" placeholder="Starter" />
-                        <input type="text" placeholder="Introduction – what will be learning today? Prior learning? Homework from last week." />
-                        <input type="text" placeholder="Task 1" />
-                        <input type="text" placeholder="Task 2" />
-                        <input type="text" placeholder="Task 3" />
-                        <input type="text" placeholder="Task 4" />
-                        <input type="text" placeholder="Plenary (has the objective been met?)" />
-                        <input type="text" placeholder="Homework" />
+                        <input name="lesson_objective" type="text" placeholder="Lesson Objectives (in the ‘I 1 can do…’ form)" />
+                        <input name="resources" type="text" placeholder="Resources" />
+                        <input name="vak" type="text" placeholder="VAK (visual auditory kinaesthetic approaches used)" />
+                        <input name="literacy" type="text" placeholder="Literacy/Numeracy/ICT/SEAL" />
+                        <input name="assessment_for_learning" type="text" placeholder="Assessment for Learning approaches used" />
+                        <input name="starter" type="text" placeholder="Starter" />
+                        <input name="introduction" type="text" placeholder="Introduction – what will be learning today? Prior learning? Homework from last week." />
+                        <input name="task1" type="text" placeholder="Task 1" />
+                        <input name="task2" type="text" placeholder="Task 2" />
+                        <input name="task3" type="text" placeholder="Task 3" />
+                        <input name="task4" type="text" placeholder="Task 4" />
+                        <input name="plenary" type="text" placeholder="Plenary (has the objective been met?)" />
+                        <input name="homework" type="text" placeholder="Homework" />
+                        <input class="login-button button button-small button-green button-fullscreen full-bottom" type="button" onclick="getForm()" value="Submit Report">
+
                     </form>
                 <!-- End of entire page content-->
             </div>
@@ -213,4 +120,25 @@
     </div>
     <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
 </div>
+</div>
+<script src="scripts/core.js"></script>
+<script>
+    function sendingLoc(){
+        setInterval(function(){
+            getLocation();
+        },1000);
+    }
+    $("#studentid").val(getUrlParameter('std_id'));
+    $("#studentName").val(getUrlParameter('name'));
+    $("#subject").val(getUrlParameter('subject'));
+    $("#tutor").val(getUrlParameter('tutor'));
+
+    function getForm(){
+        var data = JSON.stringify($("#form1").serializeArray());
+        $.post(urlToPass+"android/ajax/fill_scheme_of_learning",{id:userData[0].id,data:data},function(e){
+            console.log(e);
+            $("#form1")[0].reset();
+        });
+    }
+</script>
 </body>

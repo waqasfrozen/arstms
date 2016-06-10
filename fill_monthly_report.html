@@ -243,7 +243,7 @@
         var data = JSON.stringify($("#form1").serializeArray());
         $.post(urlToPass+"android/ajax/fillMonthlyReport",{id:userData[0].id,data:data},function(e){
             console.log(e);
-            //$("#form1")[0].reset();
+            $("#form1")[0].reset();
         });
     }
 </script>

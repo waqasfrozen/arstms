@@ -5,21 +5,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>Tutor Management System - Front</title>
-    <link rel="icon" type="image/png" href="images/splash/android-chrome-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" sizes="196x196" href="images/splash/apple-touch-icon-196x196.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/splash/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/splash/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/splash/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/splash/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/splash/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/splash/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/splash/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/splash/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/splash/apple-touch-icon-57x57.png">
-    <link rel="icon" type="image/png" href="images/splash/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="images/splash/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="images/splash/favicon-16x16.png" sizes="16x16">
-    <link rel="shortcut icon" href="images/splash/favicon.ico" type="image/x-icon" />
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="styles/framework.css" rel="stylesheet" type="text/css">
     <link href="styles/font-awesome.css" rel="stylesheet" type="text/css">
@@ -33,16 +18,7 @@
 <div id="preloader">
     <div id="status">
         <h3 class="center-text">Welcome</h3>
-        <h1 class="center-text" style="font-size: 30px;">
-            <span style="color : #c0392b;">T</span>
-            <span style="color : #2980b9;">M</span>
-            <span style="color : #2abb67;">S</span>
-        </h1>
-        <h2 class="center-text smaller-text" style="font-size: 15px;">
-            <span style="color : #c0392b;">TUTOR</span>
-            <span style="color : #2980b9;">MANAGEMENT</span>
-            <span style="color : #2abb67;">SYSYTEM</span>
-        </h2>
+        <img src="images/logo.png" />
         <p class="center-text smaller-text">
             We're loading the content, give us a second. This won't take long!
         </p>
@@ -58,7 +34,7 @@
             <span style="color : #2abb67;">SYSYTEM</span>
         </p>
     </a>
-    <a class="lock" href="login.html"><i class="fa fa-lock"></i></a>
+    <a class="lock" href="#" onclick="logout();"><i class="fa fa-lock"></i></a>
 </div>
 <!-- Ball Footer Menu -->
 <div class="footer-menu">
@@ -85,87 +61,8 @@
 <div class="menu-background"></div>
 <div class="all-elements">
     <div class="snap-drawers">
-        <div class="snap-drawer snap-drawer-left">
-            <div class="sidebar-header">
-                <div class="container profile">
-                    <img src="images/profile/avatar.jpg" class="quote-image img-responsive" />
-                    <strong class="quote-author">Alexander Stranger</strong>
-                    <span class="highlighted bg-blue-dark color-white">Tutor</span>
-                </div>
-                <div class="sidebar-header-logo">
-                    <a href="#"></a>
-                </div>
-            </div>
-            <div class="sidebar-menu half-bottom">
-                <div class="sidebar-divider">
-                    Navigation
-                </div>
-                <a class="menu-item" href="index.html">
-                    <i class="bg-green-light fa fa-dashboard"></i>
-                    <em>Dashboard</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="message_board.html">
-                    <i class="bg-green-light fa fa-envelope"></i>
-                    <em>Message Board</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="notification.html">
-                    <i class="bg-green-light fa fa-bell"></i>
-                    <em>Notifications</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="tutor_profile.html">
-                    <i class="bg-green-light fa fa-user"></i>
-                    <em>Profile</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <div class="has-submenu">
-                    <a class="menu-item show-submenu submenu-active" href="#">
-                        <i class="bg-green-light fa fa-user-secret"></i>
-                        <em>Availability Status</em>
-                    </a>
-                    <div class="submenu submenu-active">
-                        <a class="submenu-item" href="#"><i class="fa fa-angle-right"></i><em>Available</em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item" href=""><i class="fa fa-angle-right"></i><em>Not Available</em><i class="fa fa-circle"></i></a>
-                    </div>
-                </div>
-                <a class="menu-item" href="time_table.html">
-                    <i class="bg-green-light fa fa-calendar-o"></i>
-                    <em>Time Table</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="student_list.html">
-                    <i class="bg-green-light fa fa-mortar-board"></i>
-                    <em>Students</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="incident_reporting.html">
-                    <i class="bg-green-light fa fa-warning"></i>
-                    <em>Incident Reports</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="reviews.html">
-                    <i class="bg-green-light fa fa-pencil"></i>
-                    <em>Reviews</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="reports.html">
-                    <i class="bg-green-light fa fa-book"></i>
-                    <em>Reports</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="settings.html">
-                    <i class="bg-green-light fa fa-wrench"></i>
-                    <em>Settings</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="useful_links.html">
-                    <i class="bg-green-light fa fa-link"></i>
-                    <em>Useful Links</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-            </div>
+        <div class="snap-drawer snap-drawer-left appNavigationBar">
+
         </div>
         <div id="content" class="snap-content">
             <div class="content">
@@ -189,98 +86,101 @@
                     <br/>
                     <br/>
                     <br/>
-                    <form>
+                    <form id="form1">
+                        <label>Student ID </label>
+                        <input type="text" id="studentid" name="student_id" placeholder="Student">
                         <label>Student</label>
-                        <input type="text" placeholder="Student" disabled>
+                        <input type="text" id="studentName" readonly name="student_name" placeholder="Student">
                         <label>Tutor</label>
-                        <input type="text" placeholder="Tutor" disabled>
+                        <input id="tutor" name="tutor" type="text" placeholder="Tutor" readonly >
                         <label>Council</label>
-                        <input type="text" placeholder="Council" disabled>
+                        <input type="text" placeholder="Council"  name="council">
                         <label>Start Date</label>
-                        <input type="text" placeholder="Start Date" disabled>
+                        <input type="text" placeholder="Start Date" id="start_date" name="start_date" readonly>
                         <label>Year Group</label>
-                        <input type="text" placeholder="Year Group" disabled>
+                        <input type="text" placeholder="Year Group" name="yearGroup" id="yearGroup" readonly>
                         <label>MAPP (Y/N)</label>
-                        <input type="text" placeholder="Mapp (Y/N)" disabled>
+                        <input type="text" placeholder="Mapp (Y/N)" name="mapp">
                         <label>Report Date</label>
-                        <input type="text" placeholder="Report Date" disabled>
+                        <input type="date" placeholder="Report Date" name="report_date">
                         <label>Subject</label>
-                        <input type="text" placeholder="Subject" disabled>
+                        <input type="text" placeholder="Subject" readonly id="subject" name="subject">
                         <br/>
                         <br/>
                         <h3><strong>Section A</strong></h3>
                         <br/>
-                        <input type="text" placeholder="Subject/focus area"/>
-                        <input type="text" placeholder="Initial Assessment Date"/>
-                        <input type="text" placeholder="Assessment tool(s) used"/>
-                        <input type="text" placeholder="Initial Assessment Outcome"/>
-                        <input type="text" placeholder="Target(s)"/>
+                        <input name="focus_area" type="text" placeholder="Subject/focus area"/>
+                        <input name="initial_assessment_date" type="text" placeholder="Initial Assessment Date"/>
+                        <input name="assessment_tools_used" type="text" placeholder="Assessment tool(s) used"/>
+                        <input name="initial_assessment outcome" type="text" placeholder="Initial Assessment Outcome"/>
+                        <input name="targer" type="text" placeholder="Target(s)"/>
                         <br/>
                         <h3><strong>Section B</strong></h3>
                         <br/>
-                        <input type="text" placeholder="End of term/block assessment Date"/>
-                        <input type="text" placeholder="Assessment tool(s) used"/>
-                        <input type="text" placeholder="End of term/block Assessment Outcome"/>
+                        <input name="end_of_term_assessment_date" type="text" placeholder="End of term/block assessment Date"/>
+                        <input name="end_of_term_assessment_tool_used" type="text" placeholder="Assessment tool(s) used"/>
+                        <input name="end_of_term_assessment_outcome" type="text" placeholder="End of term/block Assessment Outcome"/>
                         <br/>
                         <h3><strong>Section C (Scheme of Work)</strong></h3>
                         <br/>
                         <label><strong>List of Topics Covered (Week by Week)</strong></label>
-                        <input type="text" placeholder="Week 1"/>
-                        <input type="text" placeholder="Week 2"/>
-                        <input type="text" placeholder="Week 3"/>
-                        <input type="text" placeholder="Week 4"/>
-                        <input type="text" placeholder="Week 5"/>
+                        <input name="list_of_topic_covered_week1" type="text" placeholder="Week 1"/>
+                        <input name="list_of_topic_covered_week2" type="text" placeholder="Week 2"/>
+                        <input name="list_of_topic_covered_week3" type="text" placeholder="Week 3"/>
+                        <input name="list_of_topic_covered_week4" type="text" placeholder="Week 4"/>
+                        <input name="list_of_topic_covered_week5" type="text" placeholder="Week 5"/>
                         <h3><strong>Section D (Outcomes/Comments)</strong></h3>
                         <br/>
                         <label><strong>Week 1</strong></label>
-                        <input class="radiobox" type="radio">
-                        <label class="radio-label">Achieved</label>
-                        <input class="radiobox" type="radio">
-                        <label class="radio-label">Partially Achieved</label>
-                        <input class="radiobox" type="radio">
-                        <label class="radio-label">Not Achieved</label>
-                        <input type="text" placeholder="Explanation of student achievements"/>
+                        <input id="week1a" name="week4" value="achieved" class="radiobox" type="radio">
+                        <label for="week1a" class="radio-label">Achieved</label>
+                        <input  id="week1p" name="week4" class="radiobox" value="Partially Achieved" type="radio">
+                        <label for="week1p" class="radio-label">Partially Achieved</label>
+                        <input id="week1n"  name="week4" class="radiobox" value="Not Acheived" type="radio">
+                        <label for="week1n" class="radio-label">Not Achieved</label>
+                        <input name="week1_explaination" type="text" placeholder="Explanation of student achievements"/>
                         <br/>
                         <label><strong>Week 2</strong></label>
-                        <input class="radiobox" type="radio">
-                        <label class="radio-label">Achieved</label>
-                        <input class="radiobox" type="radio">
-                        <label class="radio-label">Partially Achieved</label>
-                        <input class="radiobox" type="radio">
-                        <label class="radio-label">Not Achieved</label>
-                        <input type="text" placeholder="Explanation of student achievements"/>
+                        <input id="week2a" name="week2" value="achieved" class="radiobox" type="radio">
+                        <label for="week2a" class="radio-label">Achieved</label>
+                        <input  id="week2p" name="week2" class="radiobox" value="Partially Achieved" type="radio">
+                        <label for="week2p" class="radio-label">Partially Achieved</label>
+                        <input id="week2n"  name="week2" class="radiobox" value="Not Acheived" type="radio">
+                        <label for="week2n" class="radio-label">Not Achieved</label>
+                        <input name="week2_explaination" type="text" placeholder="Explanation of student achievements"/>
                         <br/>
                         <label><strong>Week 3</strong></label>
-                        <input class="radiobox" type="radio">
-                        <label class="radio-label">Achieved</label>
-                        <input class="radiobox" type="radio">
-                        <label class="radio-label">Partially Achieved</label>
-                        <input class="radiobox" type="radio">
-                        <label class="radio-label">Not Achieved</label>
-                        <input type="text" placeholder="Explanation of student achievements"/>
+                        <input id="week3a" name="week3" value="achieved" class="radiobox" type="radio">
+                        <label for="week3a" class="radio-label">Achieved</label>
+                        <input  id="week3p" name="week3" class="radiobox" value="Partially Achieved" type="radio">
+                        <label for="week3p" class="radio-label">Partially Achieved</label>
+                        <input id="week3n"  name="week3" class="radiobox" value="Not Acheived" type="radio">
+                        <label for="week3n" class="radio-label">Not Achieved</label>
+                        <input name="week3_explaination" type="text" placeholder="Explanation of student achievements"/>
                         <br/>
                         <label><strong>Week 4</strong></label>
-                        <input class="radiobox" type="radio">
-                        <label class="radio-label">Achieved</label>
-                        <input class="radiobox" type="radio">
-                        <label class="radio-label">Partially Achieved</label>
-                        <input class="radiobox" type="radio">
-                        <label class="radio-label">Not Achieved</label>
-                        <input type="text" placeholder="Explanation of student achievements"/>
+                        <input id="week4a" name="week4" value="achieved" class="radiobox" type="radio">
+                        <label for="week4a" class="radio-label">Achieved</label>
+                        <input  id="week4p" name="week4" class="radiobox" value="Partially Achieved" type="radio">
+                        <label for="week4p" class="radio-label">Partially Achieved</label>
+                        <input id="week4n"  name="week4" class="radiobox" value="Not Acheived" type="radio">
+                        <label for="week4n" class="radio-label">Not Achieved</label>
+                        <input name="week4_explaination" type="text" placeholder="Explanation of student achievements"/>
                         <br/>
                         <label><strong>Week 5</strong></label>
-                        <input class="radiobox" type="radio">
-                        <label class="radio-label">Achieved</label>
-                        <input class="radiobox" type="radio">
-                        <label class="radio-label">Partially Achieved</label>
-                        <input class="radiobox" type="radio">
-                        <label class="radio-label">Not Achieved</label>
-                        <input type="text" placeholder="Explanation of student achievements"/>
+                        <input id="week5a" name="week4" value="achieved" class="radiobox" type="radio">
+                        <label for="week5a" class="radio-label">Achieved</label>
+                        <input  id="week5p" name="week4" class="radiobox" value="Partially Achieved" type="radio">
+                        <label for="week5p" class="radio-label">Partially Achieved</label>
+                        <input id="week5n"  name="week4" class="radiobox" value="Not Acheived" type="radio">
+                        <label for="week5n" class="radio-label">Not Achieved</label>
+                        <input name="week5_explaination" type="text" placeholder="Explanation of student achievements"/>
                         <br/>
                         <h3><strong>Section F</strong></h3>
                         <br/>
-                        <textarea placeholder="OTHER COMMENTS/CONCERNS"></textarea>
-                        <textarea placeholder="STUDENT'S VIEWS"></textarea>
+                        <textarea name="other_comments" placeholder="OTHER COMMENTS/CONCERNS"></textarea>
+                        <textarea name="student_views"  placeholder="STUDENT'S VIEWS"></textarea>
+                        <input class="login-button button button-small button-green button-fullscreen full-bottom" type="button" onclick="getForm()" value="Submit Report">
                     </form>
                     <!-- End of entire page content-->
                 </div>
@@ -288,4 +188,31 @@
         </div>
         <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
     </div>
+</div>
+<script src="scripts/core.js"></script>
+<script>
+    function sendingLoc(){
+        setInterval(function(){
+            getLocation();
+        },1000);
+    }
+
+    $("#yearGroup").val(getUrlParameter('yearGroup'));
+    $("#start_date").val(getUrlParameter('start_date'));
+    $("#studentid").val(getUrlParameter('std_id'));
+    $("#studentName").val(getUrlParameter('name'));
+    $("#subject").val(getUrlParameter('subject'));
+    $("#tutor").val(getUrlParameter('tutor'));
+   // document.getElementById('date').value = new Date();
+
+    function getForm(){
+        var data = JSON.stringify($("#form1").serializeArray());
+        $.post(urlToPass+"android/ajax/fill_individual_action_plan",{id:userData[0].id,data:data},function(e){
+            console.log(e);
+            $("#form1")[0].reset();
+        });
+    }
+
+
+</script>
 </body>

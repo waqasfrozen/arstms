@@ -89,7 +89,7 @@
                     <input type="radio" checked class="radiobox" name="severity" value="Low">
                     <label class="radio-label">Low</label>
                     <br/>
-                    <textarea placeholder="Summary of Incident"></textarea>
+                    <textarea name="summary" placeholder="Summary of Incident"></textarea>
                     <p>Attach A Photo</p><input type="file">
                     <input class="login-button button button-small button-green button-fullscreen full-bottom" type="button" onclick="getForm()" value="Submit Report">
                 </form>
@@ -109,11 +109,11 @@
     }
     function getForm(){
         var data = JSON.stringify($("#form1").serializeArray());
-        $.post(urlToPass+"android/ajax/incidentReport",{data:data},function(e){
+        $.post(urlToPass+"android/ajax/incidentReport",{id:userData[0].id,data:data},function(e){
             console.log(e);
 
         });
-        $("#form1").reset();
+        $("#form1")[0].reset();
     }
 </script>
 </body>
