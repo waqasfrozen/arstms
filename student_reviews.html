@@ -13,38 +13,6 @@
     <script type="text/javascript" src="scripts/jqueryui.js"></script>
     <script type="text/javascript" src="scripts/framework-plugins.js"></script>
     <script type="text/javascript" src="scripts/custom.js"></script>
-    <style>
-        h3.accordiona {
-            background-color: #eee;
-            color: #444;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-            transition: 0.4s;
-        }
-
-        h3.accordiona.active, h3.accordiona:hover {
-            background-color: #ddd;
-        }
-
-        div.panel {
-            padding: 0 18px;
-            background-color: white;
-            max-height: 0;
-            overflow: hidden;
-            transition: 0.6s ease-in-out;
-            opacity: 0;
-        }
-
-        div.panel.show {
-            opacity: 1;
-            max-height: 500px;
-        }
-    </style>
 </head>
 <body class="dual-sidebar">
 <div id="preloader">
@@ -99,20 +67,23 @@
         <div id="content" class="snap-content">
             <div class="content">
                 <div class="header-clear-large"></div>
+                <!--Page content goes here, fixed elements go above the all elements class-->
                 <div class="material-container designed">
-                    <div class="design"><span class="line big"></span><span><i class="fa fa-link"></i></span><span class="line big"></span></div>
+                    <div class="design"><span class="line big"></span><span><i class="fa fa-pencil"></i></span><span class="line big"></span></div>
                     <div class="heading-style-5">
-                        <h4 class="heading-title">Useful Links</h4>
+                        <h4 class="heading-title">Reviews</h4>
+                        <p>Polite Notice : Please you are not allowed to contact any carer/guardian to discuss issues pertaining to your reviews at anytime. Thankyou.</p>
                     </div>
                 </div>
                 <div class="decoration"></div>
-                <div class="container">
-                    <div class="material-container container tutorsUsefulLinks " id="accordion">
+                <div class="material-container container">
+                    <div class="decoration"></div>
+                    <div class="blog-post-comments full-bottom">
 
-
-
+                        <div class="decoration"></div>
                     </div>
                 </div>
+                <!-- End of entire page content-->
             </div>
         </div>
     </div>
@@ -126,18 +97,9 @@
         },1000);
     }
     setTimeout(function(){
-        getUsefulLinks(userData[0].id);
+        $.post(urlToPass + "android/ajax/getStudentReviews",{id:userData[0].id},function(e){
+            $(".blog-post-comments").html(e);
+        })
     },1000);
-    function getUsefulLinks(id){
-        $.post(urlToPass + "android/ajax/getUseFulLinks",{id:id},function(e){
-            console.log(e);
-            $(".tutorsUsefulLinks").html(e);
-            $('#accordion').accordion({
-                active: true,
-                collapsible: true
-            });
-            $('#accordion').accordion();
-        });
-    }
 </script>
 </body>

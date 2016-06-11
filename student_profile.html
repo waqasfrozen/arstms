@@ -137,7 +137,8 @@
                                         </tr>
                                     </table>
                                     <ul class="half-bottom-if-responsive">
-                                        <li><a href="#"><strong>View Rewards</strong></a></li>
+                                        <li><a href="student_reviews.html"><strong>View Rewards</strong></a></li>
+                                        <li><a id="createReview" href="#"><strong>Create Review</strong></a></li>
                                         <li><a href="reports.html"><strong>View Monthly Reports</strong></a></li>
                                         <li><a id="createMonthlyReport" href="#"><strong>Create Monthly Reports</strong></a></li>
                                         <li><a id="urlForWeeklyReport" href="#"><strong>Create Scheme of learning</strong></a></li>
@@ -160,6 +161,7 @@
 </div>
 <script src="scripts/core.js"></script>
 <script>
+    var createReview = "create_review.html?";
     var urlForDailyReport = "fill_individual_education_plan.html?";
     var urlForWeeklyReport = "fill_scheme_of_learning.html?";
     var urlForMonthlyReport = "fill_monthly_report.html?";
@@ -182,6 +184,7 @@
                 }else{
                     var jsonData = JSON.parse(e);
                     urlForMonthlyReport += "std_id="+jsonData[0].id+"&name="+jsonData[0].student+"&subject="+jsonData[0].subjects+"&tutor="+userData[0].name + " " + userData[0].lname;
+                    createReview += "std_id="+jsonData[0].id+"&name="+jsonData[0].student+"&subject="+jsonData[0].subjects+"&tutor="+userData[0].name + " " + userData[0].lname;
                     urlForWeeklyReport += "yearGroup="+ jsonData[0].yeargroup +"&start_date="+ jsonData[0].starting +"&std_id="+jsonData[0].id+"&name="+jsonData[0].student+"&subject="+jsonData[0].subjects+"&tutor="+userData[0].name + " " + userData[0].lname;
                     urlForDailyReport += "yearGroup="+ jsonData[0].yeargroup +"&start_date="+ jsonData[0].starting +"&std_id="+jsonData[0].id+"&name="+jsonData[0].student+"&subject="+jsonData[0].subjects+"&tutor="+userData[0].name + " " + userData[0].lname;
                     $(".client_name").html(jsonData[0].client);
@@ -194,6 +197,7 @@
                     $("#createMonthlyReport").attr("href",urlForMonthlyReport);
                     $("#urlForWeeklyReport").attr("href",urlForWeeklyReport);
                     $("#urlForDailyReport").attr("href",urlForDailyReport);
+                    $("#createReview").attr("href",createReview);
                     long1 = jsonData[0].longitude;
                     lat1 = jsonData[0].latitude;
                     getTimeBetweenTwoLocations();

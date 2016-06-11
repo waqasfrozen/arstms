@@ -151,16 +151,20 @@
             getLocation();
         },1000);
     }
-    setTimeout(function(){
-        $.post(urlToPass + "android/ajax/getClientsForReports",{id:userData[0].id},function(e){
-            $(".currentClients").html(e);
-            $('#accordion').accordion({
-                active: true,
-                collapsible: true
+    getReports();
+    function getReports(){
+        setTimeout(function(){
+            $.post(urlToPass + "android/ajax/getClientsForReports",{id:userData[0].id},function(e){
+                $(".currentClients").html(e);
+                $('#accordion').accordion({
+                    active: true,
+                    collapsible: true
+                });
+                $('#accordion').accordion();
             });
-            $('#accordion').accordion();
-        });
-    },1500);
+        },1500);
+    }
+
 </script>
 
 </body>
