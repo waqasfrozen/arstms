@@ -3,7 +3,9 @@ var tutorLat;
 var userid = '';
 var userData = '';
 var urlToPass = "http://devlabx.com/tms_upd_forAndroid/index.php/";
+//var urlToPass = "//localhost/tms/index.php/";
 var urlForAssets = "http://devlabx.com/tms_upd/";
+//var urlForAssets = "//localhost/tms/";
 setTimeout(function(){
     var userValidation = window.localStorage.getItem("tms_user");
     if(userValidation == "" || userValidation == null){

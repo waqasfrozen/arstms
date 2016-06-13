@@ -13,6 +13,8 @@
 <script type="text/javascript" src="scripts/jqueryui.js"></script>
 <script type="text/javascript" src="scripts/framework-plugins.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
+
+    <link rel="stylesheet" href="styles/calendar.css"/>
 </head>
 <body class="dual-sidebar">
 <div id="preloader">
@@ -95,7 +97,7 @@
                                 </tr>
                             </table>
                             <br/>
-                            <div class="calendar">
+                            <div id="calendar">
 
                             </div>
                         </div>
@@ -118,11 +120,26 @@
     <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
 </div>
 <script src="scripts/core.js"></script>
+<script src="scripts/moments.js"></script>
+<script src="scripts/calendar.js"></script>
 <script>
     function sendingLoc(){
         setInterval(function(){
             getLocation();
         },1000);
     }
+
+    $('#calendar').fullCalendar({
+        'gotoDate': "2016-06-01",
+        height: 400
+//        events: [
+//            {
+//                title  : 'Class',
+//                start  : '2016-06-03'
+//            }
+//        ]
+
+    })
+
 </script>
 </body>

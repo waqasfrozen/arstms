@@ -13,6 +13,38 @@
     <script type="text/javascript" src="scripts/jqueryui.js"></script>
     <script type="text/javascript" src="scripts/framework-plugins.js"></script>
     <script type="text/javascript" src="scripts/custom.js"></script>
+    <style>
+        h3.accordiona {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        h3.accordiona.active, h3.accordiona:hover {
+            background-color: #ddd;
+        }
+
+        div.panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.6s ease-in-out;
+            opacity: 0;
+        }
+
+        div.panel.show {
+            opacity: 1;
+            max-height: 500px;
+        }
+    </style>
 </head>
 <body class="dual-sidebar">
 <div id="preloader">
@@ -84,232 +116,26 @@
                         <li class="tab-link" data-tab="daily">Daily</li>
                     </ul>
                     <div id="monthly" class="tab-content active-tab-content">
-                        <div class="material-container container">
-                            <div class="decoration"></div>
-                            <div class="date">
-                                <h4>WEDNESDAY 21 JAN</h4>
-                                <div class="toggle">
-                                    <a href="#" class="toggle-title">
-                                        Tution At John
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                    <div class="toggle-content">
-                                        <div class="pageapp-timeline-2 material-container">
-                                            <div class="timeline-decoration"></div>
-                                            <div class="timeline-item">
-                                                <div class="timeline-icon">
-                                                    <i class="fa fa-pencil bg-hover-green-dark"></i>
-                                                </div>
-                                                <div class="timeline-text">
-                                                    <h3 class="title">Tution At John</h3>
-                                                    <em class="subtitle">Date / Time</em>
-                                                    <table class="time-table">
-                                                        <tr>
-                                                            <th>Location</th>
-                                                            <td>The Dutch, 131 Sullivan Street</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Subjects</th>
-                                                            <td>English</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Booked Hour</th>
-                                                            <td>2 Hrs</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Hourly Rates</th>
-                                                            <td>3 USD/hr</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Absence Reason</th>
-                                                            <td><a class="simple-modal" href="#">Click</a></td>
-                                                        </tr>
-                                                    </table>
-                                                    <div class="material-container container">
-                                                        <div class="one-half last-column">
-                                                            <h4>Student Attendance</h4>
-                                                            <form>
-                                                                <input class="radiobox" name="attendace" value="present" type="radio"><label class="radio-label">Present</label>
-                                                                <input class="radiobox" name="attendace" value="absent" type="radio"><label class="radio-label" >Absent</label>
-                                                            </form>
-                                                        </div>
-                                                        <div class="one-half last-column">
-                                                            <h4>Tutor Attendance</h4>
-                                                            <form>
-                                                                <input class="radiobox" name="attendace" value="present" type="radio"><label class="radio-label">Present</label>
-                                                                <input class="radiobox" name="attendace" value="absent" type="radio"><label class="radio-label" >Absent</label>
-                                                            </form>
-                                                        </div>
-                                                        <div class="clear"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="decoration"></div>
+                        <div class="material-container container monthlyTimeTable accourdionForTimeTable">
+
                         </div>
                     </div>
-                    <div id="weekly" class="tab-content active-tab-content">
-                        <div class="material-container container">
-                            <div class="decoration"></div>
-                            <div class="date">
-                                <h4>WEDNESDAY 21 JAN</h4>
-                                <div class="toggle">
-                                    <a href="#" class="toggle-title">
-                                        Tution At John
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                    <div class="toggle-content">
-                                        <div class="pageapp-timeline-2 material-container">
-                                            <div class="timeline-decoration"></div>
-                                            <div class="timeline-item">
-                                                <div class="timeline-icon">
-                                                    <i class="fa fa-pencil bg-hover-green-dark"></i>
-                                                </div>
-                                                <div class="timeline-text">
-                                                    <h3 class="title">Tution At John</h3>
-                                                    <em class="subtitle">Date / Time</em>
-                                                    <table class="time-table">
-                                                        <tr>
-                                                            <th>Location</th>
-                                                            <td>The Dutch, 131 Sullivan Street</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Subjects</th>
-                                                            <td>English</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Booked Hour</th>
-                                                            <td>2 Hrs</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Hourly Rates</th>
-                                                            <td>3 USD/hr</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Absence Reason</th>
-                                                            <td><a class="simple-modal" href="#">Click</a></td>
-                                                        </tr>
-                                                    </table>
-                                                    <div class="material-container container">
-                                                        <div class="one-half last-column">
-                                                            <h4>Student Attendance</h4>
-                                                            <form>
-                                                                <input class="radiobox" name="attendace" value="present" type="radio"><label class="radio-label">Present</label>
-                                                                <input class="radiobox" name="attendace" value="absent" type="radio"><label class="radio-label" >Absent</label>
-                                                            </form>
-                                                        </div>
-                                                        <div class="one-half last-column">
-                                                            <h4>Tutor Attendance</h4>
-                                                            <form>
-                                                                <input class="radiobox" name="attendace" value="present" type="radio"><label class="radio-label">Present</label>
-                                                                <input class="radiobox" name="attendace" value="absent" type="radio"><label class="radio-label" >Absent</label>
-                                                            </form>
-                                                        </div>
-                                                        <div class="clear"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="decoration"></div>
+                    <div id="weekly" class="tab-content">
+                        <div class="material-container container weeklyTimeTable accourdionForTimeTable" >
+
                         </div>
                     </div>
-                    <div id="daily" class="tab-content">
-                        <div class="pageapp-timeline-2 material-container">
-                            <div class="timeline-decoration"></div>
-                            <div class="timeline-item">
-                                <div class="timeline-icon">
-                                    <i class="fa fa-pencil bg-hover-green-dark"></i>
-                                </div>
-                                <div class="timeline-text">
-                                    <h3 class="title">Tution At John</h3>
-                                    <em class="subtitle">Date / Time</em>
-                                    <table class="time-table">
-                                        <tr>
-                                            <th>Location</th>
-                                            <td>The Dutch, 131 Sullivan Street</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Subjects</th>
-                                            <td>English</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Booked Hour</th>
-                                            <td>2 Hrs</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Hourly Rates</th>
-                                            <td>3 USD/hr</td>
-                                        </tr>
-                                    </table>
-                                    <div class="material-container container">
-                                        <div class="one-half last-column">
-                                            <h4>Student Attendance</h4>
-                                            <form>
-                                                <input class="radiobox" name="attendace" value="present" type="radio"><label class="radio-label">Present</label>
-                                                <input class="radiobox" name="attendace" value="absent" type="radio"><label class="radio-label" >Absent</label>
-                                            </form>
-                                        </div>
-                                        <div class="one-half last-column">
-                                            <h4>Tutor Attendance</h4>
-                                            <form>
-                                                <input class="radiobox" name="attendace" value="present" type="radio"><label class="radio-label">Present</label>
-                                                <input class="radiobox" name="attendace" value="absent" type="radio"><label class="radio-label" >Absent</label>
-                                            </form>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="daily" class="tab-content"></div>
                 </div>
                 <!-- End of entire page content-->
             </div>
         </div>
     </div>
     <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
+
+
     <div class="simple-modal-content modal-content">
-        <div class="material-container container">
-            <h4>Reason For Absence</h4>
-            <p>
-            <form>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label">(N) off course/pupil not on roll</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(Z) Other authorised circumstances</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(C) Late (before registers close)</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(L) Present</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >() School Closed to Pupils</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(#) Enforced Closure</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(Y) Illness</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >() Excluded</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(E) No Attendence record</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(_) Work Experience</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(W) Educated off site - (not dual registration)</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(B) Dual Registration</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(D) Extended family Holiday (agreed)</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(F) Family Holiday (Not agreed)</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(G) Family Holiday (agreed)</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(H) Interview</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(J) Medial/Dental Appointments</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(M) Unauthorised Absence</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(O) Approved sporting activity</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(P) Religious observance</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(R) Study leave</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(S) Traveller absence</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(T) Late (After registration closed)</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(U) Educational visit or trip</label>
-                <input class="radiobox" name="reason" value="" type="radio"><label class="radio-label" >(V) Untimetabled session for non-compulsory school-age people</label>
-                <input type="text" placeholder="Why is the student absent?">
-                <input type="submit" class="login-button button button-small button-green button-fullscreen full-bottom" value="Submit">
-            </form>
-            <a href="#" class="button button-red button-small round-button modal-close button-center">Close Me</a>
-            </p>
-        </div>
+
     </div>
 </div>
 <script src="scripts/core.js"></script>
@@ -319,5 +145,126 @@
             getLocation();
         },1000);
     }
+    setTimeout(function(){
+        $.post(urlToPass + "android/ajax/getTimeTable",{id:userData[0].id},function(e){
+            $(".monthlyTimeTable").html(e);
+//            $(".weeklyTimeTable").html(e);
+            $('.accourdionForTimeTable').accordion({
+                active: true,
+                collapsible: true
+            });
+            $('.accourdionForTimeTable').accordion();
+        })
+    },1000);
+    function absentTutor(id,day){
+        var a = "<div class='material-container container'> " +
+                "<h4>Reason For Absence</h4> " +
+                "<p> " +
+                "<form id='form2'> " +
+                "<input name='day' value='"+ day +"' type='hidden'> " +
+                "<input name='type' value='tutor' type='hidden'> " +
+                "<input name='user_id' value='" + id + "' type='hidden'> " +
+                "<input class='radiobox' name='reason' value='Y' checked type='radio'><label class='radio-label' >(Y) Illness</label> " +
+                "<input class='radiobox' name='reason' value='N' type='radio'><label class='radio-label'>(N) off course/pupil not on roll</label> " +
+                "<input class='radiobox' name='reason' value='Z' type='radio'><label class='radio-label' >(Z) Other authorised circumstances</label> " +
+                "<input class='radiobox' name='reason' value='C' type='radio'><label class='radio-label' >(C) Late (before registers close)</label> " +
+                "<input class='radiobox' name='reason' value='school closed to pupil' type='radio'><label class='radio-label' >() School Closed to Pupils</label> " +
+                "<input class='radiobox' name='reason' value='enforced closure' type='radio'><label class='radio-label' >(#) Enforced Closure</label> " +
+                "<input class='radiobox' name='reason' value='excluded' type='radio'><label class='radio-label' >() Excluded</label> " +
+                "<input class='radiobox' name='reason' value='E' type='radio'><label class='radio-label' >(E) No Attendence record</label> " +
+                "<input class='radiobox' name='reason' value='_' type='radio'><label class='radio-label' >(_) Work Experience</label> " +
+                "<input class='radiobox' name='reason' value='W' type='radio'><label class='radio-label' >(W) Educated off site - (not dual registration)</label> " +
+                "<input class='radiobox' name='reason' value='B' type='radio'><label class='radio-label' >(B) Dual Registration</label> " +
+                "<input class='radiobox' name='reason' value='D' type='radio'><label class='radio-label' >(D) Extended family Holiday (agreed)</label> " +
+                "<input class='radiobox' name='reason' value='F' type='radio'><label class='radio-label' >(F) Family Holiday (Not agreed)</label> " +
+                "<input class='radiobox' name='reason' value='G' type='radio'><label class='radio-label' >(G) Family Holiday (agreed)</label> " +
+                "<input class='radiobox' name='reason' value='H' type='radio'><label class='radio-label' >(H) Interview</label> " +
+                "<input class='radiobox' name='reason' value='J' type='radio'><label class='radio-label' >(J) Medial/Dental Appointments</label> " +
+                "<input class='radiobox' name='reason' value='M' type='radio'><label class='radio-label' >(M) Unauthorised Absence</label> " +
+                "<input class='radiobox' name='reason' value='O' type='radio'><label class='radio-label' >(O) Approved sporting activity</label> " +
+                "<input class='radiobox' name='reason' value='P' type='radio'><label class='radio-label' >(P) Religious observance</label> " +
+                "<input class='radiobox' name='reason' value='R' type='radio'><label class='radio-label' >(R) Study leave</label> " +
+                "<input class='radiobox' name='reason' value='S' type='radio'><label class='radio-label' >(S) Traveller absence</label> " +
+                "<input class='radiobox' name='reason' value='T' type='radio'><label class='radio-label' >(T) Late (After registration closed)</label> " +
+                "<input class='radiobox' name='reason' value='U' type='radio'><label class='radio-label' >(U) Educational visit or trip</label> " +
+                "<input class='radiobox' name='reason' value='V' type='radio'><label class='radio-label' >(V) Untimetabled session for non-compulsory school-age people</label> " +
+                "<input type='text' name='details' placeholder='Why is the student absent?'> " +
+                "<input type='button' onclick='getForm(2)'  class='login-button button button-small button-green button-fullscreen full-bottom' value='Submit'> " +
+                "</form> " +
+                "<a href='#' class='button button-red button-small round-button modal-close button-center'>Close Me</a> " +
+                "</p> " +
+                "</div>";
+        $(".simple-modal-content").html(a);
+        $(".simple-modal-content").modal("show");
+    }
+    function absentStudent(id,day){
+        var a = "<div class='material-container container'> " +
+                "<h4>Reason For Absence</h4> " +
+                "<p> " +
+                "<form id='form1'> " +
+                "<input name='day' value='"+ day +"' type='hidden'> " +
+                "<input name='type' value='student' type='hidden'> " +
+                "<input name='user_id' value='" + id + "' type='hidden'> " +
+                "<input class='radiobox' name='reason' value='Y' checked type='radio'><label class='radio-label' >(Y) Illness</label> " +
+                "<input class='radiobox' name='reason' value='N' type='radio'><label class='radio-label'>(N) off course/pupil not on roll</label> " +
+                "<input class='radiobox' name='reason' value='Z' type='radio'><label class='radio-label' >(Z) Other authorised circumstances</label> " +
+                "<input class='radiobox' name='reason' value='C' type='radio'><label class='radio-label' >(C) Late (before registers close)</label> " +
+                "<input class='radiobox' name='reason' value='school closed to pupil' type='radio'><label class='radio-label' >() School Closed to Pupils</label> " +
+                "<input class='radiobox' name='reason' value='enforced closure' type='radio'><label class='radio-label' >(#) Enforced Closure</label> " +
+                "<input class='radiobox' name='reason' value='excluded' type='radio'><label class='radio-label' >() Excluded</label> " +
+                "<input class='radiobox' name='reason' value='E' type='radio'><label class='radio-label' >(E) No Attendence record</label> " +
+                "<input class='radiobox' name='reason' value='_' type='radio'><label class='radio-label' >(_) Work Experience</label> " +
+                "<input class='radiobox' name='reason' value='W' type='radio'><label class='radio-label' >(W) Educated off site - (not dual registration)</label> " +
+                "<input class='radiobox' name='reason' value='B' type='radio'><label class='radio-label' >(B) Dual Registration</label> " +
+                "<input class='radiobox' name='reason' value='D' type='radio'><label class='radio-label' >(D) Extended family Holiday (agreed)</label> " +
+                "<input class='radiobox' name='reason' value='F' type='radio'><label class='radio-label' >(F) Family Holiday (Not agreed)</label> " +
+                "<input class='radiobox' name='reason' value='G' type='radio'><label class='radio-label' >(G) Family Holiday (agreed)</label> " +
+                "<input class='radiobox' name='reason' value='H' type='radio'><label class='radio-label' >(H) Interview</label> " +
+                "<input class='radiobox' name='reason' value='J' type='radio'><label class='radio-label' >(J) Medial/Dental Appointments</label> " +
+                "<input class='radiobox' name='reason' value='M' type='radio'><label class='radio-label' >(M) Unauthorised Absence</label> " +
+                "<input class='radiobox' name='reason' value='O' type='radio'><label class='radio-label' >(O) Approved sporting activity</label> " +
+                "<input class='radiobox' name='reason' value='P' type='radio'><label class='radio-label' >(P) Religious observance</label> " +
+                "<input class='radiobox' name='reason' value='R' type='radio'><label class='radio-label' >(R) Study leave</label> " +
+                "<input class='radiobox' name='reason' value='S' type='radio'><label class='radio-label' >(S) Traveller absence</label> " +
+                "<input class='radiobox' name='reason' value='T' type='radio'><label class='radio-label' >(T) Late (After registration closed)</label> " +
+                "<input class='radiobox' name='reason' value='U' type='radio'><label class='radio-label' >(U) Educational visit or trip</label> " +
+                "<input class='radiobox' name='reason' value='V' type='radio'><label class='radio-label' >(V) Untimetabled session for non-compulsory school-age people</label> " +
+                "<input type='text' name='details' placeholder='Why is the student absent?'> " +
+                "<input type='button' onclick='getForm(1)' class='login-button button button-small button-green button-fullscreen full-bottom' value='Submit'> " +
+                "</form> " +
+                "<a href='#' class='button button-red button-small round-button modal-close button-center'>Close Me</a> " +
+                "</p> " +
+                "</div>";
+        $(".simple-modal-content").html(a);
+        $(".simple-modal-content").modal("show");
+    }
+    function markPresent(id,day,type){
+        $.post(urlToPass+"android/ajax/markAttendance",{id:userData[0].id,user_id:id,day:day,type:type},function(e){
+            alertify.error('Attendance Marked');
+        });
+    }
+    function markTutorPresent(id,day){
+        $.post(urlToPass+"android/ajax/markTutorAttendance",{id:userData[0].id,user_id:id,day:day},function(e){
+            alertify.error('Attendance Marked');
+        });
+    }
+
+    function getForm(formId){
+        var to = "markAttendance";
+        if(formId == 1){
+            formId = "form1";
+        }
+        if(formId == 2){
+            formId = "form2";
+            to = "markTutorAttendance"
+            //markTutorAttendance
+        }
+        var data = JSON.stringify($("#"+formId).serializeArray());
+        $.post(urlToPass+"android/ajax/"+to,{id:userData[0].id,data:data},function(e){
+            $(".modal-close").click();
+            alertify.error('Attendance Marked');
+        });
+    }
+
 </script>
 </body>

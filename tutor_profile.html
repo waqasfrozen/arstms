@@ -97,11 +97,21 @@
                                     <th>Joining Date</th>
                                     <td id="joiningDate">11/06/2016</td>
                                 </tr>
+                                <tr>
+                                    <th>Projected Earnings</th>
+                                    <td><span id="tutor_earning"></span> USD</td>
+                                </tr>
+                                <tr>
+                                    <th>Upcoming Earnings</th>
+                                    <td><span id="upcomingEarnings"></span> USD</td>
+                                </tr>
                             </table>
                         </div>
                         <div class="clear"></div>
 
                     </div>
+                    <canvas id="myChart" width="400" height="400"></canvas>
+
                     <div class="decoration"></div>
                     <!-- End of entire page content-->
                 </div>
@@ -133,6 +143,7 @@
             }
         });
         setTimeout(function(){
+            getEarnings();
             setInterval(function(){
                 $.get("http://maps.googleapis.com/maps/api/geocode/json",{latlng:location,sensor:'true'},function(e){
 //                    console.log(e.results[0].formatted_address);
@@ -141,5 +152,44 @@
             },2000);
         },2000);
     }
+    function getEarnings(){
+        $.post(urlToPass + "android/ajax/getEarnings",{id:userData[0].id},function(e){
+//           console.log(e);
+            $("#tutor_earning").html(e);
+        })
+    }
+</script>
+<script src="scripts/chart.js"></script>
+<script>
+    setTimeout(function(){
+        $.post(urlToPass + "android/ajax/getEarningChart",{id:userData[0]['id']},function(e){
+            e = e.trim()
+            jsonEarning = JSON.parse(e);
+            var ctx = document.getElementById("myChart");
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: jsonEarning,
+                    datasets: [{
+                        label: '',
+                        fill : false,
+                        data: jsonEarning,
+                        backgroundColor: "rgba(75,192,192,0.4)",
+                        borderColor: "rgba(75,192,192,1)",
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true
+                            }
+                        }]
+                    }
+                }
+            });
+        })
+    },1000);
 </script>
 </body>
