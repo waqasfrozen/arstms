@@ -130,7 +130,6 @@
     }
     setTimeout(function(){
         $.post(urlToPass + "android/calender",{id:userData[0].id},function(e){
-            console.log(e);
             $(".monthlyTimeTable").html(e);
         })
     },1000)

@@ -142,7 +142,6 @@
         var student = getUrlParameter("student_id")
         $.post(urlToPass + "android/ajax/getTimeTableDetail",{id:userData[0].id,date:date},function(e){
             console.log(e);
-            //getUrlParameter
             $(".monthlyTimeTable").html(e);
         })
     },1000);

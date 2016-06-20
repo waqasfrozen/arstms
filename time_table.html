@@ -147,7 +147,6 @@
     }
     setTimeout(function(){
         $.post(urlToPass + "android/ajax/getTimeTable",{id:userData[0].id},function(e){
-//            console.log(e);
             $(".weeklyTimeTable").html(e);
             $('.weeklyTimeTable').accordion({
                 active: true,
@@ -156,7 +155,6 @@
             $('.weeklyTimeTable').accordion();
         });
                 $.post(urlToPass + "android/calender",{id:userData[0].id},function(e){
-                    console.log(e);
                     $(".monthlyTimeTable").html(e);
                 })
     },1000);
@@ -252,7 +250,25 @@
             alertify.error('Attendance Marked');
         });
     }
-
+    function amendTimeTable(id,rate){
+        var a = "<div class='material-container container'>" +
+                "<h4>Create New Slot</h4>" +
+                "<p>" +
+                "<form id='form3'> " +
+                "<input name='rate' value='" + rate + "' type='hidden'> " +
+                "<input name='student_id' value='" + id + "' type='hidden'> " +
+                "<input name='tutor_id' value='" + userData[0].id + "' type='hidden'> " +
+                "<input name='date' type='date'> " +
+                "<input type='time' name='starting'> " +
+                "<input type='time' name='ending'> " +
+                "<input type='button' onclick='createNewSlot()' class='login-button button button-small button-green button-fullscreen full-bottom' value='Submit'> " +
+                "</form> " +
+                "<a href='#' class='button button-red button-small round-button modal-close button-center'>Close Me</a> " +
+                "</p> " +
+                "</div>";
+        $(".simple-modal-content").html(a);
+        $(".simple-modal-content").modal("show");
+    }
     function getForm(formId){
         var to = "markAttendance";
         if(formId == 1){
@@ -267,6 +283,14 @@
         $.post(urlToPass+"android/ajax/"+to,{id:userData[0].id,data:data},function(e){
             $(".modal-close").click();
             alertify.error('Attendance Marked');
+        });
+    }
+    function createNewSlot(){
+        var data = JSON.stringify($("#form3").serializeArray());
+        $.post(urlToPass+"android/ajax/createNewSlot",{id:userData[0].id,data:data},function(e){
+//            console.log(e);
+            $(".modal-close").click();
+            alertify.error('New Slot Created!');
         });
     }
 
