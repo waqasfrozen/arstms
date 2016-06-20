@@ -97,7 +97,7 @@
                                 </tr>
                             </table>
                             <br/>
-                            <div id="calendar">
+                            <div class="monthlyTimeTable">
 
                             </div>
                         </div>
@@ -128,18 +128,13 @@
             getLocation();
         },1000);
     }
+    setTimeout(function(){
+        $.post(urlToPass + "android/calender",{id:userData[0].id},function(e){
+            console.log(e);
+            $(".monthlyTimeTable").html(e);
+        })
+    },1000)
 
-    $('#calendar').fullCalendar({
-        'gotoDate': "2016-06-01",
-        height: 400
-//        events: [
-//            {
-//                title  : 'Class',
-//                start  : '2016-06-03'
-//            }
-//        ]
-
-    })
 
 </script>
 </body>

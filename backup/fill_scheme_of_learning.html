@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Tutor Management System - Front</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/framework.css" rel="stylesheet" type="text/css">
+    <link href="styles/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="styles/animate.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jqueryui.js"></script>
+    <script type="text/javascript" src="scripts/framework-plugins.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+</head>
+<body class="dual-sidebar">
+<div id="preloader">
+    <div id="status">
+        <h3 class="center-text">Welcome</h3>
+        <img src="images/logo.png" />
+        <p class="center-text smaller-text">
+            We're loading the content, give us a second. This won't take long!
+        </p>
+    </div>
+</div>
+<div class="gallery-fix"></div> <!-- Important for all pages that have galleries or portfolios -->
+<div id="header-fixed">
+    <a class="open-left-sidebar" href="#"><i class="fa fa-navicon"></i></a>
+    <a class="style-logo" href="#">
+        <p>
+            <span style="color : #c0392b;">TUTOR</span>
+            <span style="color : #2980b9;">MANAGEMENT</span>
+            <span style="color : #2abb67;">SYSYTEM</span>
+        </p>
+    </a>
+    <a class="lock" href="#" onclick="logout();"><i class="fa fa-lock"></i></a>
+</div>
+<!-- Ball Footer Menu -->
+<div class="footer-menu">
+    <a href="#" class="footer-menu-open">
+        <i class="fa fa-ellipsis-v"></i>
+    </a>
+    <a href="#" class="footer-menu-close">
+        <em class="footer-menu-open-text">Navigation</em>
+        <i class="bg-red-dark fa fa-times"></i>
+    </a>
+    <a href="message_board.html" class="footer-menu-item fm-1">
+        <em>Messages</em>
+        <i class="bg-night-dark fa fa-envelope"></i>
+    </a>
+    <a href="notification.html" class="footer-menu-item fm-2">
+        <em>Notifications</em>
+        <i class="bg-green-dark fa fa-bell"></i>
+    </a>
+    <a href="tutor_profile.html" class="footer-menu-item fm-3">
+        <em>Profile</em>
+        <i class="bg-blue-dark fa fa-user"></i>
+    </a>
+</div>
+<div class="menu-background"></div>
+<div class="all-elements">
+    <div class="snap-drawers">
+        <div class="snap-drawer snap-drawer-left appNavigationBar">
+
+        </div>
+        <div id="content" class="snap-content">
+            <div class="content">
+                <div class="header-clear-large"></div>
+                <!--Page content goes here, fixed elements go above the all elements class-->
+                <div class="material-container designed">
+                    <div class="design"><span class="line big"></span><span><i class="fa fa-book"></i></span><span class="line big"></span></div>
+                    <div class="heading-style-5">
+                        <h4 class="heading-title">Scheme of learning</h4>
+                    </div>
+                </div>
+                <div class="decoration"></div>
+                <div class="material-container container">
+                    <em>
+                        Please complete this document to indicate the learning plan for your student.  This document is intended to provide a bullet point summary.  You are encouraged to write lesson plans to assist the delivery of lessons.  Lesson plans will be asked for in advance of an observation of a specific lesson only.
+                    </em>
+                    <form id="form1">
+                        <input id="studentid" name="student_id" type="text" placeholder="Subject" readonly>
+                        <input id="subject" name="subject" type="text" placeholder="Subject" readonly>
+                        <input name="unit_name" type="text" placeholder="Unit Name" >
+                        <input name="unit_aim" type="text" placeholder="Unit Aim" >
+                        <input name="link_to_specification" type="text" placeholder="Link to Specification" >
+                        <input name="previous_unit_was" type="text" placeholder="The previous unit was" >
+                        <input name="next_unit_will_be" type="text" placeholder="The Next unit will be" >
+                        <input name="starting_level" type="text" placeholder="Starting Level – Initial assessment Results" >
+                        <input name="current_attainment_level" type="text" placeholder="Current Attainment Level" >
+                        <input name="target_attainment_level" type="text" placeholder="Target Attainment Level" >
+                        <input id="studentName" name="student" type="text" placeholder="Student" readonly>
+                        <input id="yearGroup" name="yearGroup" type="text" placeholder="Year group" readonly>
+                        <input id="tutor" name="tutor" type="text" placeholder="Tutor" readonly>
+                        <input name="date" type="date" placeholder="Date" >
+                        <br/>
+                    <br/>
+                    <h3><strong>Week 1 (This would be changed according to the date/month)</strong></h3>
+                    <br/>
+                        <input name="lesson_objective" type="text" placeholder="Lesson Objectives (in the ‘I 1 can do…’ form)" />
+                        <input name="resources" type="text" placeholder="Resources" />
+                        <input name="vak" type="text" placeholder="VAK (visual auditory kinaesthetic approaches used)" />
+                        <input name="literacy" type="text" placeholder="Literacy/Numeracy/ICT/SEAL" />
+                        <input name="assessment_for_learning" type="text" placeholder="Assessment for Learning approaches used" />
+                        <input name="starter" type="text" placeholder="Starter" />
+                        <input name="introduction" type="text" placeholder="Introduction – what will be learning today? Prior learning? Homework from last week." />
+                        <input name="task1" type="text" placeholder="Task 1" />
+                        <input name="task2" type="text" placeholder="Task 2" />
+                        <input name="task3" type="text" placeholder="Task 3" />
+                        <input name="task4" type="text" placeholder="Task 4" />
+                        <input name="plenary" type="text" placeholder="Plenary (has the objective been met?)" />
+                        <input name="homework" type="text" placeholder="Homework" />
+                        <input class="login-button button button-small button-green button-fullscreen full-bottom" type="button" onclick="getForm()" value="Submit Report">
+
+                    </form>
+                <!-- End of entire page content-->
+            </div>
+        </div>
+    </div>
+    <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
+</div>
+</div>
+<script src="scripts/core.js"></script>
+<script>
+    function sendingLoc(){
+        setInterval(function(){
+            getLocation();
+        },1000);
+    }
+    $("#studentid").val(getUrlParameter('std_id'));
+    $("#studentName").val(getUrlParameter('name'));
+    $("#subject").val(getUrlParameter('subject'));
+    $("#tutor").val(getUrlParameter('tutor'));
+
+    function getForm(){
+        var data = JSON.stringify($("#form1").serializeArray());
+        $.post(urlToPass+"android/ajax/fill_scheme_of_learning",{id:userData[0].id,data:data},function(e){
+            console.log(e);
+            $("#form1")[0].reset();
+        });
+    }
+</script>
+</body>

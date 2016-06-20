@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Tutor Management System - Front</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/framework.css" rel="stylesheet" type="text/css">
+    <link href="styles/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="styles/animate.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jqueryui.js"></script>
+    <script type="text/javascript" src="scripts/framework-plugins.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+</head>
+<body class="dual-sidebar">
+<div id="preloader">
+    <div id="status">
+        <h3 class="center-text">Welcome</h3>
+        <img src="images/logo.png" />
+        <p class="center-text smaller-text">
+            We're loading the content, give us a second. This won't take long!
+        </p>
+    </div>
+</div>
+<div class="gallery-fix"></div> <!-- Important for all pages that have galleries or portfolios -->
+<div id="header-fixed">
+    <a class="open-left-sidebar" href="#"><i class="fa fa-navicon"></i></a>
+    <a class="style-logo" href="#">
+        <p>
+            <span style="color : #c0392b;">TUTOR</span>
+            <span style="color : #2980b9;">MANAGEMENT</span>
+            <span style="color : #2abb67;">SYSYTEM</span>
+        </p>
+    </a>
+    <a class="lock" href="#" onclick="logout();"><i class="fa fa-lock"></i></a>
+</div>
+<!-- Ball Footer Menu -->
+<div class="footer-menu">
+    <a href="#" class="footer-menu-open">
+        <i class="fa fa-ellipsis-v"></i>
+    </a>
+    <a href="#" class="footer-menu-close">
+        <em class="footer-menu-open-text">Navigation</em>
+        <i class="bg-red-dark fa fa-times"></i>
+    </a>
+    <a href="message_board.html" class="footer-menu-item fm-1">
+        <em>Messages</em>
+        <i class="bg-night-dark fa fa-envelope"></i>
+    </a>
+    <a href="notification.html" class="footer-menu-item fm-2">
+        <em>Notifications</em>
+        <i class="bg-green-dark fa fa-bell"></i>
+    </a>
+    <a href="tutor_profile.html" class="footer-menu-item fm-3">
+        <em>Profile</em>
+        <i class="bg-blue-dark fa fa-user"></i>
+    </a>
+</div>
+<div class="menu-background"></div>
+<div class="all-elements">
+    <div class="snap-drawers">
+        <div class="snap-drawer snap-drawer-left appNavigationBar">
+
+        </div>
+        <div id="content" class="snap-content">
+            <div class="content">
+                <div class="header-clear-large"></div>
+                <div class="material-container designed">
+                    <div class="design"><span class="line big"></span><span><i class="fa fa-book"></i></span><span class="line big"></span></div>
+                    <div class="heading-style-5">
+                        <h4 class="heading-title">End of half term report</h4>
+                    </div>
+                </div>
+                <div class="decoration"></div>
+                <div class="material-container container">
+                    <table cellspacing='0' class="table">
+                        <tr>
+                            <th>Student</th>
+                            <td id="studentName"></td>
+                        </tr>
+                        <tr>
+                            <th>Tutor</th>
+                            <td id="tutorName"></td>
+                        </tr>
+                        <tr>
+                            <th>Subject</th>
+                            <td id="subjects"></td>
+                        </tr>
+                        <tr>
+                            <th>Year</th>
+                            <td id="yearGroup"></td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td id="date"></td>
+                        </tr>
+                        <tr>
+                            <th>LA/School</th>
+                            <td id="laSchool"></td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <h5>This term’s subject targets</h5>
+                    <ul class="half-bottom-if-responsive">
+                        <li>Specific</li>
+                        <li>Measurable</li>
+                        <li>Achievable</li>
+                    </ul>
+                    <em>Please use SMART targets (Specific, Measurable, Achievable, Realistic, Time-bound)</em>
+                    <br/>
+                    <br/>
+                    <h5>Summary of work covered this term</h5>
+                    <div class="send-message">
+                        <textarea id="summary" placeholder="Please provide a summary of what has been covered this term in relation to the Scheme of Learning." readonly></textarea>
+                    </div>
+                    <br/>
+                    <h5>Progress</h5>
+                    <table cellspacing='0' class="table">
+                        <tr>
+                            <th>Standard of classwork </th>
+                            <td id="standard"></td>
+                        </tr>
+                        <tr>
+                            <th>Standard of homework</th>
+                            <td id="homework"></td>
+                        </tr>
+                        <tr>
+                            <th>Effort</th>
+                            <td id="effort"></td>
+                        </tr>
+                        <tr>
+                            <th>Progress</th>
+                            <td id="progress"></td>
+                        </tr>
+                        <tr>
+                            <th>Behaviour in lessons</th>
+                            <td id="behaviour"></td>
+                        </tr>
+                        <tr>
+                            <th>Attendance</th>
+                            <td id="attendance"></td>
+                        </tr>
+                        <tr>
+                            <th>Punctuality</th>
+                            <td id="punctuality"></td>
+                        </tr>
+                    </table>
+                    <em>E=Excellent G= Good S= Satisfactory I= Improvement Needed C= Cause for Concern</em>
+                    <br/>
+                    <br/>
+                    <table cellspacing='0' class="table">
+                        <tr>
+                            <th>Last term’s grade/baseline assessment</th>
+                            <td id="lastTerms"></td>
+                        </tr>
+                        <tr>
+                            <th>Current assessment grade</th>
+                            <td id="currentGrade"></td>
+                        </tr>
+                        <tr>
+                            <th>Target grade for end of academic year</th>
+                            <td id="targetGrade"></td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- End of entire page content-->
+            </div>
+        </div>
+    </div>
+    <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
+</div>
+<script src="scripts/core.js"></script>
+<script>
+    function sendingLoc(){
+        setInterval(function(){
+            getLocation();
+        },1000);
+    }
+    setTimeout(function(){
+        var reportId = window.location.hash;
+        reportId = reportId.replace("#","");
+        $.post(urlToPass + "android/ajax/getMonthlyReport",{reportId : reportId},function(e){
+            e = e.trim();
+            if(e == "false"){
+                window.location.href = "index.html";
+            }else{
+                var reportJsonData = JSON.parse(e);
+                console.log(reportJsonData);
+                $("#studentName").html(reportJsonData.studentName);
+                $("#tutorName").html(reportJsonData.studentName);
+                $("#subjects").html(reportJsonData.tutor);
+                $("#yearGroup").html(reportJsonData.year);
+                $("#date").html(reportJsonData.date);
+                $("#laSchool").html(reportJsonData.school);
+                $("#summary").html(reportJsonData.summary);
+                $("#standard").html(reportJsonData.standard);
+                $("#homework").html(reportJsonData.homework);
+                $("#effort").html(reportJsonData.effort);
+                $("#progress").html(reportJsonData.progress);
+                $("#behaviour").html(reportJsonData.behaviour);
+                $("#attendance").html(reportJsonData.attendance);
+                $("#punctuality").html(reportJsonData.punctuality);
+                $("#lastTerms").html(reportJsonData.lastTermGrade);
+                $("#currentGrade").html(reportJsonData.currentGrade);
+                $("#targetGrade").html(reportJsonData.endOfAcademicYearGrade);
+                //
+            }
+        })
+    },1000);
+</script>
+</body>

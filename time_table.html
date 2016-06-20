@@ -111,18 +111,18 @@
 
                 <div class="container">
                     <ul class="tabs">
-                        <li class="tab-link active-tab" data-tab="monthly">Monthly</li>
-                        <li class="tab-link" data-tab="weekly">Weekly</li>
+                        <li class="tab-link active-tab" data-tab="weekly">Weekly</li>
+                        <li class="tab-link " data-tab="monthly">Monthly</li>
                         <li class="tab-link" data-tab="daily">Daily</li>
                     </ul>
-                    <div id="monthly" class="tab-content active-tab-content">
-                        <div class="material-container container monthlyTimeTable accourdionForTimeTable">
+                    <div id="monthly" class="tab-content ">
+                        <div class="material-container container monthlyTimeTable ">
 
                         </div>
                     </div>
-                    <div id="weekly" class="tab-content">
-                        <div class="material-container container weeklyTimeTable accourdionForTimeTable" >
-
+                    <div id="weekly" class="tab-content active-tab-content">
+                        <div class="material-container container weeklyTimeTable " >
+                            <p style="text-align:center">Loading...!!!</p>
                         </div>
                     </div>
                     <div id="daily" class="tab-content"></div>
@@ -147,14 +147,18 @@
     }
     setTimeout(function(){
         $.post(urlToPass + "android/ajax/getTimeTable",{id:userData[0].id},function(e){
-            $(".monthlyTimeTable").html(e);
-//            $(".weeklyTimeTable").html(e);
-            $('.accourdionForTimeTable').accordion({
+//            console.log(e);
+            $(".weeklyTimeTable").html(e);
+            $('.weeklyTimeTable').accordion({
                 active: true,
                 collapsible: true
             });
-            $('.accourdionForTimeTable').accordion();
-        })
+            $('.weeklyTimeTable').accordion();
+        });
+                $.post(urlToPass + "android/calender",{id:userData[0].id},function(e){
+                    console.log(e);
+                    $(".monthlyTimeTable").html(e);
+                })
     },1000);
     function absentTutor(id,day){
         var a = "<div class='material-container container'> " +

@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Tutor Management System - Front</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/framework.css" rel="stylesheet" type="text/css">
+    <link href="styles/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="styles/animate.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jqueryui.js"></script>
+    <script type="text/javascript" src="scripts/framework-plugins.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+</head>
+<body class="dual-sidebar">
+<div id="preloader">
+    <div id="status">
+        <h3 class="center-text">Welcome</h3>
+        <img src="images/logo.png" />
+        <p class="center-text smaller-text">
+            We're loading the content, give us a second. This won't take long!
+        </p>
+    </div>
+</div>
+<div class="gallery-fix"></div> <!-- Important for all pages that have galleries or portfolios -->
+<div id="header-fixed">
+    <a class="open-left-sidebar" href="#"><i class="fa fa-navicon"></i></a>
+    <a class="style-logo" href="#">
+        <p>
+            <span style="color : #c0392b;">TUTOR</span>
+            <span style="color : #2980b9;">MANAGEMENT</span>
+            <span style="color : #2abb67;">SYSYTEM</span>
+        </p>
+    </a>
+    <a class="lock" href="#" onclick="logout();"><i class="fa fa-lock"></i></a>
+</div>
+<!-- Ball Footer Menu -->
+<div class="footer-menu">
+    <a href="#" class="footer-menu-open">
+        <i class="fa fa-ellipsis-v"></i>
+    </a>
+    <a href="#" class="footer-menu-close">
+        <em class="footer-menu-open-text">Navigation</em>
+        <i class="bg-red-dark fa fa-times"></i>
+    </a>
+    <a href="message_board.html" class="footer-menu-item fm-1">
+        <em>Messages</em>
+        <i class="bg-night-dark fa fa-envelope"></i>
+    </a>
+    <a href="notification.html" class="footer-menu-item fm-2">
+        <em>Notifications</em>
+        <i class="bg-green-dark fa fa-bell"></i>
+    </a>
+    <a href="tutor_profile.html" class="footer-menu-item fm-3">
+        <em>Profile</em>
+        <i class="bg-blue-dark fa fa-user"></i>
+    </a>
+</div>
+<div class="menu-background"></div>
+<div class="all-elements">
+    <div class="snap-drawers">
+        <div class="snap-drawer snap-drawer-left appNavigationBar">
+
+        </div>
+        <div id="content" class="snap-content">
+            <div class="content">
+                <div class="header-clear-large"></div>
+                <!--Page content goes here, fixed elements go above the all elements class-->
+                <div class="material-container designed">
+                    <div class="design"><span class="line big"></span><span><i class="fa fa-book"></i></span><span class="line big"></span></div>
+                    <div class="heading-style-5">
+                        <h4 class="heading-title">INDIVIDUAL EDUCATION PLAN AND PROGRESS REPORT</h4>
+                    </div>
+                </div>
+                <div class="decoration"></div>
+                <div class="material-container container">
+                    <em>
+                        Please submit sections A (initial assessment, targets) and C (scheme of work) of this report within 2 weeks of the start date.
+                        <br/>
+                        Please update sections C, D, and E as tuition progresses and submit the up-to- date report at the end of each month.
+                        <br/>
+                        When tuition has finished, please complete section B (outcomes) and submit the completed report within 48 hours.
+                    </em>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <form id="form1">
+                        <label>Student ID </label>
+                        <input type="text" id="studentid" name="student_id" placeholder="Student">
+                        <label>Student</label>
+                        <input type="text" id="studentName" readonly name="student_name" placeholder="Student">
+                        <label>Tutor</label>
+                        <input id="tutor" name="tutor" type="text" placeholder="Tutor" readonly >
+                        <label>Council</label>
+                        <input type="text" placeholder="Council"  name="council">
+                        <label>Start Date</label>
+                        <input type="text" placeholder="Start Date" id="start_date" name="start_date" readonly>
+                        <label>Year Group</label>
+                        <input type="text" placeholder="Year Group" name="yearGroup" id="yearGroup" readonly>
+                        <label>MAPP (Y/N)</label>
+                        <input type="text" placeholder="Mapp (Y/N)" name="mapp">
+                        <label>Report Date</label>
+                        <input type="date" placeholder="Report Date" name="report_date">
+                        <label>Subject</label>
+                        <input type="text" placeholder="Subject" readonly id="subject" name="subject">
+                        <br/>
+                        <br/>
+                        <h3><strong>Section A</strong></h3>
+                        <br/>
+                        <input name="focus_area" type="text" placeholder="Subject/focus area"/>
+                        <input name="initial_assessment_date" type="text" placeholder="Initial Assessment Date"/>
+                        <input name="assessment_tools_used" type="text" placeholder="Assessment tool(s) used"/>
+                        <input name="initial_assessment outcome" type="text" placeholder="Initial Assessment Outcome"/>
+                        <input name="targer" type="text" placeholder="Target(s)"/>
+                        <br/>
+                        <h3><strong>Section B</strong></h3>
+                        <br/>
+                        <input name="end_of_term_assessment_date" type="text" placeholder="End of term/block assessment Date"/>
+                        <input name="end_of_term_assessment_tool_used" type="text" placeholder="Assessment tool(s) used"/>
+                        <input name="end_of_term_assessment_outcome" type="text" placeholder="End of term/block Assessment Outcome"/>
+                        <br/>
+                        <h3><strong>Section C (Scheme of Work)</strong></h3>
+                        <br/>
+                        <label><strong>List of Topics Covered (Week by Week)</strong></label>
+                        <input name="list_of_topic_covered_week1" type="text" placeholder="Week 1"/>
+                        <input name="list_of_topic_covered_week2" type="text" placeholder="Week 2"/>
+                        <input name="list_of_topic_covered_week3" type="text" placeholder="Week 3"/>
+                        <input name="list_of_topic_covered_week4" type="text" placeholder="Week 4"/>
+                        <input name="list_of_topic_covered_week5" type="text" placeholder="Week 5"/>
+                        <h3><strong>Section D (Outcomes/Comments)</strong></h3>
+                        <br/>
+                        <label><strong>Week 1</strong></label>
+                        <input id="week1a" name="week4" value="achieved" class="radiobox" type="radio">
+                        <label for="week1a" class="radio-label">Achieved</label>
+                        <input  id="week1p" name="week4" class="radiobox" value="Partially Achieved" type="radio">
+                        <label for="week1p" class="radio-label">Partially Achieved</label>
+                        <input id="week1n"  name="week4" class="radiobox" value="Not Acheived" type="radio">
+                        <label for="week1n" class="radio-label">Not Achieved</label>
+                        <input name="week1_explaination" type="text" placeholder="Explanation of student achievements"/>
+                        <br/>
+                        <label><strong>Week 2</strong></label>
+                        <input id="week2a" name="week2" value="achieved" class="radiobox" type="radio">
+                        <label for="week2a" class="radio-label">Achieved</label>
+                        <input  id="week2p" name="week2" class="radiobox" value="Partially Achieved" type="radio">
+                        <label for="week2p" class="radio-label">Partially Achieved</label>
+                        <input id="week2n"  name="week2" class="radiobox" value="Not Acheived" type="radio">
+                        <label for="week2n" class="radio-label">Not Achieved</label>
+                        <input name="week2_explaination" type="text" placeholder="Explanation of student achievements"/>
+                        <br/>
+                        <label><strong>Week 3</strong></label>
+                        <input id="week3a" name="week3" value="achieved" class="radiobox" type="radio">
+                        <label for="week3a" class="radio-label">Achieved</label>
+                        <input  id="week3p" name="week3" class="radiobox" value="Partially Achieved" type="radio">
+                        <label for="week3p" class="radio-label">Partially Achieved</label>
+                        <input id="week3n"  name="week3" class="radiobox" value="Not Acheived" type="radio">
+                        <label for="week3n" class="radio-label">Not Achieved</label>
+                        <input name="week3_explaination" type="text" placeholder="Explanation of student achievements"/>
+                        <br/>
+                        <label><strong>Week 4</strong></label>
+                        <input id="week4a" name="week4" value="achieved" class="radiobox" type="radio">
+                        <label for="week4a" class="radio-label">Achieved</label>
+                        <input  id="week4p" name="week4" class="radiobox" value="Partially Achieved" type="radio">
+                        <label for="week4p" class="radio-label">Partially Achieved</label>
+                        <input id="week4n"  name="week4" class="radiobox" value="Not Acheived" type="radio">
+                        <label for="week4n" class="radio-label">Not Achieved</label>
+                        <input name="week4_explaination" type="text" placeholder="Explanation of student achievements"/>
+                        <br/>
+                        <label><strong>Week 5</strong></label>
+                        <input id="week5a" name="week4" value="achieved" class="radiobox" type="radio">
+                        <label for="week5a" class="radio-label">Achieved</label>
+                        <input  id="week5p" name="week4" class="radiobox" value="Partially Achieved" type="radio">
+                        <label for="week5p" class="radio-label">Partially Achieved</label>
+                        <input id="week5n"  name="week4" class="radiobox" value="Not Acheived" type="radio">
+                        <label for="week5n" class="radio-label">Not Achieved</label>
+                        <input name="week5_explaination" type="text" placeholder="Explanation of student achievements"/>
+                        <br/>
+                        <h3><strong>Section F</strong></h3>
+                        <br/>
+                        <textarea name="other_comments" placeholder="OTHER COMMENTS/CONCERNS"></textarea>
+                        <textarea name="student_views"  placeholder="STUDENT'S VIEWS"></textarea>
+                        <input class="login-button button button-small button-green button-fullscreen full-bottom" type="button" onclick="getForm()" value="Submit Report">
+                    </form>
+                    <!-- End of entire page content-->
+                </div>
+            </div>
+        </div>
+        <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
+    </div>
+</div>
+<script src="scripts/core.js"></script>
+<script>
+    function sendingLoc(){
+        setInterval(function(){
+            getLocation();
+        },1000);
+    }
+
+    $("#yearGroup").val(getUrlParameter('yearGroup'));
+    $("#start_date").val(getUrlParameter('start_date'));
+    $("#studentid").val(getUrlParameter('std_id'));
+    $("#studentName").val(getUrlParameter('name'));
+    $("#subject").val(getUrlParameter('subject'));
+    $("#tutor").val(getUrlParameter('tutor'));
+   // document.getElementById('date').value = new Date();
+
+    function getForm(){
+        var data = JSON.stringify($("#form1").serializeArray());
+        $.post(urlToPass+"android/ajax/fill_individual_action_plan",{id:userData[0].id,data:data},function(e){
+            console.log(e);
+            $("#form1")[0].reset();
+        });
+    }
+
+
+</script>
+</body>

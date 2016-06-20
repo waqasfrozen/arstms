@@ -5,21 +5,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>Tutor Management System - Front</title>
-    <link rel="icon" type="image/png" href="images/splash/android-chrome-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" sizes="196x196" href="images/splash/apple-touch-icon-196x196.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/splash/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/splash/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/splash/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/splash/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/splash/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/splash/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/splash/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/splash/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/splash/apple-touch-icon-57x57.png">
-    <link rel="icon" type="image/png" href="images/splash/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="images/splash/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="images/splash/favicon-16x16.png" sizes="16x16">
-    <link rel="shortcut icon" href="images/splash/favicon.ico" type="image/x-icon" />
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="styles/framework.css" rel="stylesheet" type="text/css">
     <link href="styles/font-awesome.css" rel="stylesheet" type="text/css">
@@ -32,8 +17,8 @@
 <body class="dual-sidebar">
 <div id="preloader">
     <div id="status">
-        <div class="preloader-logo"></div>
         <h3 class="center-text">Welcome</h3>
+        <img src="images/logo.png" />
         <p class="center-text smaller-text">
             We're loading the content, give us a second. This won't take long!
         </p>
@@ -42,87 +27,50 @@
 <div class="gallery-fix"></div> <!-- Important for all pages that have galleries or portfolios -->
 <div id="header-fixed">
     <a class="open-left-sidebar" href="#"><i class="fa fa-navicon"></i></a>
-    <a class="" href="#"></a>
-    <a class="lock" href="login.html"><i class="fa fa-lock"></i></a>
+    <a class="style-logo" href="#">
+        <p>
+            <span style="color : #c0392b;">TUTOR</span>
+            <span style="color : #2980b9;">MANAGEMENT</span>
+            <span style="color : #2abb67;">SYSYTEM</span>
+        </p>
+    </a>
+    <a class="lock" href="#" onclick="logout();"><i class="fa fa-lock"></i></a>
+</div>
+<!-- Ball Footer Menu -->
+<div class="footer-menu">
+    <a href="#" class="footer-menu-open">
+        <i class="fa fa-ellipsis-v"></i>
+    </a>
+    <a href="#" class="footer-menu-close">
+        <em class="footer-menu-open-text">Navigation</em>
+        <i class="bg-red-dark fa fa-times"></i>
+    </a>
+    <a href="message_board.html" class="footer-menu-item fm-1">
+        <em>Messages</em>
+        <i class="bg-night-dark fa fa-envelope"></i>
+    </a>
+    <a href="notification.html" class="footer-menu-item fm-2">
+        <em>Notifications</em>
+        <i class="bg-green-dark fa fa-bell"></i>
+    </a>
+    <a href="tutor_profile.html" class="footer-menu-item fm-3">
+        <em>Profile</em>
+        <i class="bg-blue-dark fa fa-user"></i>
+    </a>
 </div>
 <div class="menu-background"></div>
 <div class="all-elements">
     <div class="snap-drawers">
-        <div class="snap-drawer snap-drawer-left">
-            <div class="sidebar-header">
-                <div class="container profile">
-                    <img src="images/profile/avatar.jpg" class="quote-image img-responsive" />
-                    <strong class="quote-author">Alexander Stranger</strong>
-                    <span class="highlighted bg-blue-dark color-white">Tutor</span>
-                </div>
-                <div class="sidebar-header-logo">
-                    <a href="#"></a>
-                </div>
-            </div>
-            <div class="sidebar-menu half-bottom">
-                <div class="sidebar-divider">
-                    Navigation
-                </div>
-                <a class="menu-item" href="#">
-                    <i class="bg-green-light fa fa-dashboard"></i>
-                    <em>Dashboard</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="message_detail.html">
-                    <i class="bg-green-light fa fa-envelope"></i>
-                    <em>Message Board</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="#">
-                    <i class="bg-green-light fa fa-bell"></i>
-                    <em>Notifications</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="tutor_profile.html">
-                    <i class="bg-green-light fa fa-user"></i>
-                    <em>Profile</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <div class="has-submenu">
-                    <a class="menu-item show-submenu submenu-active" href="#">
-                        <i class="bg-green-light fa fa-user-secret"></i>
-                        <em>Availability Status</em>
-                    </a>
-                    <div class="submenu submenu-active">
-                        <a class="submenu-item" href="#"><i class="fa fa-angle-right"></i><em>Available</em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item" href=""><i class="fa fa-angle-right"></i><em>Not Available</em><i class="fa fa-circle"></i></a>
-                    </div>
-                </div>
-                <a class="menu-item" href="#">
-                    <i class="bg-green-light fa fa-calendar-o"></i>
-                    <em>Time Table</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="#">
-                    <i class="bg-green-light fa fa-mortar-board"></i>
-                    <em>Students</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="#">
-                    <i class="bg-green-light fa fa-pencil"></i>
-                    <em>Reviews</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-                <a class="menu-item" href="#">
-                    <i class="bg-green-light fa fa-book"></i>
-                    <em>Reports</em>
-                    <i class="fa fa-circle"></i>
-                </a>
-            </div>
+        <div class="snap-drawer snap-drawer-left appNavigationBar">
+
         </div>
         <div id="content" class="snap-content">
             <div class="content">
                 <div class="header-clear-large"></div>
                 <div class="page-profile">
                     <div class="page-profile-header container-fullscreen">
-                        <img src="images/pictures/5s.jpg" alt="img">
-                        <h3>Student Name</h3>
-                        <em><i class="fa fa-location-arrow"></i>Melbourne Victoria,  Australia</em>
+                        <h3 class="student_name">Student Name</h3>
+                        <em><i class="fa fa-location-arrow"></i><span class="address"></span></em>
                         <div class="overlay bg-black"></div>
                     </div>
                     <div class="decoration"></div>
@@ -130,52 +78,140 @@
                             <div class="material-container container student-detail">
                                 <div class="one-half-responsive">
                                     <h4>Student Details</h4>
+                                    <table class="table">
+                                        <tr>
+                                            <th>Job Referance</th>
+                                            <td class="job_ref"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Client Name</th>
+                                            <td class="client_name"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Career Name</th>
+                                            <td class="career_name"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Career Phone no.</th>
+                                            <td class="career_phone"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Alternate Phone no.</th>
+                                            <td class="alternate_phone"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Career Email ID</th>
+                                            <td class="career_email"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Student Name</th>
+                                            <td class="student_name"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Education Level</th>
+                                            <td class="education_level"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Subject Required</th>
+                                            <td class="subject_required"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Current School</th>
+                                            <td class="current_school"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Hours per Week</th>
+                                            <td class="hours_per_week"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Maximum Hours</th>
+                                            <td class="max_hours"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Ideal Tuition Time</th>
+                                            <td class="ideal_time"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Address</th>
+                                            <td class="address"></td>
+                                        </tr>
+                                    </table>
                                     <ul class="half-bottom-if-responsive">
-                                        <li><strong>Job Referance</strong></li>
-                                        <li></li>
-                                        <li><strong>Client Name</strong></li>
-                                        <li></li>
-                                        <li><strong>Career Name</strong></li>
-                                        <li></li>
-                                        <li><strong>Career Phone no.</strong></li>
-                                        <li></li>
-                                        <li><strong>Alternate Phone no.</strong></li>
-                                        <li></li>
-                                        <li><strong>Career Email ID</strong></li>
-                                        <li></li>
-                                        <li><strong>Student Name</strong></li>
-                                        <li></li>
-                                        <li><strong>Education Level</strong></li>
-                                        <li></li>
-                                        <li><strong>Subject Required</strong></li>
-                                        <li></li>
-                                        <li><strong>Current School</strong></li>
-                                        <li></li>
-                                        <li><strong>Hours per Week</strong></li>
-                                        <li></li>
-                                        <li><strong>Maximum Hours</strong></li>
-                                        <li></li>
-                                        <li><strong>Ideal Tuition Time</strong></li>
-                                        <li></li>
-                                        <li><strong>Address</strong></li>
-                                        <li></li>
-                                        <li><a href="#"><strong>View Monthly Reports</strong></a></li>
+                                        <li><a href="student_reviews.html"><strong>View Rewards</strong></a></li>
+                                        <li><a id="createReview" href="#"><strong>Create Review</strong></a></li>
+                                        <li><a href="reports.html"><strong>View Monthly Reports</strong></a></li>
+                                        <li><a id="createMonthlyReport" href="#"><strong>Create Monthly Reports</strong></a></li>
+                                        <li><a id="urlForWeeklyReport" href="#"><strong>Create Scheme of learning</strong></a></li>
+                                        <li><a id="urlForDailyReport" href="#"><strong>Create Individual education plan</strong></a></li>
+                                        <li><a href="#"><strong>View This months Current Reports</strong></a></li>
+                                        <li><a href="#"><strong>View Current Months Attendence</strong></a></li>
                                     </ul>
+                                    <a href="#" class="highlighted bg-red-dark color-white">Suspend Student</a>
+                                    <a href="#" class="highlighted bg-green-dark color-white">Release Student</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="decoration"></div>
-                    <!-- End of entire page content-->
                 </div>
-                <!--Page content goes here, fixed elements go above the all elements class-->
-                <div class="footer">
-                    <p class="center-text">Copyright 2015. All rights reserved.</p>
-                </div>
-                <!-- End of entire page content-->
             </div>
         </div>
     </div>
     <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
 </div>
+<script src="scripts/core.js"></script>
+<script>
+    var createReview = "create_review.html?";
+    var urlForDailyReport = "fill_individual_education_plan.html?";
+    var urlForWeeklyReport = "fill_scheme_of_learning.html?";
+    var urlForMonthlyReport = "fill_monthly_report.html?";
+    var long1 = ''; var lat1 = '';
+    function sendingLoc(){
+        setInterval(function(){
+            getLocation();
+        },1000);
+    }
+    var std_id = window.location.hash;
+    std_id = std_id.replace("#"," "); std_id = std_id.trim();
+    if(std_id == ""){
+        window.location.href  = "student_list.html";
+    }else{
+        setTimeout(function(){
+            $.post(urlToPass+"android/ajax/getStudentInfo",{id:std_id},function(e){
+                e = e.trim();
+                if(e == ""){
+
+                }else{
+                    var jsonData = JSON.parse(e);
+                    urlForMonthlyReport += "std_id="+jsonData[0].id+"&name="+jsonData[0].student+"&subject="+jsonData[0].subjects+"&tutor="+userData[0].name + " " + userData[0].lname;
+                    createReview += "std_id="+jsonData[0].id+"&name="+jsonData[0].student+"&subject="+jsonData[0].subjects+"&tutor="+userData[0].name + " " + userData[0].lname;
+                    urlForWeeklyReport += "yearGroup="+ jsonData[0].yeargroup +"&start_date="+ jsonData[0].starting +"&std_id="+jsonData[0].id+"&name="+jsonData[0].student+"&subject="+jsonData[0].subjects+"&tutor="+userData[0].name + " " + userData[0].lname;
+                    urlForDailyReport += "yearGroup="+ jsonData[0].yeargroup +"&start_date="+ jsonData[0].starting +"&std_id="+jsonData[0].id+"&name="+jsonData[0].student+"&subject="+jsonData[0].subjects+"&tutor="+userData[0].name + " " + userData[0].lname;
+                    $(".client_name").html(jsonData[0].client);
+                    $(".address").html(jsonData[0].location);
+                    $(".max_hours").html(jsonData[0].max_hour);
+                    $(".hours_per_week").html(jsonData[0].hours);
+                    $(".ideal_time").html(jsonData[0].ideal_time);
+                    $(".subject_required").html(jsonData[0].subjects);
+                    $(".student_name").html(jsonData[0].student);
+                    $("#createMonthlyReport").attr("href",urlForMonthlyReport);
+                    $("#urlForWeeklyReport").attr("href",urlForWeeklyReport);
+                    $("#urlForDailyReport").attr("href",urlForDailyReport);
+                    $("#createReview").attr("href",createReview);
+                    long1 = jsonData[0].longitude;
+                    lat1 = jsonData[0].latitude;
+                    getTimeBetweenTwoLocations();
+                }
+            })
+        },1500);
+    }
+    function getTimeBetweenTwoLocations(){
+        $.post(urlToPass+"android/ajax/getTimeBetweenTwoLocations",{},function(e){
+            e.trim();
+            var locationData = JSON.parse(e);
+            console.log(locationData.travel_time_minutes);
+        });
+    }
+
+</script>
 </body>

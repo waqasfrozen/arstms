@@ -68,32 +68,30 @@
             <div class="content">
                 <div class="header-clear-large"></div>
                 <!--Page content goes here, fixed elements go above the all elements class-->
-                <div class="material-container designed">
-                    <div class="design"><span class="line big"></span><span><i class="fa fa-trophy"></i></span><span class="line big"></span></div>
+                <div class="material-container">
                     <div class="heading-style-5">
                         <h4 class="heading-title">Digital Rewards</h4>
                     </div>
                 </div>
                 <div class="decoration"></div>
                 <div class="material-container container">
-                    <h3 style="text-align: center"><strong>Student Details</strong></h3>
                     <form id="form1">
                         <input type="text" readonly id="studentid" name="studentid" placeholder="Student ID" >
                         <input type="text" readonly id="studentName" name="studentName" placeholder="Student Name" >
                         <input type="text" readonly id="date" name="date" placeholder="Date" >
                         <input type="text" readonly id="tutor" name="tutor" placeholder="Tutor" >
-                        <!--<label><strong>Review</strong></label>-->
-                        <!--<br/>-->
-                        <!--<textarea style="height: 100px;" name="review" placeholder="Create Review For Student"></textarea>-->
+
+                        <label><strong>Review</strong></label>
                         <br/>
-                        <label><strong><h4>Star Rating</h4></strong></label>
+                        <textarea style="height: 100px;" name="review" placeholder="Create Review For Student"></textarea>
+                        <br/>
+                        <label>Star Rating</label>
                         <select name="rating" class="dropdown">
                             <option value="1">1 Stars</option>
                             <option value="2">2 Stars</option>
                             <option value="3">3 Stars</option>
                         </select>
-                        <br/>
-                        <input class="login-button button button-small button-green button-fullscreen full-bottom" type="button" onclick="getForm()" value="Submit Reward">
+                        <input class="login-button button button-small button-green button-fullscreen full-bottom" type="button" onclick="getForm()" value="Submit Review">
                     </form>
                 </div>
 
