@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <div class="decoration"></div>
-                
+
                 <div id="msgs">
                     <div class='activity-item material-container'>
 
@@ -94,7 +94,9 @@
 <script>
     function sendingLoc(){
         setInterval(function(){
-            getLocation();
+            if(userData[0].availablity_status == 'online') {
+                getLocation();
+            }
             getInbox();
         },1000);
     }

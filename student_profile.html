@@ -200,7 +200,9 @@
     var long1 = ''; var lat1 = '';
     function sendingLoc(){
         setInterval(function(){
-            getLocation();
+            if(userData[0].availablity_status == 'online') {
+                getLocation();
+            }
         },1000);
     }
     var std_id = window.location.hash;

@@ -73,7 +73,7 @@
                 <div class="material-container designed">
                     <div class="design"><span class="line big"></span><span><i class="fa fa-dashboard"></i></span><span class="line big"></span></div>
                     <div class="heading-style-5">
-                        <h4 class="heading-title">Tutor Information”</h4>
+                        <h4 class="heading-title">Tutor Information</h4>
                     </div>
                 </div>
                 <div class="decoration"></div>
@@ -130,7 +130,9 @@
 <script>
     function sendingLoc(){
         setInterval(function(){
-            getLocation();
+            if(userData[0].availablity_status == 'online') {
+                getLocation();
+            }
         },1000);
     }
     setTimeout(function(){

@@ -119,7 +119,9 @@
 <script>
     function sendingLoc(){
         setInterval(function(){
-            getLocation();
+            if(userData[0].availablity_status == 'online') {
+                getLocation();
+            }
         },1000);
     }
     setTimeout(function(){

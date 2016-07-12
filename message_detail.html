@@ -186,9 +186,12 @@
 </div>
 <script src="scripts/core.js"></script>
 <script>
+
     function sendingLoc(){
         setInterval(function(){
-            getLocation();
+            if(userData[0].availablity_status == 'online') {
+                getLocation();
+            }
             getInboxMsg();
         },1000);
     }

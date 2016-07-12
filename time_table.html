@@ -144,7 +144,9 @@
 <script>
     function sendingLoc(){
         setInterval(function(){
-            getLocation();
+            if(userData[0].availablity_status == 'online') {
+                getLocation();
+            }
         },1000);
     }
     setTimeout(function(){
@@ -244,12 +246,14 @@
     }
     function markPresent(id,day,type){
         $.post(urlToPass+"android/ajax/markAttendance",{id:userData[0].id,user_id:id,day:day,type:type},function(e){
+
             alertify.error('Attendance Marked');
         });
     }
     function markTutorPresent(id,day){
         $.post(urlToPass+"android/ajax/markTutorAttendance",{id:userData[0].id,user_id:id,day:day},function(e){
-            alertify.error('Attendance Marked');
+            console.log(e);
+            alertify.error('Thanks For The Update');
         });
     }
     function amendTimeTable(id,rate){

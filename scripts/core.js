@@ -40,8 +40,6 @@ setTimeout(function(){
             }
         }
         a += "</ul>";
-//        console.log(a);
-
         $("#tutorSubject").html(a);
         $(".tutorName").html(userData[0].name + " " + userData[0].lname);
         $(".tutorImage").attr("data-original",urlForAssets + userData[0].profile_pic);
@@ -68,7 +66,7 @@ function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
     } else {
-        alert("Geolocation is not supported by this browser.");
+        alert("GPS is offline.");
     }
 }
 function showPosition(position) {
