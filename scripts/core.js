@@ -32,7 +32,17 @@ setTimeout(function(){
         $(".status_availability").html(userData[0].availablity_status);
         $("#joiningDate").html(userData[0].joining);
         $("#tutorGender").html(userData[0].gender);
-        $("#tutorSubject").html(userData[0].subjects);
+        var sub = userData[0].subjects.split(",");
+        var a = "<ul>";
+        if(sub != ""){
+            for(var i = 0 ; i < sub.length ; i++){
+                a += "<li>"+ sub[i] +"</li>";
+            }
+        }
+        a += "</ul>";
+//        console.log(a);
+
+        $("#tutorSubject").html(a);
         $(".tutorName").html(userData[0].name + " " + userData[0].lname);
         $(".tutorImage").attr("data-original",urlForAssets + userData[0].profile_pic);
         $(".tutorImage").attr("src",urlForAssets + userData[0].profile_pic);

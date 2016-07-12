@@ -70,7 +70,7 @@
                     <div class="page-profile-header container-fullscreen">
                         <img class="tutorImage" src="images/pictures/5s.jpg" alt="img">
                         <h3 class="tutorName">Loading...!!!</h3>
-                        <em><i class="fa fa-location-arrow"></i><span id="tutorLocation">Loading...!!!</span></em>
+                        <em><i class="fa fa-location-arrow"></i><span class="tutorLocation1">Loading...!!!</span></em>
                         <em>Status : <span class="status_availability">Available</span></em>
                         <div class="overlay bg-black"></div>
                     </div>
@@ -86,7 +86,7 @@
                                     <td id="qualification">Loading...!!!</td>
                                 </tr>
                                 <tr>
-                                    <th>Subject Area</th>
+                                    <th>Covered Subjects</th>
                                     <td id="tutorSubject">Loading...!!!</td>
                                 </tr>
                                 <tr>
@@ -94,16 +94,20 @@
                                     <td id="tutorGender">Loading...!!!</td>
                                 </tr>
                                 <tr>
-                                    <th>Joining Date</th>
+                                    <th>Join Date/Time</th>
                                     <td id="joiningDate">11/06/2016</td>
                                 </tr>
                                 <tr>
                                     <th>Projected Earnings</th>
-                                    <td><span id="tutor_earning"></span> USD</td>
+                                    <td><span id="tutor_earning"></span>  £</td>
                                 </tr>
                                 <tr>
                                     <th>Upcoming Earnings</th>
-                                    <td><span id="upcomingEarnings"></span> USD</td>
+                                    <td><span id="upcomingEarnings"></span>  £</td>
+                                </tr>
+                                <tr>
+                                    <th>Tutor Address</th>
+                                    <td><span class="tutoraddress"></span></td>
                                 </tr>
                             </table>
                         </div>
@@ -147,7 +151,8 @@
             setInterval(function(){
                 $.get("http://maps.googleapis.com/maps/api/geocode/json",{latlng:location,sensor:'true'},function(e){
 //                    console.log(e.results[0].formatted_address);
-                    $("#tutorLocation").html(e.results[0].formatted_address);
+                    $(".tutoraddress").html(userData[0].address + " " + userData[0].address2 + " " + userData[0].address3);
+                    $(".tutorLocation1").html(e.results[0].formatted_address);
                 })
             },2000);
         },2000);
