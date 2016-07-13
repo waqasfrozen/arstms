@@ -161,7 +161,6 @@
     }
     function getEarnings(){
         $.post(urlToPass + "android/ajax/getEarnings",{id:userData[0].id},function(e){
-//           console.log(e);
             $("#tutor_earning").html(e);
         })
     }
@@ -170,6 +169,7 @@
 <script>
     setTimeout(function(){
         $.post(urlToPass + "android/ajax/getEarningChart",{id:userData[0]['id']},function(e){
+            console.log(e);
             e = e.trim()
             jsonEarning = JSON.parse(e);
             var ctx = document.getElementById("myChart");
