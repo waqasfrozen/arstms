@@ -119,6 +119,7 @@
 
     function getForm(){
         var data = JSON.stringify($("#form1").serializeArray());
+//        console.log(data);
         $.post(urlToPass+"android/ajax/createDigitalReward",{id:userData[0].id,data:data},function(e){
             console.log(e);
             $("#form1")[0].reset();
