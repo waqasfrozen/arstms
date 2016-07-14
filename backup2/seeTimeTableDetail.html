@@ -13,6 +13,38 @@
     <script type="text/javascript" src="scripts/jqueryui.js"></script>
     <script type="text/javascript" src="scripts/framework-plugins.js"></script>
     <script type="text/javascript" src="scripts/custom.js"></script>
+    <style>
+        h3.accordiona {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        h3.accordiona.active, h3.accordiona:hover {
+            background-color: #ddd;
+        }
+
+        div.panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.6s ease-in-out;
+            opacity: 0;
+        }
+
+        div.panel.show {
+            opacity: 1;
+            max-height: 500px;
+        }
+    </style>
 </head>
 <body class="dual-sidebar">
 <div id="preloader">
@@ -69,46 +101,33 @@
                 <div class="header-clear-large"></div>
                 <!--Page content goes here, fixed elements go above the all elements class-->
                 <div class="material-container designed">
-                    <div class="design"><span class="line big"></span><span><i class="fa fa-wrench"></i></span><span class="line big"></span></div>
+                    <div class="design"><span class="line big"></span><span><i class="fa fa-calendar"></i></span><span class="line big"></span></div>
                     <div class="heading-style-5">
-                        <h4 class="heading-title">Settings</h4>
+                        <h4 class="heading-title">Time Table Detail</h4>
                     </div>
                 </div>
-                <div class="container no-bottom settings">
-                    <table cellspacing="0" class="table">
-                        <tbody>
-                        <tr>
-                            <th>Tutor Name</th>
-                            <td class="tutorName">John Doe</td>
-                        </tr>
-                        <tr>
-                            <th>Password</th>
-                            <td>******* &nbsp;&nbsp;<a href="change_password.html">(Edit)</a></td>
-                        </tr>
-                        <tr>
-                            <th>Tutor Ref No</th>
-                            <td>Undefined ! </td>
-                        </tr>
-                        <tr>
-                            <th>No of Hours Worked for the Month</th>
-                            <td>Undefined Hours</td>
-                        </tr>
-                        <tr>
-                            <th>Projected Earnings for the Month</th>
-                            <td>Undefined Hours</td>
-                        </tr>
-                        <tr>
-                            <th>Location</th>
-                            <td>Undefined !</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <div class="decoration"></div>
+                <!-- Tabs -->
+
+                <div class="container">
+                    <ul class="tabs">
+                        <li class="tab-link active-tab" data-tab="weekly">Today's Tuition Detail</li>
+                    </ul>
+                    <div id="weekly" class="tab-content active-tab-content">
+                        <div class="material-container container monthlyTimeTable " >
+                            <p style="text-align:center">Loading...!!!</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- End of entire page content-->
             </div>
         </div>
     </div>
     <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
+
+
+    <div class="simple-modal-content modal-content">
+
+    </div>
 </div>
 <script src="scripts/core.js"></script>
 <script>
@@ -119,5 +138,16 @@
             }
         },1000);
     }
+    setTimeout(function(){
+        var date = getUrlParameter("date");
+        var tutor = getUrlParameter("tutor_id")
+        var student = getUrlParameter("student_id")
+        $.post(urlToPass + "android/ajax/getTimeTableDetail",{id:userData[0].id,date:date},function(e){
+            console.log(e);
+            $(".monthlyTimeTable").html(e);
+        })
+    },1000);
+
+
 </script>
 </body>

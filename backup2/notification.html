@@ -13,6 +13,38 @@
     <script type="text/javascript" src="scripts/jqueryui.js"></script>
     <script type="text/javascript" src="scripts/framework-plugins.js"></script>
     <script type="text/javascript" src="scripts/custom.js"></script>
+    <style>
+        h3.accordiona {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        h3.accordiona.active, h3.accordiona:hover {
+            background-color: #ddd;
+        }
+
+        div.panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.6s ease-in-out;
+            opacity: 0;
+        }
+
+        div.panel.show {
+            opacity: 1;
+            max-height: 500px;
+        }
+    </style>
 </head>
 <body class="dual-sidebar">
 <div id="preloader">
@@ -62,49 +94,21 @@
 <div class="all-elements">
     <div class="snap-drawers">
         <div class="snap-drawer snap-drawer-left appNavigationBar">
-
         </div>
         <div id="content" class="snap-content">
             <div class="content">
                 <div class="header-clear-large"></div>
                 <!--Page content goes here, fixed elements go above the all elements class-->
                 <div class="material-container designed">
-                    <div class="design"><span class="line big"></span><span><i class="fa fa-wrench"></i></span><span class="line big"></span></div>
+                    <div class="design"><span class="line big"></span><span><i class="fa fa-bell"></i></span><span class="line big"></span></div>
                     <div class="heading-style-5">
-                        <h4 class="heading-title">Settings</h4>
+                        <h4 class="heading-title">Notifications</h4>
                     </div>
                 </div>
-                <div class="container no-bottom settings">
-                    <table cellspacing="0" class="table">
-                        <tbody>
-                        <tr>
-                            <th>Tutor Name</th>
-                            <td class="tutorName">John Doe</td>
-                        </tr>
-                        <tr>
-                            <th>Password</th>
-                            <td>******* &nbsp;&nbsp;<a href="change_password.html">(Edit)</a></td>
-                        </tr>
-                        <tr>
-                            <th>Tutor Ref No</th>
-                            <td>Undefined ! </td>
-                        </tr>
-                        <tr>
-                            <th>No of Hours Worked for the Month</th>
-                            <td>Undefined Hours</td>
-                        </tr>
-                        <tr>
-                            <th>Projected Earnings for the Month</th>
-                            <td>Undefined Hours</td>
-                        </tr>
-                        <tr>
-                            <th>Location</th>
-                            <td>Undefined !</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- End of entire page content-->
+                <div class="decoration"></div>
+                    <div class="activity-item material-container" id="accordion">
+
+                    </div>
             </div>
         </div>
     </div>
@@ -119,5 +123,21 @@
             }
         },1000);
     }
+    setTimeout(function(){
+        $.post(urlToPass + "android/ajax/getNotifications",{id:userData[0].id},function(e){
+            $("#accordion").html(e);
+            $('#accordion').accordion({
+                active: true,
+                collapsible: true
+            });
+            $('#accordion').accordion();
+        });
+    },1500);
+    function declineJob(id,status){
+        $.post(urlToPass + "android/ajax/declineJob",{id:id,status:status},function(e){
+            alertify.warning("Job "+status+"ed! ");
+        });
+    }
 </script>
+
 </body>

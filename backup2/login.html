@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+    <title>Tutor Management System - Front</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/framework.css" rel="stylesheet" type="text/css">
+    <link href="styles/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="styles/animate.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jqueryui.js"></script>
+    <script type="text/javascript" src="scripts/framework-plugins.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+</head>
+<body class="dual-sidebar">
+<div id="preloader">
+    <div id="status">
+        <h3 class="center-text">Welcome</h3>
+        <img src="images/logo.png" />
+        <p class="center-text smaller-text">
+            We're loading the content, give us a second. This won't take long!
+        </p>
+    </div>
+</div>
+<div class="menu-background"></div>
+<div class="all-elements">
+    <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
+    <div class="snap-drawers">
+        <div id="content" class="snap-content">
+            <div class="pageapp-login bg-5 cover-screen">
+                <div class="pageapp-login-content cover-center">
+                    <div class="unboxed-layout">
+                        <form id="loginForm" action="">
+                            <a class="pageapp-login-logo" href="#"></a>
+                            <div class="pageapp-login-field">
+                                <i class="fa fa-user"></i>
+                                <input type="text" id="username" placeholder="Username">
+                            </div>
+                            <div class="pageapp-login-field">
+                                <i class="fa fa-lock"></i>
+                                <input type="password" id="pwd" placeholder="Password">
+                            </div>
+                            <p style="background: transparent;color: white;text-align: center;" id="error"></p>
+                            <button onclick="" type="button" class="simple-login-modal pageapp-login-button button button-small button-green button-fullscreen">
+                                Forgot Password
+                            </button>
+                            <button onclick="doLogin()" type="button" class="pageapp-login-button button button-small button-green button-fullscreen">
+                                Login
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="overlay bg-black"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="simple-login-modal-content modal-content rounded-modal">
+    <div class="login-modal-wrapper">
+        <h4>Forgot Your Password</h4>
+        <input type="email" class="login-modal-user" id="forgetEmail" placeholder="Enter your Email">
+        <a class="button-green login-button" onclick="forgetPassword()">Submit</a>
+        <a href="#" class="button-red login-close modal-close">Close</a>
+        <div class="clear"></div>
+    </div>
+</div>
+<script>
+    var urlToPass = "http://devlabx.com/tms_upd_forAndroid/index.php/";
+    setTimeout(function(){
+        $("#loginForm")[0].reset();
+    },1000);
+    function doLogin(){
+        $("#error").html("");
+        var username = $("#username").val(); pwd = $("#pwd").val();
+        if(username == "" || pwd == ""){
+            $("#error").html("Please insert both fields correctly");
+        }else{
+            $.post(urlToPass + "android/ajaxLogin",{username:username,pwd:pwd},function(e){
+                console.log(e);
+                e = e.trim();
+                if(e == 'false'){
+                    $("#error").html("Invalid Credentials");
+                }
+                if(e != 'false'){
+                    window.localStorage.setItem("tms_user",e);
+                    window.location.href = "index.html";
+                }
+            })
+        }
+    }
+    function forgetPassword(){
+        var email = $("#forgetEmail").val();
+        $.post(urlToPass+"android/ajax/forgetPassword",{email:email,id:userData[0].id}, function (e) {
+            console.log(e);
+        })
+    }
+</script>
+</body>

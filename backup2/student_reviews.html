@@ -69,40 +69,16 @@
                 <div class="header-clear-large"></div>
                 <!--Page content goes here, fixed elements go above the all elements class-->
                 <div class="material-container designed">
-                    <div class="design"><span class="line big"></span><span><i class="fa fa-wrench"></i></span><span class="line big"></span></div>
+                    <div class="design"><span class="line big"></span><span><i class="fa fa-trophy"></i></span><span class="line big"></span></div>
                     <div class="heading-style-5">
-                        <h4 class="heading-title">Settings</h4>
+                        <h4 class="heading-title">Student Rewards</h4>
                     </div>
                 </div>
-                <div class="container no-bottom settings">
-                    <table cellspacing="0" class="table">
-                        <tbody>
-                        <tr>
-                            <th>Tutor Name</th>
-                            <td class="tutorName">John Doe</td>
-                        </tr>
-                        <tr>
-                            <th>Password</th>
-                            <td>******* &nbsp;&nbsp;<a href="change_password.html">(Edit)</a></td>
-                        </tr>
-                        <tr>
-                            <th>Tutor Ref No</th>
-                            <td>Undefined ! </td>
-                        </tr>
-                        <tr>
-                            <th>No of Hours Worked for the Month</th>
-                            <td>Undefined Hours</td>
-                        </tr>
-                        <tr>
-                            <th>Projected Earnings for the Month</th>
-                            <td>Undefined Hours</td>
-                        </tr>
-                        <tr>
-                            <th>Location</th>
-                            <td>Undefined !</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <div class="decoration"></div>
+                <div class="material-container container">
+                    <div class="blog-post-comments full-bottom">
+
+                    </div>
                 </div>
                 <!-- End of entire page content-->
             </div>
@@ -119,5 +95,10 @@
             }
         },1000);
     }
+    setTimeout(function(){
+        $.post(urlToPass + "android/ajax/getStudentReviews",{id:userData[0].id},function(e){
+            $(".blog-post-comments").html(e);
+        })
+    },1000);
 </script>
 </body>

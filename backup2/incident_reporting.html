@@ -67,43 +67,33 @@
         <div id="content" class="snap-content">
             <div class="content">
                 <div class="header-clear-large"></div>
-                <!--Page content goes here, fixed elements go above the all elements class-->
                 <div class="material-container designed">
-                    <div class="design"><span class="line big"></span><span><i class="fa fa-wrench"></i></span><span class="line big"></span></div>
+                    <div class="design"><span class="line big"></span><span><i class="fa fa-warning"></i></span><span class="line big"></span></div>
                     <div class="heading-style-5">
-                        <h4 class="heading-title">Settings</h4>
+                        <h4 class="heading-title">Incident Report</h4>
                     </div>
                 </div>
-                <div class="container no-bottom settings">
-                    <table cellspacing="0" class="table">
-                        <tbody>
-                        <tr>
-                            <th>Tutor Name</th>
-                            <td class="tutorName">John Doe</td>
-                        </tr>
-                        <tr>
-                            <th>Password</th>
-                            <td>******* &nbsp;&nbsp;<a href="change_password.html">(Edit)</a></td>
-                        </tr>
-                        <tr>
-                            <th>Tutor Ref No</th>
-                            <td>Undefined ! </td>
-                        </tr>
-                        <tr>
-                            <th>No of Hours Worked for the Month</th>
-                            <td>Undefined Hours</td>
-                        </tr>
-                        <tr>
-                            <th>Projected Earnings for the Month</th>
-                            <td>Undefined Hours</td>
-                        </tr>
-                        <tr>
-                            <th>Location</th>
-                            <td>Undefined !</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <div class="decoration"></div>
+                <form id="form1">
+                    <input name="name" type="text" placeholder="Student Name">
+                    <input name="date" type="date" placeholder="Date of Incident">
+                    <input name="time" type="time" placeholder="Time of Incident">
+                    <input name="location" type="text" placeholder="Location of Incident">
+                    <p>
+                        Severity of Incident
+                    </p>
+                    <input type="radio" class="radiobox" name="severity" value="High">
+                    <label class="radio-label">High</label>
+                    <input type="radio" class="radiobox" name="severity" value="Medium">
+                    <label class="radio-label">Medium</label>
+                    <input type="radio" checked class="radiobox" name="severity" value="Low">
+                    <label class="radio-label">Low</label>
+                    <br/>
+                    <textarea name="summary" placeholder="Summary of Incident"></textarea>
+                    <p>Attach A Photo</p><input type="file">
+                    <input class="login-button button button-small button-green button-fullscreen full-bottom" type="button" onclick="getForm()" value="Submit Report">
+                </form>
+                <!--Page content goes here, fixed elements go above the all elements class-->
                 <!-- End of entire page content-->
             </div>
         </div>
@@ -118,6 +108,14 @@
                 getLocation();
             }
         },1000);
+    }
+    function getForm(){
+        var data = JSON.stringify($("#form1").serializeArray());
+        $.post(urlToPass+"android/ajax/incidentReport",{id:userData[0].id,data:data},function(e){
+            console.log(e);
+
+        });
+        $("#form1")[0].reset();
     }
 </script>
 </body>

@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Tutor Management System - Front</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/framework.css" rel="stylesheet" type="text/css">
+    <link href="styles/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="styles/animate.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jqueryui.js"></script>
+    <script type="text/javascript" src="scripts/framework-plugins.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+</head>
+<body class="dual-sidebar">
+<div id="preloader">
+    <div id="status">
+        <h3 class="center-text">Welcome</h3>
+        <img src="images/logo.png" />
+        <p class="center-text smaller-text">
+            We're loading the content, give us a second. This won't take long!
+        </p>
+    </div>
+</div>
+<div class="gallery-fix"></div> <!-- Important for all pages that have galleries or portfolios -->
+<div id="header-fixed">
+    <a class="open-left-sidebar" href="#"><i class="fa fa-navicon"></i></a>
+    <a class="style-logo" href="#">
+        <p>
+            <span style="color : #c0392b;">TUTOR</span>
+            <span style="color : #2980b9;">MANAGEMENT</span>
+            <span style="color : #2abb67;">SYSYTEM</span>
+        </p>
+    </a>
+    <a class="lock" href="#" onclick="logout();"><i class="fa fa-lock"></i></a>
+</div>
+<!-- Ball Footer Menu -->
+<div class="footer-menu">
+    <a href="#" class="footer-menu-open">
+        <i class="fa fa-ellipsis-v"></i>
+    </a>
+    <a href="#" class="footer-menu-close">
+        <em class="footer-menu-open-text">Navigation</em>
+        <i class="bg-red-dark fa fa-times"></i>
+    </a>
+    <a href="message_board.html" class="footer-menu-item fm-1">
+        <em>Messages</em>
+        <i class="bg-night-dark fa fa-envelope"></i>
+    </a>
+    <a href="notification.html" class="footer-menu-item fm-2">
+        <em>Notifications</em>
+        <i class="bg-green-dark fa fa-bell"></i>
+    </a>
+    <a href="tutor_profile.html" class="footer-menu-item fm-3">
+        <em>Profile</em>
+        <i class="bg-blue-dark fa fa-user"></i>
+    </a>
+</div>
+<div class="menu-background"></div>
+<div class="all-elements">
+    <div class="snap-drawers">
+        <div class="snap-drawer snap-drawer-left appNavigationBar">
+
+        </div>
+        <div id="content" class="snap-content">
+            <div class="content">
+                <div class="header-clear-large"></div>
+                <div class="page-profile">
+                    <div class="page-profile-header container-fullscreen">
+                        <h3 class="student_name">Student Name</h3>
+                        <em><i class="fa fa-location-arrow"></i><span class="address"></span></em>
+                        <div class="overlay bg-black"></div>
+                    </div>
+                    <div class="decoration"></div>
+                        <div class="material-container container no-bottom">
+                            <div class="material-container container student-detail">
+                                <div class="one-half-responsive">
+                                    <h4>Student Details</h4>
+                                    <table class="table">
+                                        <tr>
+                                            <th>Job Referance</th>
+                                            <td class="job_ref"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Client Name</th>
+                                            <td class="client_name"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Career Name</th>
+                                            <td class="career_name"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Career Phone no.</th>
+                                            <td class="career_phone"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Alternate Phone no.</th>
+                                            <td class="alternate_phone"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Career Email ID</th>
+                                            <td class="career_email"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Student Name</th>
+                                            <td class="student_name"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Education Level</th>
+                                            <td class="education_level"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Subject Required</th>
+                                            <td class="subject_required"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Current School</th>
+                                            <td class="current_school"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Hours per Week</th>
+                                            <td class="hours_per_week"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Maximum Hours</th>
+                                            <td class="max_hours"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Ideal Tuition Time</th>
+                                            <td class="ideal_time"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Address</th>
+                                            <td class="address"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Create Rewards</th>
+                                            <td><a class="highlighted bg-green-dark color-white" style="background: dodgerblue!important;" id="createReview" href="#">Click Here</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>View Reward</th>
+                                            <td><a class="highlighted bg-green-dark color-white" style="background: dodgerblue!important;" href="student_reviews.html">Click Here</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Create Monthly Reports</th>
+                                            <td><a class="highlighted bg-green-dark color-white" style="background: dodgerblue!important;" id="createMonthlyReport" href="#">Click Here</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>View Monthly Reports</th>
+                                            <td><a class="highlighted bg-green-dark color-white" style="background: dodgerblue!important;" href="reports.html">Click Here</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Create Scheme of learning</th>
+                                            <td><a class="highlighted bg-green-dark color-white" style="background: dodgerblue!important;" id="urlForWeeklyReport" href="#">Click Here</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Create Individual education plan</th>
+                                            <td><a class="highlighted bg-green-dark color-white" style="background: dodgerblue!important;" id="urlForDailyReport" href="#">Click Here</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>View This months Current Reports</th>
+                                            <td><a class="highlighted bg-green-dark color-white" style="background: dodgerblue!important;" href="#">Click Here</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>View Current Months Attendence</th>
+                                            <td><a class="highlighted bg-green-dark color-white" style="background: dodgerblue!important;" href="#">Click Here</a></td>
+                                        </tr>
+                                    </table>
+                                    <!--<ul class="half-bottom-if-responsive">-->
+                                        <!--<li><a href="student_reviews.html"><strong>View Rewards</strong></a></li>-->
+                                        <!--<li><a id="createReview" href="#"><strong>Create Review</strong></a></li>-->
+                                        <!--<li><a href="reports.html"><strong>View Monthly Reports</strong></a></li>-->
+                                        <!--<li><a id="createMonthlyReport" href="#"><strong>Create Monthly Reports</strong></a></li>-->
+                                        <!--<li><a id="urlForWeeklyReport" href="#"><strong>Create Scheme of learning</strong></a></li>-->
+                                        <!--<li><a id="urlForDailyReport" href="#"><strong>Create Individual education plan</strong></a></li>-->
+                                        <!--<li><a href="#"><strong>View This months Current Reports</strong></a></li>-->
+                                        <!--<li><a href="#"><strong>View Current Months Attendence</strong></a></li>-->
+                                    <!--</ul>-->
+                                    <a href="#" class="highlighted bg-red-dark color-white">Suspend Student</a>
+                                    <a href="#" class="highlighted bg-green-dark color-white">Release Student</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="decoration"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
+</div>
+<script src="scripts/core.js"></script>
+<script>
+    var createReview = "create_review.html?";
+    var urlForDailyReport = "fill_individual_education_plan.html?";
+    var urlForWeeklyReport = "fill_scheme_of_learning.html?";
+    var urlForMonthlyReport = "fill_monthly_report.html?";
+    var long1 = ''; var lat1 = '';
+    function sendingLoc(){
+        setInterval(function(){
+            if(userData[0].availablity_status == 'online') {
+                getLocation();
+            }
+        },1000);
+    }
+    var std_id = window.location.hash;
+    std_id = std_id.replace("#"," "); std_id = std_id.trim();
+    if(std_id == ""){
+        window.location.href  = "student_list.html";
+    }else{
+        setTimeout(function(){
+            $.post(urlToPass+"android/ajax/getStudentInfo",{id:std_id},function(e){
+                e = e.trim();
+                if(e == ""){
+
+                }else{
+                    var jsonData = JSON.parse(e);
+                    urlForMonthlyReport += "std_id="+jsonData[0].id+"&name="+jsonData[0].student+"&subject="+jsonData[0].subjects+"&tutor="+userData[0].name + " " + userData[0].lname;
+                    createReview += "std_id="+jsonData[0].id+"&name="+jsonData[0].student+"&subject="+jsonData[0].subjects+"&tutor="+userData[0].name + " " + userData[0].lname;
+                    urlForWeeklyReport += "yearGroup="+ jsonData[0].yeargroup +"&start_date="+ jsonData[0].starting +"&std_id="+jsonData[0].id+"&name="+jsonData[0].student+"&subject="+jsonData[0].subjects+"&tutor="+userData[0].name + " " + userData[0].lname;
+                    urlForDailyReport += "yearGroup="+ jsonData[0].yeargroup +"&start_date="+ jsonData[0].starting +"&std_id="+jsonData[0].id+"&name="+jsonData[0].student+"&subject="+jsonData[0].subjects+"&tutor="+userData[0].name + " " + userData[0].lname;
+                    $(".client_name").html(jsonData[0].client);
+                    $(".address").html(jsonData[0].location);
+                    $(".max_hours").html(jsonData[0].max_hour);
+                    $(".hours_per_week").html(jsonData[0].hours);
+                    $(".ideal_time").html(jsonData[0].ideal_time);
+                    $(".subject_required").html(jsonData[0].subjects);
+                    $(".student_name").html(jsonData[0].student);
+                    $("#createMonthlyReport").attr("href",urlForMonthlyReport);
+                    $("#urlForWeeklyReport").attr("href",urlForWeeklyReport);
+                    $("#urlForDailyReport").attr("href",urlForDailyReport);
+                    $("#createReview").attr("href",createReview);
+                    long1 = jsonData[0].longitude;
+                    lat1 = jsonData[0].latitude;
+                    getTimeBetweenTwoLocations();
+                }
+            })
+        },1500);
+    }
+    function getTimeBetweenTwoLocations(){
+        $.post(urlToPass+"android/ajax/getTimeBetweenTwoLocations",{},function(e){
+            e.trim();
+            var locationData = JSON.parse(e);
+            console.log(locationData.travel_time_minutes);
+        });
+    }
+
+</script>
+</body>

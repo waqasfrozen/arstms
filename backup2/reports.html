@@ -13,6 +13,39 @@
     <script type="text/javascript" src="scripts/jqueryui.js"></script>
     <script type="text/javascript" src="scripts/framework-plugins.js"></script>
     <script type="text/javascript" src="scripts/custom.js"></script>
+    <style>
+        h3.accordiona {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        h3.accordiona.active, h3.accordiona:hover {
+            background-color: #ddd;
+        }
+
+        div.panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.6s ease-in-out;
+            opacity: 0;
+        }
+
+        div.panel.show {
+            opacity: 1;
+            max-height: 500px;
+        }
+    </style>
+
 </head>
 <body class="dual-sidebar">
 <div id="preloader">
@@ -24,7 +57,7 @@
         </p>
     </div>
 </div>
-<div class="gallery-fix"></div> <!-- Important for all pages that have galleries or portfolios -->
+<div class="gallery-fix"></div>
 <div id="header-fixed">
     <a class="open-left-sidebar" href="#"><i class="fa fa-navicon"></i></a>
     <a class="style-logo" href="#">
@@ -36,7 +69,6 @@
     </a>
     <a class="lock" href="#" onclick="logout();"><i class="fa fa-lock"></i></a>
 </div>
-<!-- Ball Footer Menu -->
 <div class="footer-menu">
     <a href="#" class="footer-menu-open">
         <i class="fa fa-ellipsis-v"></i>
@@ -67,42 +99,46 @@
         <div id="content" class="snap-content">
             <div class="content">
                 <div class="header-clear-large"></div>
-                <!--Page content goes here, fixed elements go above the all elements class-->
                 <div class="material-container designed">
-                    <div class="design"><span class="line big"></span><span><i class="fa fa-pencil"></i></span><span class="line big"></span></div>
+                    <div class="design"><span class="line big"></span><span><i class="fa fa-book"></i></span><span class="line big"></span></div>
                     <div class="heading-style-5">
-                        <h4 class="heading-title">Reviews</h4>
-                        <p style="line-height: 1.5;">Polite Notice: Please be reminded that you are not allowed at any time to discuss your reviews with your students or their carers. Thank you</p>
+                        <h4 class="heading-title">Reports</h4>
                     </div>
                 </div>
-                <div class="decoration"></div>
-                <div class="material-container container">
-                    <div class="quote-1 container">
-                        <img class="quote-image" src="images/pictures/3s.jpg" alt="img">
-                        <strong class="quote-author">Alexander Stranger</strong>
-                        <div class="quote-rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                <div class="container">
+                    <ul class="tabs">
+                        <li class="tab-link active-tab" data-tab="current">Current</li>
+                        <!--<li class="tab-link" data-tab="past">Past</li>-->
+                    </ul>
+                    <div id="current" class="tab-content active-tab-content ">
+                        <div id="accordion" class="currentClients">
+                            <img src="images/loader.gif" alt=""/>
                         </div>
-                        <em class="quote-author">4.4 out of 5</em>
                     </div>
-                    <div class="decoration"></div>
-                    <div class="blog-post-comments full-bottom">
-                        <div class="blog-post-comment">
-                            <em>July 25, 2014</em>
-                            <strong>Alexander Doe</strong>
-                            <p>
-                                Phemmie is a very committed and reliable tutor. He teaches with so much passion and great drive to engage his
-                                student throughout the session
-                            </p>
+                    <div id="past" class="tab-content">
+                        <div class="material-container container">
+                            <div class="toggle">
+                                <a href="#" class="toggle-title">Client 2<i class="fa fa-plus"></i></a>
+                                <div class="toggle-content">
+                                    <div class="material-container container">
+                                        <div class="one-half-responsive">
+                                            <ul class="half-bottom-if-responsive">
+                                                <li>Student One</li>
+                                                <ul>
+                                                    <li><a href="monthly_report.html">Reports</a></li>
+                                                </ul>
+                                                <li>Student Two</li>
+                                                <ul>
+                                                    <li><a href="scheme_of_learning.html">Reports</a></li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="decoration"></div>
                     </div>
                 </div>
-                <!-- End of entire page content-->
             </div>
         </div>
     </div>
@@ -117,5 +153,20 @@
             }
         },1000);
     }
+    getReports();
+    function getReports(){
+        setTimeout(function(){
+            $.post(urlToPass + "android/ajax/getClientsForReports",{id:userData[0].id},function(e){
+                $(".currentClients").html(e);
+                $('#accordion').accordion({
+                    active: true,
+                    collapsible: true
+                });
+                $('#accordion').accordion();
+            });
+        },1500);
+    }
+
 </script>
+
 </body>

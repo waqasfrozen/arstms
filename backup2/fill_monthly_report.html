@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Tutor Management System - Front</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/framework.css" rel="stylesheet" type="text/css">
+    <link href="styles/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="styles/animate.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jqueryui.js"></script>
+    <script type="text/javascript" src="scripts/framework-plugins.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+</head>
+<body class="dual-sidebar">
+<div id="preloader">
+    <div id="status">
+        <h3 class="center-text">Welcome</h3>
+        <img src="images/logo.png" />
+        <p class="center-text smaller-text">
+            We're loading the content, give us a second. This won't take long!
+        </p>
+    </div>
+</div>
+<div class="gallery-fix"></div>
+<div id="header-fixed">
+    <a class="open-left-sidebar" href="#"><i class="fa fa-navicon"></i></a>
+    <a class="style-logo" href="#">
+        <p>
+            <span style="color : #c0392b;">TUTOR</span>
+            <span style="color : #2980b9;">MANAGEMENT</span>
+            <span style="color : #2abb67;">SYSYTEM</span>
+        </p>
+    </a>
+    <a class="lock" href="#" onclick="logout();"><i class="fa fa-lock"></i></a>
+</div>
+<!-- Ball Footer Menu -->
+<div class="footer-menu">
+    <a href="#" class="footer-menu-open">
+        <i class="fa fa-ellipsis-v"></i>
+    </a>
+    <a href="#" class="footer-menu-close">
+        <em class="footer-menu-open-text">Navigation</em>
+        <i class="bg-red-dark fa fa-times"></i>
+    </a>
+    <a href="message_board.html" class="footer-menu-item fm-1">
+        <em>Messages</em>
+        <i class="bg-night-dark fa fa-envelope"></i>
+    </a>
+    <a href="notification.html" class="footer-menu-item fm-2">
+        <em>Notifications</em>
+        <i class="bg-green-dark fa fa-bell"></i>
+    </a>
+    <a href="tutor_profile.html" class="footer-menu-item fm-3">
+        <em>Profile</em>
+        <i class="bg-blue-dark fa fa-user"></i>
+    </a>
+</div>
+<div class="menu-background"></div>
+<div class="all-elements">
+    <div class="snap-drawers">
+        <div class="snap-drawer snap-drawer-left appNavigationBar">
+
+        </div>
+        <div id="content" class="snap-content">
+            <div class="content">
+                <div class="header-clear-large"></div>
+                <!--Page content goes here, fixed elements go above the all elements class-->
+                <div class="material-container">
+                    <div class="heading-style-5">
+                        <h4 class="heading-title">End of half term report</h4>
+                    </div>
+                </div>
+                <div class="decoration"></div>
+                <div class="material-container container">
+                    <form id="form1">
+                        <input type="text" readonly id="studentid" name="studentid" placeholder="Student ID" >
+                        <input type="text" readonly id="studentName" name="studentName" placeholder="Student Name" >
+                        <input type="text" readonly id="subject" name="subject" placeholder="Subject" >
+                        <input type="text" readonly id="date" name="date" placeholder="Date" >
+                        <input type="text" readonly id="tutor" name="tutor" placeholder="Tutor" >
+                        <input type="text" readonly id="year" name="year" placeholder="Year" >
+                        <input type="text" readonly id="school" name="school" placeholder="LA/School" >
+                        <label><strong>This term’s subject targets</strong></label>
+                        <br/>
+                        <input class="checkbox" name="subjectTarget[]" value="specific" id="specific" type="checkbox">
+                        <label for="specific" class="checkbox-label">Specific</label>
+                        <input class="checkbox" name="subjectTarget[]" value="achievable" id="achievable"  type="checkbox">
+                        <label for="achievable" class="checkbox-label">Achievable</label>
+                        <input class="checkbox" type="checkbox" name="subjectTarget[]" value="realistic" id="realistic">
+                        <label class="checkbox-label" for="realistic">Realistic</label>
+                        <input class="checkbox" type="checkbox" name="subjectTarget[]" value="time_Bound" id="time_bound" >
+                        <label class="checkbox-label" for="time_Bound">Time-bound</label>
+                        <br/>
+                        <label><strong>Summary of work covered this term</strong></label>
+                        <br/>
+                        <textarea style="height: 100px;" name="summary" placeholder="Please provide a summary of what has been covered this term in relation to the Scheme of Learning."></textarea>
+                        <br/>
+                        <h3><strong>Progress</strong></h3>
+                        <label><strong>Standard Of Progress</strong></label>
+                        <input checked class="radiobox" type="radio" name="standard" value="e">
+                        <label class="radio-label">E = Excellent</label>
+                        <input class="radiobox" type="radio" name="standard" value="g">
+                        <label class="radio-label">G = Good</label>
+                        <input class="radiobox" type="radio" name="standard" value="s">
+                        <label class="radio-label">S = Satisfactory</label>
+                        <input class="radiobox" type="radio" name="standard" value="i">
+                        <label class="radio-label">I = Improvement Needed</label>
+                        <input class="radiobox" type="radio" name="standard" value="c">
+                        <label class="radio-label">C = Cause of Concern</label>
+                        <Br/>
+                        <label><strong>Standard of homework</strong></label>
+                        <input checked class="radiobox" type="radio" name="homework" value="e">
+                        <label class="radio-label">E = Excellent</label>
+                        <input class="radiobox" type="radio" name="homework" value="g">
+                        <label class="radio-label">G = Good</label>
+                        <input class="radiobox" type="radio" name="homework" value="s">
+                        <label class="radio-label">S = Satisfactory</label>
+                        <input class="radiobox" type="radio" name="homework" value="i">
+                        <label class="radio-label">I = Improvement Needed</label>
+                        <input class="radiobox" type="radio" name="homework" value="c">
+                        <label class="radio-label">C = Cause of Concern</label>
+                        <br/>
+                        <label><strong>Effort</strong></label>
+                        <input checked class="radiobox" type="radio" name="effort" value="e">
+                        <label class="radio-label">E = Excellent</label>
+                        <input class="radiobox" type="radio" name="effort" value="g">
+                        <label class="radio-label">G = Good</label>
+                        <input class="radiobox" type="radio" name="effort" value="s">
+                        <label class="radio-label">S = Satisfactory</label>
+                        <input class="radiobox" type="radio" name="effort" value="i">
+                        <label class="radio-label">I = Improvement Needed</label>
+                        <input class="radiobox" type="radio" name="effort" value="c">
+                        <label class="radio-label">C = Cause of Concern</label>
+                        <br/>
+                        <label><strong>Progress</strong></label>
+                        <input checked class="radiobox" type="radio" name="progress" value="e">
+                        <label class="radio-label">E = Excellent</label>
+                        <input class="radiobox" type="radio" name="progress" value="g">
+                        <label class="radio-label">G = Good</label>
+                        <input class="radiobox" type="radio" name="progress" value="s">
+                        <label class="radio-label">S = Satisfactory</label>
+                        <input class="radiobox" type="radio" name="progress" value="i">
+                        <label class="radio-label">I = Improvement Needed</label>
+                        <input class="radiobox" type="radio" name="progress" value="c">
+                        <label class="radio-label">C = Cause of Concern</label>
+                        <br/>
+                        <label><strong>Behaviour in lessons</strong></label>
+                        <input checked class="radiobox" type="radio" name="behaviour" value="e">
+                        <label class="radio-label">E = Excellent</label>
+                        <input class="radiobox" type="radio" name="behaviour" value="g">
+                        <label class="radio-label">G = Good</label>
+                        <input class="radiobox" type="radio" name="behaviour" value="s">
+                        <label class="radio-label">S = Satisfactory</label>
+                        <input class="radiobox" type="radio" name="behaviour" value="i">
+                        <label class="radio-label">I = Improvement Needed</label>
+                        <input class="radiobox" type="radio" name="behaviour" value="c">
+                        <label class="radio-label">C = Cause of Concern</label>
+                        <br/>
+                        <label><strong>Attendance</strong></label>
+                        <input checked class="radiobox" type="radio" name="attendance" value="e">
+                        <label class="radio-label">E = Excellent</label>
+                        <input class="radiobox" type="radio" name="attendance" value="g">
+                        <label class="radio-label">G = Good</label>
+                        <input class="radiobox" type="radio" name="attendance" value="s">
+                        <label class="radio-label">S = Satisfactory</label>
+                        <input class="radiobox" type="radio" name="attendance" value="i">
+                        <label class="radio-label">I = Improvement Needed</label>
+                        <input class="radiobox" type="radio" name="attendance" value="c">
+                        <label class="radio-label">C = Cause of Concern</label>
+                        <br/>
+                        <label><strong>Punctuality</strong></label>
+                        <input checked class="radiobox" type="radio" name="punctuality" value="e">
+                        <label class="radio-label">E = Excellent</label>
+                        <input class="radiobox" type="radio" name="" value="g">
+                        <label class="radio-label">G = Good</label>
+                        <input class="radiobox" type="radio" name="" value="s">
+                        <label class="radio-label">S = Satisfactory</label>
+                        <input class="radiobox" type="radio" name="" value="i">
+                        <label class="radio-label">I = Improvement Needed</label>
+                        <input class="radiobox" type="radio" name="" value="c">
+                        <label class="radio-label">C = Cause of Concern</label>
+                        <br/>
+                        <h5 style="color: gray">Note: Please use National Curriculum Levels/GCSE/AS/A2 grades A*-E</h5>
+                        <label>Last term’s grade/baseline assessment</label>
+                        <select name="lastTermGrade" class="dropdown">
+                            <option value="A*">A*</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="U">U/G</option>
+                        </select>
+                        <label>Current assessment grade</label>
+                        <select class="dropdown" name="currentGrade">
+                            <option value="A*">A*</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="U">U/G</option>
+                        </select>
+                        <label>Target grade for end of academic year</label>
+                        <select name="endOfAcademicYearGrade" class="dropdown">
+                            <option value="A*">A*</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="U">U/G</option>
+                        </select>
+                        <input class="login-button button button-small button-green button-fullscreen full-bottom" type="button" onclick="getForm()" value="Submit Report">
+                    </form>
+                </div>
+
+                <!-- End of entire page content-->
+            </div>
+        </div>
+    </div>
+    <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
+</div>
+<script src="scripts/core.js"></script>
+<script>
+    function sendingLoc(){
+        setInterval(function(){
+            if(userData[0].availablity_status == 'online') {
+                getLocation();
+            }
+        },1000);
+    }
+    $("#studentid").val(getUrlParameter('std_id'));
+    $("#studentName").val(getUrlParameter('name'));
+    $("#subject").val(getUrlParameter('subject'));
+    $("#tutor").val(getUrlParameter('tutor'));
+    document.getElementById('date').value = new Date();
+
+    function getForm(){
+        var data = JSON.stringify($("#form1").serializeArray());
+        $.post(urlToPass+"android/ajax/fillMonthlyReport",{id:userData[0].id,data:data},function(e){
+            console.log(e);
+            $("#form1")[0].reset();
+        });
+    }
+</script>
+</body>
