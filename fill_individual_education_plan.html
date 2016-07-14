@@ -212,6 +212,8 @@
         $.post(urlToPass+"android/ajax/fill_individual_action_plan",{id:userData[0].id,data:data},function(e){
             console.log(e);
             $("#form1")[0].reset();
+            alertify.error('Thanks For The Update');
+            window.location.href = "reports.html";
         });
     }
 

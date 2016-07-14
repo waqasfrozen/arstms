@@ -138,8 +138,10 @@
     function getForm(){
         var data = JSON.stringify($("#form1").serializeArray());
         $.post(urlToPass+"android/ajax/fill_scheme_of_learning",{id:userData[0].id,data:data},function(e){
-            console.log(e);
+//            console.log(e);
             $("#form1")[0].reset();
+            alertify.error('Thanks For The Update');
+            window.location.href = "reports.html";
         });
     }
 </script>
