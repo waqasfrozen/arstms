@@ -3,10 +3,10 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.bidlagaotest"
+        id        = "com.phonegap.tms"
         version   = "1.0.0">
 
-    <name>TMS Beta</name>
+    <name>Tutor Management System</name>
 
     <description>
         Tutor Management System
