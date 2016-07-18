@@ -41,7 +41,7 @@ setTimeout(function(){
         }
         a += "</ul>";
         $("#tutorSubject").html(a);
-        $(".tutorName").html(userData[0].name + " " + userData[0].lname);
+        $(".tutorName").html(userData[0].name + " </br> " + userData[0].lname);
         $(".tutorImage").attr("data-original",urlForAssets + userData[0].profile_pic);
         $(".tutorImage").attr("src",urlForAssets + userData[0].profile_pic);
         sendingLoc();
