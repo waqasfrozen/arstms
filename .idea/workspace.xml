@@ -30,49 +30,9 @@
       <file leaf-file-name="android.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../tms/application/controllers/android.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="115" max-vertical-offset="1564">
+            <state vertical-scroll-proportion="0.0" vertical-offset="14628" max-vertical-offset="17043">
               <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
               <folding>
-                <element signature="e#47#114#0#PHP" expanded="false" />
-                <element signature="e#119#150#0#PHP" expanded="false" />
-                <element signature="e#155#744#0#PHP" expanded="false" />
-                <element signature="e#749#26737#0#PHP" expanded="false" />
-                <element signature="e#824#1471#0#PHP" expanded="false" />
-                <element signature="e#1480#2045#0#PHP" expanded="false" />
-                <element signature="e#2054#2318#0#PHP" expanded="false" />
-                <element signature="e#2327#2494#0#PHP" expanded="false" />
-                <element signature="e#2503#3560#0#PHP" expanded="false" />
-                <element signature="e#3569#3989#0#PHP" expanded="false" />
-                <element signature="e#3998#4254#0#PHP" expanded="false" />
-                <element signature="e#4263#4578#0#PHP" expanded="false" />
-                <element signature="e#4587#5165#0#PHP" expanded="false" />
-                <element signature="e#5174#5571#0#PHP" expanded="false" />
-                <element signature="e#5580#5964#0#PHP" expanded="false" />
-                <element signature="e#5973#6412#0#PHP" expanded="false" />
-                <element signature="e#6421#6868#0#PHP" expanded="false" />
-                <element signature="e#6877#8973#0#PHP" expanded="false" />
-                <element signature="e#8982#9237#0#PHP" expanded="false" />
-                <element signature="e#9246#9505#0#PHP" expanded="false" />
-                <element signature="e#9514#9775#0#PHP" expanded="false" />
-                <element signature="e#9784#10283#0#PHP" expanded="false" />
-                <element signature="e#10292#12126#0#PHP" expanded="false" />
-                <element signature="e#12135#18591#0#PHP" expanded="false" />
-                <element signature="e#18600#19241#0#PHP" expanded="false" />
-                <element signature="e#19250#20304#0#PHP" expanded="false" />
-                <element signature="e#20313#20573#0#PHP" expanded="false" />
-                <element signature="e#20582#21253#0#PHP" expanded="false" />
-                <element signature="e#21262#21303#0#PHP" expanded="false" />
-                <element signature="e#21312#24278#0#PHP" expanded="false" />
-                <element signature="e#24287#24435#0#PHP" expanded="false" />
-                <element signature="e#24444#25272#0#PHP" expanded="false" />
-                <element signature="e#25281#25648#0#PHP" expanded="false" />
-                <element signature="e#25657#26731#0#PHP" expanded="false" />
-                <element signature="e#26742#27374#0#PHP" expanded="false" />
-                <element signature="e#27379#29715#0#PHP" expanded="false" />
-                <element signature="e#29720#30013#0#PHP" expanded="false" />
-                <element signature="e#30018#30341#0#PHP" expanded="false" />
-                <element signature="e#30342#30372#0#PHP" expanded="false" />
-                <element signature="e#30691#32217#0#PHP" expanded="false" />
                 <marker date="1468526138947" expanded="true" signature="6959:7010" placeholder="SELECT * FRO..." />
                 <marker date="1468526138947" expanded="true" signature="12202:12359" placeholder="SELECT * FRO..." />
                 <marker date="1468526138947" expanded="true" signature="12402:12560" placeholder="SELECT * FRO..." />
@@ -93,8 +53,8 @@
       <file leaf-file-name="core.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/core.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1580756" vertical-offset="0" max-vertical-offset="3450">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.24914089" vertical-offset="39" max-vertical-offset="3450">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -177,6 +137,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -211,12 +172,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../aliAndroid" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -228,31 +188,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <pass-parent-env-vars>false</pass-parent-env-vars>
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -276,29 +211,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1040" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1040" height="754" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33061224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3303393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -321,18 +256,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$USER_HOME$/Downloads/android.php</url>
-          <line>262</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$USER_HOME$/Downloads/android.php</url>
-          <line>412</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="81" />
     </breakpoint-manager>
     <watches-manager />
@@ -468,43 +391,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.30728242" vertical-offset="495" max-vertical-offset="1058">
           <caret line="97" column="49" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="49" />
-          <folding>
-            <element signature="n#__construct#0;n#Android#0;n#!!top" expanded="false" />
-            <element signature="n#index#0;n#Android#0;n#!!top" expanded="false" />
-            <element signature="n#ajaxLogin#0;n#Android#0;n#!!top" expanded="false" />
-            <element signature="e#824#1380#0#PHP" expanded="false" />
-            <element signature="e#1389#1954#0#PHP" expanded="false" />
-            <element signature="e#1963#2227#0#PHP" expanded="false" />
-            <element signature="e#2236#2403#0#PHP" expanded="false" />
-            <element signature="e#2412#3469#0#PHP" expanded="false" />
-            <element signature="e#3478#3898#0#PHP" expanded="false" />
-            <element signature="e#3907#4163#0#PHP" expanded="false" />
-            <element signature="e#4172#4487#0#PHP" expanded="false" />
-            <element signature="e#4496#5074#0#PHP" expanded="false" />
-            <element signature="e#5083#5480#0#PHP" expanded="false" />
-            <element signature="e#5489#5873#0#PHP" expanded="false" />
-            <element signature="e#5882#6321#0#PHP" expanded="false" />
-            <element signature="e#6330#6777#0#PHP" expanded="false" />
-            <element signature="e#6786#9764#0#PHP" expanded="false" />
-            <element signature="e#9773#10028#0#PHP" expanded="false" />
-            <element signature="e#10037#10296#0#PHP" expanded="false" />
-            <element signature="e#10305#10566#0#PHP" expanded="false" />
-            <element signature="e#10575#11071#0#PHP" expanded="false" />
-            <element signature="e#11080#12514#0#PHP" expanded="false" />
-            <element signature="e#12523#18000#0#PHP" expanded="false" />
-            <element signature="e#18009#18650#0#PHP" expanded="false" />
-            <element signature="e#18659#19656#0#PHP" expanded="false" />
-            <element signature="e#19665#19925#0#PHP" expanded="false" />
-            <element signature="e#19934#20191#0#PHP" expanded="false" />
-            <element signature="e#20200#20241#0#PHP" expanded="false" />
-            <element signature="e#20250#22106#0#PHP" expanded="false" />
-            <element signature="e#22115#22263#0#PHP" expanded="false" />
-            <element signature="n#sendToTutor#0;n#Android#0;n#!!top" expanded="false" />
-            <element signature="n#tutor_chat#0;n#Android#0;n#!!top" expanded="false" />
-            <element signature="n#token#0;n#Android#0;n#!!top" expanded="false" />
-            <element signature="n#forgetPwd#0;n#Android#0;n#!!top" expanded="false" />
-            <element signature="e#25874#25904#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -708,7 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4602" max-vertical-offset="5221">
           <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,55 +601,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2233" max-vertical-offset="3519">
           <caret line="145" column="5" selection-start-line="145" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../tms/application/controllers/android.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="115" max-vertical-offset="1564">
+        <state vertical-scroll-proportion="0.0" vertical-offset="14628" max-vertical-offset="17043">
           <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding>
-            <element signature="e#47#114#0#PHP" expanded="false" />
-            <element signature="e#119#150#0#PHP" expanded="false" />
-            <element signature="e#155#744#0#PHP" expanded="false" />
-            <element signature="e#749#26737#0#PHP" expanded="false" />
-            <element signature="e#824#1471#0#PHP" expanded="false" />
-            <element signature="e#1480#2045#0#PHP" expanded="false" />
-            <element signature="e#2054#2318#0#PHP" expanded="false" />
-            <element signature="e#2327#2494#0#PHP" expanded="false" />
-            <element signature="e#2503#3560#0#PHP" expanded="false" />
-            <element signature="e#3569#3989#0#PHP" expanded="false" />
-            <element signature="e#3998#4254#0#PHP" expanded="false" />
-            <element signature="e#4263#4578#0#PHP" expanded="false" />
-            <element signature="e#4587#5165#0#PHP" expanded="false" />
-            <element signature="e#5174#5571#0#PHP" expanded="false" />
-            <element signature="e#5580#5964#0#PHP" expanded="false" />
-            <element signature="e#5973#6412#0#PHP" expanded="false" />
-            <element signature="e#6421#6868#0#PHP" expanded="false" />
-            <element signature="e#6877#8973#0#PHP" expanded="false" />
-            <element signature="e#8982#9237#0#PHP" expanded="false" />
-            <element signature="e#9246#9505#0#PHP" expanded="false" />
-            <element signature="e#9514#9775#0#PHP" expanded="false" />
-            <element signature="e#9784#10283#0#PHP" expanded="false" />
-            <element signature="e#10292#12126#0#PHP" expanded="false" />
-            <element signature="e#12135#18591#0#PHP" expanded="false" />
-            <element signature="e#18600#19241#0#PHP" expanded="false" />
-            <element signature="e#19250#20304#0#PHP" expanded="false" />
-            <element signature="e#20313#20573#0#PHP" expanded="false" />
-            <element signature="e#20582#21253#0#PHP" expanded="false" />
-            <element signature="e#21262#21303#0#PHP" expanded="false" />
-            <element signature="e#21312#24278#0#PHP" expanded="false" />
-            <element signature="e#24287#24435#0#PHP" expanded="false" />
-            <element signature="e#24444#25272#0#PHP" expanded="false" />
-            <element signature="e#25281#25648#0#PHP" expanded="false" />
-            <element signature="e#25657#26731#0#PHP" expanded="false" />
-            <element signature="e#26742#27374#0#PHP" expanded="false" />
-            <element signature="e#27379#29715#0#PHP" expanded="false" />
-            <element signature="e#29720#30013#0#PHP" expanded="false" />
-            <element signature="e#30018#30341#0#PHP" expanded="false" />
-            <element signature="e#30342#30372#0#PHP" expanded="false" />
-            <element signature="e#30691#32217#0#PHP" expanded="false" />
             <marker date="1468526138947" expanded="true" signature="6959:7010" placeholder="SELECT * FRO..." />
             <marker date="1468526138947" expanded="true" signature="12202:12359" placeholder="SELECT * FRO..." />
             <marker date="1468526138947" expanded="true" signature="12402:12560" placeholder="SELECT * FRO..." />
@@ -783,8 +627,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/core.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1580756" vertical-offset="0" max-vertical-offset="3450">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.24914089" vertical-offset="39" max-vertical-offset="3450">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
         </state>
       </provider>
