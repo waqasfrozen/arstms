@@ -250,7 +250,18 @@
                     $(".max_hours").html(jsonData[0].max_hour);
                     $(".hours_per_week").html(jsonData[0].hours);
                     $(".ideal_time").html(jsonData[0].ideal_time);
-                    $(".subject_required").html(jsonData[0].subjects);
+
+                    var sub = jsonData[0].subjects.split(",");
+
+                    var a = "<ul>";
+                    if(sub != ""){
+                    for(var i = 0 ; i < sub.length ; i++){
+                        a += "<li>"+ sub[i] +"</li>";
+                        }
+                    }
+                    a += "</ul>";
+
+                    $(".subject_required").html(a);
                     $(".student_name").html(jsonData[0].student);
                     $("#createMonthlyReport").attr("href",urlForMonthlyReport);
                     $("#urlForWeeklyReport").attr("href",urlForWeeklyReport);
