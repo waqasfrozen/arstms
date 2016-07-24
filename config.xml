@@ -72,20 +72,20 @@
     -->
 
     <!-- Define app icon for each platform. -->
-    <icon src="images/bezaleelLogo.png" />
-    <icon src="images/bezaleelLogo.png" gap:platform="android" gap:qualifier="ldpi" />
-    <icon src="images/bezaleelLogo.png" gap:platform="android" gap:qualifier="mdpi" />
-    <icon src="images/bezaleelLogo.png" gap:platform="android" gap:qualifier="hdpi" />
-    <icon src="images/bezaleelLogo.png" gap:platform="android" gap:qualifier="xhdpi" />
-    <icon src="images/bezaleelLogo.png" gap:platform="blackberry" />
-    <icon src="images/bezaleelLogo.png" gap:platform="blackberry" gap:state="hover"/>
-    <icon src="images/bezaleelLogo.png" gap:platform="ios" width="57" height="57" />
-    <icon src="images/bezaleelLogo.png" gap:platform="ios" width="72" height="72" />
-    <icon src="images/bezaleelLogo.png" gap:platform="ios" width="114" height="114" />
-    <icon src="images/bezaleelLogo.png" gap:platform="ios" width="144" height="144" />
-    <icon src="images/bezaleelLogo.png" gap:platform="webos" />
-    <icon src="images/bezaleelLogo.png" gap:platform="winphone" />
-    <icon src="images/bezaleelLogo.png" gap:platform="winphone" gap:role="background" />
+    <icon src="images/bezaleelLogo3.png" />
+    <icon src="images/bezaleelLogo3.png" gap:platform="android" gap:qualifier="ldpi" />
+    <icon src="images/bezaleelLogo3.png" gap:platform="android" gap:qualifier="mdpi" />
+    <icon src="images/bezaleelLogo3.png" gap:platform="android" gap:qualifier="hdpi" />
+    <icon src="images/bezaleelLogo3.png" gap:platform="android" gap:qualifier="xhdpi" />
+    <icon src="images/bezaleelLogo3.png" gap:platform="blackberry" />
+    <icon src="images/bezaleelLogo3.png" gap:platform="blackberry" gap:state="hover"/>
+    <icon src="images/bezaleelLogo3.png" gap:platform="ios" width="57" height="57" />
+    <icon src="images/bezaleelLogo3.png" gap:platform="ios" width="72" height="72" />
+    <icon src="images/bezaleelLogo3.png" gap:platform="ios" width="114" height="114" />
+    <icon src="images/bezaleelLogo3.png" gap:platform="ios" width="144" height="144" />
+    <icon src="images/bezaleelLogo3.png" gap:platform="webos" />
+    <icon src="images/bezaleelLogo3.png" gap:platform="winphone" />
+    <icon src="images/bezaleelLogo3.png" gap:platform="winphone" gap:role="background" />
 
     <!-- Define app splash screen for each platform. -->
     <splash src="images/splash.png" />
