@@ -6,13 +6,13 @@
         id        = "com.phonegap.tms"
         version   = "1.0.0">
 
-    <name>Tutor Management System</name>
+    <name>TMS</name>
 
     <description>
         Tutor Management System
     </description>
 
-    <author href="http://phonegap.com" email="faizan@jetnetix.com">
+    <author href="http://jetnetix.com" email="faizan@jetnetix.com">
         Jetnetix
     </author>
 
