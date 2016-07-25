@@ -4,7 +4,7 @@ var userid = '';
 var userData = '';
 var urlToPass = "https://tutormanager.co.uk/tms_upd_forAndroid/index.php/";
 //var urlToPass = "//localhost/tms/index.php/";
-var urlForAssets = "https://tutormanager.co.uk/tms_upd_forAndroid/";
+var urlForAssets = "https://tutormanager.co.uk/";
 //var urlForAssets = "//localhost/tms/";
 setTimeout(function(){
     var userValidation = window.localStorage.getItem("tms_user");
